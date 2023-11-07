@@ -1,7 +1,67 @@
-.header {
-    padding: 60px;
+body {
+    background-color: #FFD700; /* Jaune */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #9400D3; /* Violet */
+    color: #FFFFFF;
     text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
-  }
+    padding: 20px;
+}
+
+nav {
+    background-color: #9400D3; /* Violet */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('image-accueil.jpg'); /* Remplacez 'image-accueil.jpg' par votre image d'accueil */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #9400D3; /* Violet */
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.feature {
+    text-align: center;
+}
+
+cta-button {
+    background-color: #9400D3; /* Violet */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #9400D3; /* Violet */
+    text-align: center;
+    padding: 10px;
+    color: #FFFFFF;
+}
