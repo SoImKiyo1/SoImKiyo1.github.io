@@ -312,7 +312,13 @@ header{
 
 
 /******* FOOTER *******/
-
+footer {
+	background-color: yellow;
+}
+.footer img {
+	width:100px;
+	height:100px;
+}
 /******* FIN DU FOOTER *******/
 
 
