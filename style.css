@@ -315,9 +315,9 @@ header{
 footer {
 	background-color: yellow;
 }
-.footer .a img {
-	width:100px;
-	height:100px;
+img.logofooter {
+	width: 100px;
+	height: 100px;
 }
 /******* FIN DU FOOTER *******/
 
