@@ -3,7 +3,7 @@
 A Project for NSI 
 
 TO-DO LIST :
-- Création des fichiers
+- Création des fichiers V
 - Finalisation du design
 - Changements des tailles
 - Ajouts de tout les textes
