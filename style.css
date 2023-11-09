@@ -320,7 +320,8 @@ img.logofooter {
   height: 50px;
 }
 .footer p {
-  margin-bottom:50px;	
+  margin-bottom:50px;
+  padding-bottom: 20px;
 }
 /******* FIN DU FOOTER *******/
 
