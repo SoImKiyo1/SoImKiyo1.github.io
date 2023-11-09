@@ -314,6 +314,7 @@ header{
 /******* FOOTER *******/
 footer {
   background-color: yellow;
+	margin: 0;
 }
 img.logofooter {
   width: 50px;
