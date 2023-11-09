@@ -316,11 +316,6 @@ footer {
   background-color: yellow;
   padding-bottom: 20px;
 }
-<<<<<<< HEAD
-.footer img {
-  width: 100px;
-  height: 100px;
-=======
 img.logofooter {
   width: 50px;
   height: 50px;
@@ -328,7 +323,6 @@ img.logofooter {
 .footer p {
   margin-bottom:50px;
   padding-bottom: 20px;
->>>>>>> d8b82b60a136e1b896546cc4606e16391c4302e0
 }
 
 /******* FIN DU FOOTER *******/
