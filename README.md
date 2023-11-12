@@ -7,9 +7,9 @@ TO-DO LIST :
 - Finalisation du design
 - Changements des tailles
 - Ajouts de tout les textes
-- Finalisation de la page home
+- Finalisation de la page home V
 - Finalisation de la page partition
-- Finalisation de la page histoire
+- Finalisation de la page histoire V
 - Finalisation de la page finaltest
 - Finalisation de la page accords
 - Finalisation de la page cle
