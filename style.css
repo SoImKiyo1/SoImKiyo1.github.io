@@ -1,4 +1,5 @@
-/* Corp du site */
+/******* Corp du site *******/
+/* Import de la police d'écriture */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
@@ -9,8 +10,9 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+/* En-Tete */
 header{
-    background-image:url(images/background.png);
+  background-image:url(images/background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -320,16 +322,19 @@ header{
 
 
 /******* FOOTER *******/
+/* Pied de page */
 footer {
   background-color: #ffe033;
   padding-bottom: 20px;
   position: relative;
 }
 
+/* Espacement supérieur au pied de page */
 footer .top {
   padding-top: 40px;
 }
 
+/* Logo du pied de page */
 footer img {
   width: 200px;
   height: 200px;
@@ -339,21 +344,25 @@ footer img {
   transition: transform 0.5s;
 }
 
+/* Logo du pied de page quand on passe dessus */
 footer img:hover {
   transform: scale(1.1);
 }
 
+/* Titre "Description" du pied de page */
 footer h1 {
   margin-left:500px;
   font-size: 60px;
 }
 
+/* Texte (description) du pied de page */
 footer p{
   margin-left:500px;
   margin-top:-20px;
   font-size: 20px;
 }
 
+/* Lien (vers le site NSI) du pied de page */
 footer .button{
   margin-top: -150px;
   font-size: 40px;
@@ -364,16 +373,19 @@ footer .button{
   color: rgb(155, 155, 155);
 }
 
+/* Lien (vers le site NSI) du pied de page quand on passe dessus*/
 footer .button:hover{
   transform: scale(1.1);
 }
 
+/* Texte "copyright" du pied de page */
 footer .copyright {
   margin-top:-140px;
   font-size: 20px;
   margin-left: 2250px;
 }
 
+/* Espacement inférieur au pied de page */
 footer .bottom {
   margin-bottom:180px;
 }
@@ -390,7 +402,7 @@ footer .bottom {
 
 
 
-  /* Le Responsive a partir 500px */
+  /* Le Responsive a partir de 500px */
   @media screen and (max-width: 500px) {
     .header a {
       float: none;
