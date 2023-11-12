@@ -58,14 +58,6 @@ body{
     color: black;
   }
   
-  /* Le lien sur la page où on est sur le header */
-  .header .active {
-    background-color: rgb(255, 214, 30);
-    color: white;
-    margin-top: 30px;
-    margin-right: 30px;
-  }
-  
   /* La partie droite du header */
   .header-droit {
     float: right;
@@ -76,10 +68,16 @@ body{
   .header-droit .finalexam {
     border: 2px solid rgb(255, 214, 30);
     margin-right:40px;
+    background-color: rgb(255, 214, 30);
   }
 
 
   /******* FIN DU HEADER *******/
+
+
+
+
+
 
 
 h1.finaltest{
@@ -89,8 +87,6 @@ h1.finaltest{
   margin-top: 100px;
   font-size: 80px;
 }
-
-
 
 .container {
   background-color: #fff;
@@ -112,8 +108,6 @@ button {
   border: none;
   border-radius: 4px;
 }
-
-
 
 
 
