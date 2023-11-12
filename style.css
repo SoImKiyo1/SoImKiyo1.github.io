@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    background-image:url(images/background.png);
+    background-image:url(/images/background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -168,7 +168,7 @@ header{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(images/backgroundcard1.png);
+  background-image: url(/images/backgroundcard1.png);
 }
 
 /* Carte de la seconde partie quand on passe dessus */
@@ -223,7 +223,7 @@ header{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(images/backgroundcard1.png);
+  background-image: url(/images/backgroundcard1.png);
 }
 
 .SecondPart .card2:hover {
@@ -272,7 +272,7 @@ header{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(images/backgroundcard1.png);
+  background-image: url(/images/backgroundcard1.png);
 }
 
 .SecondPart .card3:hover {
