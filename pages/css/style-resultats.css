@@ -1,3 +1,17 @@
+/******* Corp du site *******/
+/* Import de la police d'écriture */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  background-color: white;
+	overflow-x: hidden; 
+	overflow-y: scroll;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  touch-action: pan-y;
+}
+
+
 /******* HEADER *******/
 
 /* Image du Logo sur le header */
@@ -143,3 +157,262 @@ footer .bottom {
 
 
 /******* FIN DU FOOTER *******/
+
+
+
+
+
+
+
+
+/******* RESPONSIVE *******/
+
+/* Taille d'écran "normal" (max 1920 pixels en largeur) */
+@media screen and (max-width: 1920px) {
+  /* En-Tête */
+  .header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header {
+    padding: 20px 10%;
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .header .button {
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+
+  .header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 50px;
+    margin-left: 40px;
+  }
+
+  .header-droit {
+    float: right;
+    margin-top: 30px;
+  }
+
+  .header-droit .finalexam {
+    border: 2px solid rgb(255, 214, 30);
+    margin-right: 40px;
+  }
+
+
+
+  /* FOOTER */
+  footer img {
+    width: 200px;
+    height: 200px;
+    top: 80px;
+    left: 50px;
+    position: absolute;
+    transition: transform 0.5s;
+  }
+
+  footer img:hover {
+    transform: scale(1.1);
+  }
+
+  footer h1,
+  footer p,
+  footer .button {
+    margin-left: 370px;
+  }
+
+  footer .copyright {
+    margin-left: 1680px;
+    margin-top: -70px;
+    font-size: 15px;
+  }
+
+  footer .button {
+    margin-top: -90px;
+    font-size: 40px;
+    position: absolute;
+    right: 300px;
+    transition: transform 0.5s;
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+  }
+
+  footer .button:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+/* Taille d'écran "pc portable" (max 1200 pixels en largeur) */
+@media screen and (max-width: 1200px) {
+  /* En-Tête */
+  .header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header {
+    padding: 20px 5%;
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .header .button {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .header-droit {
+    float: right;
+    margin-top: 20px;
+  }
+
+  .header-droit .finalexam {
+    border: 2px solid rgb(255, 214, 30);
+    margin-right: 30px;
+  }
+
+
+
+  /* FOOTER */
+  footer img {
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  footer h1 {
+    margin-left: 20px;
+    margin-top: 150px;
+    text-align: center;
+  }
+
+  footer p {
+    margin-left: 0px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  footer .button {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 230px;
+    margin-left: 30px;
+    text-align: center;
+  }
+
+  footer .copyright {
+    margin-top: 90px;
+    font-size: 10px;
+    margin-right: -20px;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+
+/* Taille d'écran "tablette en mode paysage" (max 1024 pixels en largeur) */
+@media screen and (max-width: 1024px) {
+  footer .button {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 140px;
+    margin-left: 30px;
+    text-align: center;
+  }
+}
+
+
+/* Taille d'écran "tablette en mode portrait" (max 900 pixels en largeur) */
+@media screen and (max-width: 900px) {
+  footer .button {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 80px;
+    margin-left: 30px;
+    text-align: center;
+  }
+}
+
+
+/* Taille d'écran "téléphone" (max 720 pixels en largeur) */
+@media screen and (max-width: 720px) {
+  /* En-Tête */
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .header-droit {
+    float: none;
+  }
+
+
+
+  /* FOOTER */
+  footer img {
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  footer h1{
+    margin-left: 20px;
+    margin-top: 200px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-left: 0px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  footer .button {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-right:-15px;
+    margin-left: 50px;
+    text-align: center;
+  }
+
+  footer .copyright {
+    margin-top: 120px;
+    font-size: 10px;
+    margin-right: -20px;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+
+/******* FIN DU RESPONSIVE *******/

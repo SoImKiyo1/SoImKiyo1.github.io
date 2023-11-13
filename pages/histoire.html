@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-    <title>Learn-Solfege</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-histoire.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-<body>
+    <title>Learn-Solfege</title>
+</head>
 
+<body>
     <!-- En-tête (Header) -->
     <div class="header">
         <a href="../index.html" class="logo">
-            <img src="../images/logo2.png" />
+            <img src="../images/logo2.png" alt="Logo Learn-Solfege" />
         </a>
         <a class="active" href="../pages/histoire.html">Histoire</a>
-		<a href="../pages/partition.html" class="button">Lire une partition</a>
-		<a href="../pages/accords.html" class="button">Accords</a>
+        <a href="../pages/partition.html" class="button">Lire une partition</a>
+        <a href="../pages/accords.html" class="button">Accords</a>
         <a href="../pages/tonalite.html" class="button">Tonalité</a>
         <div class="header-droit">
             <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
         </div>
     </div>
 
-    <!-- Ttire de la Page -->
+    <!-- Titre de la Page -->
     <div class="histoire">
         <h1>Histoire de la musique :</h1>
 
@@ -58,12 +61,12 @@
     </div>
 
     <!-- Button menant au Prochain Cours -->
-    <a href="accords.html" class="nextbutton">
+    <a href="partition.html" class="nextbutton">
         Prochain Cours 
-        <img src="../images/rightarrow.png" class="imgnextbutton"/> 
+        <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
     </a>
 
-    <!-- Bar de séparation -->
+    <!-- Barre de séparation -->
     <div class="separateur"></div>
 
     <!-- Titre "Test" -->
@@ -80,26 +83,24 @@
         <button onclick="verifierReponses()">Vérifier</button>
         <p id="resultat"></p>
     </div>
-    
-<!-- Pied de Page (Footer) -->
-<footer>
-    <a href="../index.html">
-        <img src="../images/logo.png" />
-    </a>
-    <p class="top"></p>
-    <h1>Description</h1>
-    <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique. 
-        <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des
-        <br>quiz, des jeux et des exercices pour s’entraîner, ainsi que des utilitaires pour tous les musiciens. 
-    </p>
-    <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
-    <p class="copyright">© Copyright 2023 Learn-Solfege</p>
-    <p class="bottom"></p>
-</footer>
 
+    <!-- Pied de Page (Footer) -->
+    <footer>
+        <a href="../index.html">
+            <img src="../images/logo.png" alt="Logo Learn-Solfege" />
+        </a>
+        <p class="top"></p>
+        <h1>Description</h1>
+        <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique. 
+            <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des
+            <br>quiz, des jeux et des exercices pour s’entraîner, ainsi que des utilitaires pour tous les musiciens. 
+        </p>
+        <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
+        <p class="copyright">© Copyright 2023 Learn-Solfege</p>
+        <p class="bottom"></p>
+    </footer>
+
+    <script type="text/javascript" src="script/script-histoire.js"></script>
 </body>
-</head>
+
 </html>
-
-
-<script type="text/javascript" src="script/script-histoire.js"></script>
