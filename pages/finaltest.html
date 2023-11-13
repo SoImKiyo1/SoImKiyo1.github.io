@@ -31,7 +31,14 @@
     <div class="container">
         <h1>QCM Final</h1>
         <form id="quizForm">
-        
+            
+          <!-- Entrées Nom/Prénom -->
+          <label for="firstName">Prénom :</label>
+          <input type="text" id="firstName" name="firstName" required>
+    
+          <label for="lastName">Nom :</label>
+          <input type="text" id="lastName" name="lastName" required>
+            
           <!-- Questions du QCM -->
           <div class="question">
             <p>Question 1 : La Terre est plate.</p>
@@ -52,13 +59,6 @@
               <input type="checkbox" name="q2" value="false"> Faux
             </label>
           </div>
-    
-          <!-- Entrées Nom/Prénom -->
-          <label for="firstName">Prénom :</label>
-          <input type="text" id="firstName" name="firstName" required>
-    
-          <label for="lastName">Nom :</label>
-          <input type="text" id="lastName" name="lastName" required>
     
           <!-- Button Vérifier -->
           <button type="button" onclick="verifierReponses()">Vérifier</button>
