@@ -14,9 +14,9 @@ TO-DO LIST :
 - Finalisation de la page accords
 - Finalisation de la page cle
 - Finalisation de la page resultat
-- Ajout d'un systeme pour recuperer des infos pour la page resultat (peutetre du php)
+- Ajout d'un systeme pour recuperer des infos pour la page resultat (peutetre du php) V
 - Ajouts de tout les tests
-- Ajouts des pop up en JavaScript
+- Ajouts des pop up en JavaScript V
 - Ajouts de toutes les images
 - Resolution des bugs
 - Optimisation du code
