@@ -437,21 +437,268 @@ footer .bottom {
 
 
 
-
-
-
-
-
-
-
-  /* Le Responsive a partir de 500px */
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .header-droit {
-      float: none;
-    }
+  @media screen and (max-width: 1920px) {
+  /* En-Tête */
+  .header img {
+    width: 80px;
+    height: 80px;
   }
+
+  .header {
+    padding: 20px 10%;
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .header .button {
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+
+  .header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 50px;
+    margin-left: 40px;
+  }
+
+  .header-droit {
+    float: right;
+    margin-top: 30px;
+  }
+
+  .header-droit .finalexam {
+    border: 2px solid rgb(255, 214, 30);
+    margin-right: 40px;
+  }
+
+  /* FIRST PART */
+  .FirstPart iframe {
+    width: 80%;
+    height: 720px;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    border-radius: 15px;
+    border: 1px solid black;
+  }
+
+  /* SECOND PART */
+  .SecondPart .card1,
+  .SecondPart .card2,
+  .SecondPart .card3,
+  .SecondPart .card4 {
+      width: 400px;
+      height: 500px;
+      margin: 0 10px 20px 10px;
+  }
+
+  .SecondPart .container1 h1,
+  .SecondPart .container2 h1,
+  .SecondPart .container3 h1,
+  .SecondPart .container4 h1 {
+      font-size: 80px;
+  }
+
+  .SecondPart .container1 p,
+  .SecondPart .container2 p,
+  .SecondPart .container3 p,
+  .SecondPart .container4 p {
+      font-size: 30px;
+  }
+
+  .SecondPart .container1 img,
+  .SecondPart .container2 img,
+  .SecondPart .container3 img,
+  .SecondPart .container4 img {
+      width: 50px;
+      height: 50px;
+      margin-top: 110px;
+  }
+
+
+  /* FOOTER */
+  footer img {
+    width: 200px;
+    height: 200px;
+    top: 80px;
+    left: 50px;
+    position: absolute;
+    transition: transform 0.5s;
+  }
+
+  footer img:hover {
+    transform: scale(1.1);
+  }
+
+  footer h1,
+  footer p,
+  footer .button {
+    margin-left: 370px;
+  }
+
+  footer .copyright {
+    margin-left: 1680px;
+    margin-top: -70px;
+    font-size: 15px;
+  }
+
+  footer .button {
+    margin-top: -90px;
+    font-size: 40px;
+    position: absolute;
+    right: 300px;
+    transition: transform 0.5s;
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+  }
+
+  footer .button:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+/* Responsive pour les téléphones */
+@media screen and (max-width: 767px) {
+  /* En-Tête */
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .header-droit {
+    float: none;
+  }
+
+  /* FIRST PART */
+  .FirstPart iframe {
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+  }
+
+  /* SECOND PART */
+  .SecondPart .card1,
+  .SecondPart .card2,
+  .SecondPart .card3,
+  .SecondPart .card4 {
+    width: 80%;
+    height: 300px;
+    margin: 0 5% 20px 5%;
+    margin-top: -150px;
+    text-align: center;
+  }
+
+  .SecondPart .container1,
+  .SecondPart .container2,
+  .SecondPart .container3,
+  .SecondPart .container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .SecondPart .container1 h1 {
+    font-size: 30px;
+    margin-top: 85px;
+  }
+
+  .SecondPart .container2 h1 {
+    font-size: 30px;
+    margin-top: 70px;
+  }
+
+  .SecondPart .container3 h1 {
+    font-size: 30px;
+    margin-top: 95px;
+  }
+
+  .SecondPart .container4 h1 {
+    font-size: 30px;
+    margin-top: 65px;
+  }
+
+  .SecondPart .container1 p,
+  .SecondPart .container2 p,
+  .SecondPart .container3 p,
+  .SecondPart .container4 p {
+    font-size: 15px;
+    margin-top: -10px;
+    margin-right: 5px;
+    text-align: center;
+  }
+
+  .SecondPart .container1 img {
+    width: 20px;
+    height: 20px;
+    margin-top: 92px;
+  }
+
+  .SecondPart .container2 img {
+    width: 20px;
+    height: 20px;
+    margin-top:90px;
+  }
+
+  .SecondPart .container3 img {
+    width: 20px;
+    height: 20px;
+    margin-top: 85px;
+  }
+
+  .SecondPart .container4 img {
+    width: 20px;
+    height: 20px;
+    margin-top: 80px;
+  }
+
+  /* FOOTER */
+  footer img {
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  footer h1{
+    margin-left: 20px;
+    margin-top: 200px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-left: 0px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  footer .button {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-right:-180px;
+    margin-left: 50px;
+    text-align: center;
+  }
+
+  footer .copyright {
+    margin-top: 120px;
+    font-size: 10px;
+    margin-right: -20px;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
