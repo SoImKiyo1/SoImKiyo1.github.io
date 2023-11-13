@@ -437,6 +437,13 @@ footer .bottom {
 
 
 
+
+
+
+
+/******* Responsive *******/
+
+/* Taille d'écran "normal" (max 1920 pixels en largeur) */
   @media screen and (max-width: 1920px) {
   /* En-Tête */
   .header img {
@@ -567,8 +574,187 @@ footer .bottom {
 }
 
 
-/* Responsive pour les téléphones */
-@media screen and (max-width: 767px) {
+/* Taille d'écran "pc portable" (max 1200 pixels en largeur) */
+@media screen and (max-width: 1200px) {
+  /* En-Tête */
+  .header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header {
+    padding: 20px 5%;
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .header .button {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .header-droit {
+    float: right;
+    margin-top: 20px;
+  }
+
+  .header-droit .finalexam {
+    border: 2px solid rgb(255, 214, 30);
+    margin-right: 30px;
+  }
+
+  /* FIRST PART */
+  .FirstPart iframe {
+    width: 80%;
+    height: 600px;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    border-radius: 15px;
+    border: 1px solid black;
+  }
+
+  /* SECOND PART */
+  .SecondPart .card1,
+  .SecondPart .card2,
+  .SecondPart .card3,
+  .SecondPart .card4 {
+      width: 200px;
+      height: 500px;
+      margin: 0 10px 20px 10px;
+  }
+
+  .SecondPart .container1 h1 {
+    font-size: 80px;
+    margin-top: 150px;
+  }
+
+  .SecondPart .container2 h1 {
+    font-size: 80px;
+    margin-top: 120px;
+  }
+
+  .SecondPart .container3 h1 {
+    font-size: 80px;
+    margin-top: 160px;
+  }
+
+  .SecondPart .container4 h1 {
+    font-size: 80px;
+    margin-top: 125px;
+  }
+
+  .SecondPart .container1 p,
+  .SecondPart .container2 p,
+  .SecondPart .container3 p,
+  .SecondPart .container4 p {
+      font-size: 30px;
+  }
+
+  .SecondPart .container1 img {
+    width: 50px;
+    height: 50px;
+    margin-top: 130px;
+  }
+
+  .SecondPart .container2 img {
+    width: 50px;
+    height: 50px;
+    margin-top: 125px;
+  }
+
+  .SecondPart .container3 img {
+    width: 50px;
+    height: 50px;
+    margin-top: 124px;
+  }
+
+  .SecondPart .container4 img {
+    width: 50px;
+    height: 50px;
+    margin-top: 120px;
+  }
+
+  /* FOOTER */
+  footer img {
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  footer h1 {
+    margin-left: 20px;
+    margin-top: 150px;
+    text-align: center;
+  }
+
+  footer p {
+    margin-left: 0px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  footer .button {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 230px;
+    margin-left: 30px;
+    text-align: center;
+  }
+
+  footer .copyright {
+    margin-top: 90px;
+    font-size: 10px;
+    margin-right: -20px;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+
+/* Taille d'écran "tablette en mode paysage" (max 1024 pixels en largeur) */
+@media screen and (max-width: 1024px) {
+  footer .button {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 140px;
+    margin-left: 30px;
+    text-align: center;
+  }
+}
+
+
+/* Taille d'écran "tablette en mode portrait" (max 900 pixels en largeur) */
+@media screen and (max-width: 900px) {
+  footer .button {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 80px;
+    margin-left: 30px;
+    text-align: center;
+  }
+}
+
+
+/* Taille d'écran "téléphone" (max 720 pixels en largeur) */
+@media screen and (max-width: 720px) {
   /* En-Tête */
   .header a {
     float: none;
@@ -689,7 +875,7 @@ footer .bottom {
   footer .button {
     font-size: 20px;
     margin-top: 40px;
-    margin-right:-180px;
+    margin-right:-15px;
     margin-left: 50px;
     text-align: center;
   }
