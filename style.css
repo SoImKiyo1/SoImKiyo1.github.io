@@ -441,7 +441,7 @@ footer .bottom {
 
 
 
-/******* Responsive *******/
+/******* RESPONSIVE *******/
 
 /* Taille d'écran "normal" (max 1920 pixels en largeur) */
   @media screen and (max-width: 1920px) {
@@ -888,3 +888,6 @@ footer .bottom {
     text-align: center;
   }
 }
+
+
+/******* FIN DU RESPONSIVE *******/
