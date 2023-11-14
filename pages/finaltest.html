@@ -27,46 +27,47 @@
     <!-- Description de la page -->
     <p class="finaltest"></p>
 
-    <!-- QCM -->
-    <div class="container">
-        <h1>QCM Final</h1>
-        <form id="quizForm">
-            
-          <!-- Entrées Nom/Prénom -->
-          <label for="firstName">Prénom :</label>
-          <input type="text" id="firstName" name="firstName" required>
-    
-          <label for="lastName">Nom :</label>
-          <input type="text" id="lastName" name="lastName" required>
-            
-          <!-- Questions du QCM -->
-          <div class="question">
-            <p>Question 1 : La Terre est plate.</p>
-            <label>
-              <input type="checkbox" name="q1" value="false"> Vrai
-            </label>
-            <label>
-              <input type="checkbox" name="q1" value="true"> Faux
-            </label>
-          </div>
+    <form id="qcmForm">
+      <!-- Les champs pour le nom et le prénom -->
+      <div class="form-row">
+        <div class="form-field">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-field">
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </div>
+    </div>
 
-          <div class="question">
-            <p>Question 2 : La Lune est faite de fromage.</p>
-            <label>
-              <input type="checkbox" name="q2" value="true"> Vrai
-            </label>
-            <label>
-              <input type="checkbox" name="q2" value="false"> Faux
-            </label>
-          </div>
-    
-          <!-- Button Vérifier -->
-          <button type="button" onclick="verifierReponses()">Vérifier</button>
-        </form>
-    
-        <!-- Résultat (Element après vérification) -->
-        <div id="result"></div>
-      </div>
+      <!-- Questions -->
+      <div class="question">
+        <p>Question 1: Le fromage</p>
+        <input type="checkbox" id="q1vrai" name="question1" value="vrai">
+        <label for="q1vrai">Vrai</label>
+        <input type="checkbox" id="q1faux" name="question1" value="faux">
+        <label for="q1faux">Faux</label>
+    </div>
+
+    <div class="question">
+      <p>Question 2: Le fromage</p>
+      <input type="checkbox" id="q2vrai" name="question2" value="vrai">
+      <label for="q2vrai">Vrai</label>
+      <input type="checkbox" id="q2faux" name="question2" value="faux">
+      <label for="q2faux">Faux</label>
+  </div>
+
+  <div class="question">
+    <p>Question 3: Le fromage</p>
+    <input type="checkbox" id="q3vrai" name="question3" value="vrai">
+    <label for="q3vrai">Vrai</label>
+    <input type="checkbox" id="q3faux" name="question3" value="faux">
+    <label for="q3faux">Faux</label>
+</div>
+      <!-- Fin du bloc question -->
+
+      <input type="button" value="Vérifier" onclick="verifierReponses()">
+  </form>
 
 
 

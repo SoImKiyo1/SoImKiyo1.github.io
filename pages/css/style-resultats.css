@@ -85,6 +85,71 @@ body{
 
 
 
+
+
+/* Style du conteneur de résultats */
+#resultats {
+  max-width: 1000px;
+  margin: 200px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+/* Style des titres */
+#resultats h1 {
+  color: #fada05; /* Couleur jaune dominante */
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+#resultats h2 {
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 45px;
+}
+
+/* Style des paragraphes et des réponses */
+#resultats p {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-left: 4px solid #fada05; /* Ligne jaune à gauche pour les corrections */
+  padding: 10px;
+  font-size: 30px;
+}
+
+/* Style pour le score */
+#resultats p:first-of-type {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-size:30px;
+}
+
+#credits {
+  max-width: 800px;
+  margin: 0 auto 30px auto; /* Centre la div et ajoute une marge en bas */
+  padding: 15px;
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre douce pour la profondeur */
+  text-align: center; /* Centrer le texte */
+}
+
+#credits h3 {
+  color: #333; /* Couleur du texte pour le titre */
+  margin-bottom: 10px; /* Espace entre le titre et les noms */
+}
+
+#credits p {
+  color: #666; /* Couleur du texte pour les noms */
+  margin-bottom: 5px; /* Espace entre les noms */
+  font-style: italic; /* Style des noms */
+}
+
+
+
 /******* FOOTER *******/
 /* Pied de page */
 footer {

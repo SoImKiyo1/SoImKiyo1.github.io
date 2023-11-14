@@ -22,36 +22,43 @@
         </div>
     </div>
 
-<!-- Contenu principal -->
-<div class="container">
-    <h1>Résultats du Test Final</h1>
+    <div id="resultats">
+        <!-- Les résultats seront affichés ici -->
+    </div>
 
-    <!-- Récupérer les paramètres de l'URL -->
+    <div id="credits">
+        <h3>Créateurs du site :</h3>
+        <p>Sacha Pastor, contributeur du HTML/création du design/création du CSS/supervision du projet.</p>
+        <p>Eloi Guillot, contributeur du HTML/contributeur du CSS/contributeur au textes.</p>
+        <p>Noa Pagesse, créateur des textes/contributeur au design/contributeur au HTML/supervision du projet.</p>
+    </div>
+    
+    
+
     <script>
-        var params = new URLSearchParams(window.location.search);
-        var firstName = params.get('firstName');
-        var lastName = params.get('lastName');
-        var score = params.get('score');
-        var totalQuestions = params.get('totalQuestions');
-
-        // Afficher les résultats généraux dans la page
-        document.write(`<p>${lastName} ${firstName}</p>`);
-        document.write(`<p>Note finale : ${score}/${totalQuestions}</p>`);
-        document.write(`<p>Correction :</p>`);
-
-        // Afficher les résultats de chaque question
-        for (var i = 1; i <= totalQuestions; i++) {
-            var questionResult = JSON.parse(params.get(`q${i}`));
-
-            document.write(`<p>Question ${i} : ${questionResult[0].label}</p>`);
-            document.write(`<p>Réponse attendue : ${questionResult[0].correct ? 'Vrai' : 'Faux'}</p>`);
-            document.write(`<p>L'utilisateur a répondu : ${questionResult[0].selected ? 'Vrai' : 'Faux'}</p>`);
+        window.onload = function() {
+            var nom = localStorage.getItem('nom');
+            var prenom = localStorage.getItem('prenom');
+            var score = localStorage.getItem('score');
+            var totalQuestions = localStorage.getItem('totalQuestions');
+            var reponsesUtilisateur = JSON.parse(localStorage.getItem('reponsesUtilisateur'));
+            var reponsesCorrectes = JSON.parse(localStorage.getItem('reponsesCorrectes'));
+    
+            var resultatsDiv = document.getElementById('resultats');
+            var resultatHTML = "<h1>Résultats pour " + prenom + " " + nom + "</h1>" +
+                               "<p>Score: " + score + " / " + totalQuestions + "</p>";
+    
+            resultatHTML += "<h2>Corrections:</h2>";
+    
+            for (var question in reponsesUtilisateur) {
+                resultatHTML += "<p>" + question + ": " +
+                                "<br>Réponse attendue: " + (reponsesCorrectes[question] || "Pas de réponse") +
+                                "<br>Réponse soumise: " + (reponsesUtilisateur[question] || "Aucune réponse") + "</p>";
+            }
+    
+            resultatsDiv.innerHTML = resultatHTML;
         }
     </script>
-</div>
-
-
-
 
 
     <!-- Pied de Page (Footer) -->

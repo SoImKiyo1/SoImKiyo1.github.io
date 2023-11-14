@@ -1,63 +1,53 @@
 function verifierReponses() {
-    var firstName = document.getElementById('firstName').value;
-    var lastName = document.getElementById('lastName').value;
-
-    // Vérifie si les champs de prénom et de nom sont remplis
-    if (firstName.trim() === '' || lastName.trim() === '') {
-        alert('Veuillez remplir tous les champs avant de vérifier.');
-        return;
-    }
-
-    var questions = document.querySelectorAll('.question');
+    var nom = document.getElementById('nom').value;
+    var prenom = document.getElementById('prenom').value;
     var score = 0;
-    var totalQuestions = questions.length;
+    var totalQuestions = 5;
+    var reponsesUtilisateur = {};
 
-    for (var i = 0; i < questions.length; i++) {
-        var checkboxes = questions[i].querySelectorAll('input[type="checkbox"]');
-        var userAnswer = null;
+    // Réponses correctes
+    var reponsesCorrectes = {
+        'question1': 'vrai',
+        'question2': 'faux',
+        'question3': 'vrai',
+    };
 
-        for (var j = 0; j < checkboxes.length; j++) {
-            if (checkboxes[j].checked) {
-                userAnswer = checkboxes[j].value === 'true';
-
-                if (userAnswer) {
-                    checkboxes[j].parentNode.style.backgroundColor = '#4caf50'; // Vert
-                    score++;
-                } else {
-                    checkboxes[j].parentNode.style.backgroundColor = '#e57373'; // Rouge
-                }
-
-                // Désactive l'autre case
-                checkboxes.forEach(function (checkbox, index) {
-                    if (index !== j) {
-                        checkbox.disabled = true;
-                    }
-                });
-
-                break;
-            }
+    // Vérifie les réponses
+    for (var question in reponsesCorrectes) {
+        var reponses = document.querySelectorAll('input[name="' + question + '"]:checked');
+        reponsesUtilisateur[question] = Array.from(reponses).map(function(elem) { return elem.value; }).join(", ");
+        if (reponses.length === 1 && reponses[0].value === reponsesCorrectes[question]) {
+            score++;
         }
     }
 
-    // Redirige vers la page "resultats.html" avec les détails de chaque question
-    var redirectURL = `resultats.html?firstName=${encodeURIComponent(firstName)}&lastName=${encodeURIComponent(lastName)}&score=${score}&totalQuestions=${totalQuestions}`;
+    // Stocker les résultats et les réponses correctes dans localStorage
+    localStorage.setItem('nom', nom);
+    localStorage.setItem('prenom', prenom);
+    localStorage.setItem('score', score);
+    localStorage.setItem('totalQuestions', totalQuestions);
+    localStorage.setItem('reponsesUtilisateur', JSON.stringify(reponsesUtilisateur));
+    localStorage.setItem('reponsesCorrectes', JSON.stringify(reponsesCorrectes));
 
-    // Ajoute les détails de chaque question à l'URL
-    for (var i = 0; i < totalQuestions; i++) {
-        var checkboxes = questions[i].querySelectorAll('input[type="checkbox"]');
-        var questionResult = [];
-
-        for (var j = 0; j < checkboxes.length; j++) {
-            questionResult.push({
-                label: checkboxes[j].parentNode.textContent.trim(),
-                correct: checkboxes[j].value === 'true',
-                selected: checkboxes[j].checked,
-            });
-        }
-
-        redirectURL += `&q${i + 1}=${encodeURIComponent(JSON.stringify(questionResult))}`;
-    }
-
-    window.location.href = redirectURL;
+    // Redirection vers la page de résultats
+    window.location.href = 'resultats.html';
 }
 
+// Gestion des cases à cocher pour qu'une seule case par paire puisse être cochée
+function gererCheckboxes() {
+    var checkboxes = document.querySelectorAll('.question input[type=checkbox]');
+    checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+            var name = checkbox.name;
+            var pair = document.querySelectorAll('input[name="' + name + '"]');
+            if (checkbox.checked) {
+                pair.forEach(function(other) {
+                    if (other !== checkbox) other.checked = false;
+                });
+            }
+        });
+    });
+}
+
+// Appelle gererCheckboxes lorsque la page est chargée
+document.addEventListener('DOMContentLoaded', gererCheckboxes);
