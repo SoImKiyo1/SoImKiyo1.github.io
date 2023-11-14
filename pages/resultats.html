@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Learn-Solfege</title>
+    <title>Résultats du Test - Learn-Solfege</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-resultats.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
 <body>
 
     <!-- En-tête (Header) -->
@@ -13,34 +14,61 @@
             <img src="../images/logo2.png" />
         </a>
         <a class="button" href="../pages/histoire.html">Histoire</a>
-		<a href="../pages/partition.html" class="button">Lire une partition</a>
-		<a href="../pages/accords.html" class="button">Accords</a>
+        <a href="../pages/partition.html" class="button">Lire une partition</a>
+        <a href="../pages/accords.html" class="button">Accords</a>
         <a href="../pages/tonalite.html" class="button">Tonalité</a>
         <div class="header-droit">
             <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
         </div>
     </div>
 
+<!-- Contenu principal -->
+<div class="container">
+    <h1>Résultats du Test Final</h1>
+
+    <!-- Récupérer les paramètres de l'URL -->
+    <script>
+        var params = new URLSearchParams(window.location.search);
+        var firstName = params.get('firstName');
+        var lastName = params.get('lastName');
+        var score = params.get('score');
+        var totalQuestions = params.get('totalQuestions');
+
+        // Afficher les résultats généraux dans la page
+        document.write(`<p>${lastName} ${firstName}</p>`);
+        document.write(`<p>Note finale : ${score}/${totalQuestions}</p>`);
+        document.write(`<p>Correction :</p>`);
+
+        // Afficher les résultats de chaque question
+        for (var i = 1; i <= totalQuestions; i++) {
+            var questionResult = JSON.parse(params.get(`q${i}`));
+
+            document.write(`<p>Question ${i} : ${questionResult[0].label}</p>`);
+            document.write(`<p>Réponse attendue : ${questionResult[0].correct ? 'Vrai' : 'Faux'}</p>`);
+            document.write(`<p>L'utilisateur a répondu : ${questionResult[0].selected ? 'Vrai' : 'Faux'}</p>`);
+        }
+    </script>
+</div>
 
 
-  
-    
-<!-- Pied de Page (Footer) -->
-<footer>
-    <a href="../index.html">
-        <img src="../images/logo.png" />
-    </a>
-    <p class="top"></p>
-    <h1>Description</h1>
-    <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique. 
-    <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des quiz,
-    <br>des jeux et des exercices pour s’entraîner, ainsi que des utilitaires pour tous les musiciens. 
-    </p>
-    <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
-    <p class="copyright">© Copyright 2023 Learn-Solfege</p>
-    <p class="bottom"></p>
-</footer>
+
+
+
+    <!-- Pied de Page (Footer) -->
+    <footer>
+        <a href="../index.html">
+            <img src="../images/logo.png" />
+        </a>
+        <p class="top"></p>
+        <h1>Description</h1>
+        <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique. 
+        <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des quiz,
+        <br>des jeux et des exercices pour s’entraîner, ainsi que des utilitaires pour tous les musiciens. 
+        </p>
+        <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
+        <p class="copyright">© Copyright 2023 Learn-Solfege</p>
+        <p class="bottom"></p>
+    </footer>
 
 </body>
-</head>
 </html>
