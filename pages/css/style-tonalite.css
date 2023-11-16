@@ -111,18 +111,39 @@ body{
   max-width: 800px;
 }
 
-/* Titre sous paragraphe 1 */
-.tonalité h3.first
+/* Titre paragraphe 2 */
+.tonalite h2.second
 {
   margin-top: 150px;
   margin-right: 100px;
+  margin-left:1580px;
   font-size: 40px;
   text-align: right;
 }
 
 
+/*paragraphes 2 */
+.tonalite p.second 
+{
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left:1580px;
+  font-size: 25px;
+  text-align: justify;
+}
+
+/* titre sous-aragraphes 1 */
+.tonalite h3.first
+{
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left:1580px;
+  font-size: 25px;
+  text-align: right;
+}
+
 /* sous-aragraphes 1 */
-.tonalité p.second 
+.tonalite p.third 
 {
   margin-top: 30px;
   margin-right: 100px;
@@ -132,25 +153,22 @@ body{
 }
 
 /* titre sous-aragraphes 2 */
-.tonalité h3.second 
+.tonalite h3.second
 {
   margin-top: 30px;
-  margin-right: 100px;
-  margin-left:1580px;
+  margin-left:100px;
   font-size: 25px;
-  text-align: justify;
+  text-align: left;
 }
 
 /* sous-aragraphes 2 */
-.tonalité p.third 
+.tonalite p.fourth
 {
   margin-top: 30px;
-  margin-right: 100px;
-  margin-left:1580px;
+  margin-left:100px;
   font-size: 25px;
-  text-align: justify;
+  text-align: left;
 }
-
 
 /* Boutton pour accéder au cours suivant */
 .nextbutton {
