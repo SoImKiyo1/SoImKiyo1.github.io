@@ -228,6 +228,39 @@ body{
   transform: scale(1.1);
 }
 
+/* Bar horizontal pour séparer la lesson du test */
+.separateur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 3200px;
+  border-top: 8px solid #ffe033;
+}
+
+
+/* Titre du test */
+h1.test{
+  margin-top: 400px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  font-size: 80px;
+  color: #ffe033; 
+}
+
+.partition {
+    margin-bottom: 20px;
+}
+
+.partition img {
+    width: 100%; /* Ajuster selon le besoin */
+    height: auto;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
 
 /******* FOOTER *******/
 /* Pied de page */

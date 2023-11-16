@@ -207,16 +207,6 @@ body{
   transform: scale(1.1);
 }
 
-/* Bar horizontal pour séparer la lesson du test */
-.separateur {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 4500px;
-  border-top: 8px solid #ffe033;
-}
-
-
 /* Boutton pour accéder au cours suivant */
 .nextbutton {
   background-color: #ffe033;
@@ -242,6 +232,16 @@ body{
 .nextbutton:hover {
   transform: scale(1.1);
 }
+
+/* Bar horizontal pour séparer la lesson du test */
+.separateur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4500px;
+  border-top: 8px solid #ffe033;
+}
+
 
 /* Titre du test */
 h1.test{
