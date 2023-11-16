@@ -12,7 +12,7 @@ TO-DO LIST :
 - Finalisation de la page histoire V
 - Finalisation de la page finaltest V
 - Finalisation de la page accords
-- Finalisation de la page cle
+- Finalisation de la page tonalite
 - Finalisation de la page resultat V
 - Ajout d'un systeme pour recuperer des infos pour la page resultat (peutetre du php) V
 - Ajouts de tout les tests
@@ -25,4 +25,4 @@ TO-DO LIST :
 - Documentation Wiki + Code
 - Correction fautes d'orthographes
 - Creation de la Video
-- Apprentissage/Compréhension du code
+- Compréhension du code (Par tout le monde)
