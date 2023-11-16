@@ -890,6 +890,269 @@ footer .bottom {
   }
 }
 
+/* Taille d'écran (1366x768) */
+@media screen and (max-width: 1366px) {
+  /* En-Tête */
+  .header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header {
+    padding: 20px 10%;
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .header .button {
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+
+  .header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 50px;
+    margin-left: 40px;
+  }
+
+  .header-droit {
+    float: right;
+    margin-top: 30px;
+  }
+
+  .header-droit .finalexam {
+    border: 2px solid rgb(255, 214, 30);
+    margin-right: 40px;
+  }
+
+  /* FIRST PART */
+  .FirstPart iframe {
+    width: 80%;
+    height: 720px;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    border-radius: 15px;
+    border: 1px solid black;
+  }
+
+  /* SECOND PART */
+  .SecondPart .card1,
+  .SecondPart .card2,
+  .SecondPart .card3,
+  .SecondPart .card4 {
+      width: 300px;
+      height: 400px;
+      margin: 0 10px 20px 10px;
+  }
+
+  .SecondPart .container1 h1,
+  .SecondPart .container2 h1,
+  .SecondPart .container3 h1,
+  .SecondPart .container4 h1 {
+      font-size: 60px;
+      margin-top: 120px;
+  }
+
+  .SecondPart .container1 p,
+  .SecondPart .container2 p,
+  .SecondPart .container3 p,
+  .SecondPart .container4 p {
+      font-size: 20px;
+  }
+
+  .SecondPart .container1 img,
+  .SecondPart .container2 img,
+  .SecondPart .container3 img,
+  .SecondPart .container4 img {
+      width: 50px;
+      height: 50px;
+      margin-top: 80px;
+  }
+
+
+  /* FOOTER */
+  footer img {
+    width: 200px;
+    height: 200px;
+    top: 80px;
+    left: 50px;
+    position: absolute;
+    transition: transform 0.5s;
+  }
+
+  footer img:hover {
+    transform: scale(1.1);
+  }
+
+  footer h1,
+  footer p,
+  footer .button {
+    margin-left: 370px;
+  }
+
+  footer .copyright {
+    margin-left: 380px;
+    margin-top: 150px;
+    font-size: 15px;
+  }
+
+  footer .button {
+    margin-top: 0px;
+    font-size: 40px;
+    position: absolute;
+    right: 800px;
+    transition: transform 0.5s;
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+  }
+
+  footer .button:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Taille d'écran (1600x900) */
+@media screen and (max-width: 1600px) {
+  /* En-Tête */
+  .header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header {
+    padding: 20px 10%;
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .header .button {
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+
+  .header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 50px;
+    margin-left: 40px;
+  }
+
+  .header-droit {
+    float: right;
+    margin-top: 30px;
+  }
+
+  .header-droit .finalexam {
+    border: 2px solid rgb(255, 214, 30);
+    margin-right: 40px;
+  }
+
+  /* FIRST PART */
+  .FirstPart iframe {
+    width: 80%;
+    height: 720px;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    border-radius: 15px;
+    border: 1px solid black;
+  }
+
+  /* SECOND PART */
+  .SecondPart .card1,
+  .SecondPart .card2,
+  .SecondPart .card3,
+  .SecondPart .card4 {
+      width: 350px;
+      height: 450px;
+      margin: 0 10px 20px 10px;
+  }
+
+  .SecondPart .container1 h1,
+  .SecondPart .container2 h1,
+  .SecondPart .container3 h1,
+  .SecondPart .container4 h1 {
+      font-size: 80px;
+      margin-top: 120px;
+  }
+
+  .SecondPart .container1 p,
+  .SecondPart .container2 p,
+  .SecondPart .container3 p,
+  .SecondPart .container4 p {
+      font-size: 30px;
+  }
+
+  .SecondPart .container1 img,
+  .SecondPart .container2 img,
+  .SecondPart .container3 img,
+  .SecondPart .container4 img {
+      width: 50px;
+      height: 50px;
+      margin-top: 100px;
+  }
+
+
+  /* FOOTER */
+  footer img {
+    width: 200px;
+    height: 200px;
+    top: 80px;
+    left: 50px;
+    position: absolute;
+    transition: transform 0.5s;
+  }
+
+  footer img:hover {
+    transform: scale(1.1);
+  }
+
+  footer h1,
+  footer p,
+  footer .button {
+    margin-left: 370px;
+  }
+
+  footer .copyright {
+    margin-left: 380px;
+    margin-top: 80px;
+    font-size: 15px;
+  }
+
+  footer .button {
+    margin-top: -10px;
+    font-size: 40px;
+    position: absolute;
+    left: 0px;
+    transition: transform 0.5s;
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+  }
+
+  footer .button:hover {
+    transform: scale(1.1);
+  }
+}
+
+
 
 /******* FIN DU RESPONSIVE *******/
 
