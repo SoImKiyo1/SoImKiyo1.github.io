@@ -99,7 +99,7 @@ body{
   margin-top: 50px;
   margin-left: 100px;
   font-size: 40px;
-}
+} 
 
 /* Paragraphes 1 */
 .tonalite p.first
@@ -111,8 +111,8 @@ body{
   max-width: 800px;
 }
 
-/* Titre texte 2 */
-.tonalité h2.second 
+/* Titre sous paragraphe 1 */
+.tonalité h3.first
 {
   margin-top: 150px;
   margin-right: 100px;
@@ -121,7 +121,7 @@ body{
 }
 
 
-/* Paragraphes 2 */
+/* sous-aragraphes 1 */
 .tonalité p.second 
 {
   margin-top: 30px;
@@ -131,6 +131,25 @@ body{
   text-align: justify;
 }
 
+/* titre sous-aragraphes 2 */
+.tonalité h3.second 
+{
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left:1580px;
+  font-size: 25px;
+  text-align: justify;
+}
+
+/* sous-aragraphes 2 */
+.tonalité p.third 
+{
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left:1580px;
+  font-size: 25px;
+  text-align: justify;
+}
 
 
 /* Boutton pour accéder au cours suivant */
