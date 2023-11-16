@@ -111,6 +111,41 @@ body{
   max-width: 800px;
 }
 
+.histoire img {
+  width: 1000px;
+  height: 600px;
+  border-radius: 50px;
+}
+
+.pp {
+  margin-left:1450px;
+  margin-top:-500px;
+  margin-bottom: 150px;
+}
+
+.dp {
+  margin-left:50px;
+  margin-top:-450px;
+  margin-bottom: 150px;
+}
+
+.tp {
+  margin-left:1450px;
+  margin-top:-480px;
+}
+
+.qp {
+  margin-left:50px;
+  margin-top:-600px;
+  margin-bottom: 150px;
+}
+
+.cp {
+  margin-left:1450px;
+  margin-top:-500px;
+  margin-bottom: 150px;
+}
+
 /* Titre texte 2 */
 .histoire h2.second {
   margin-top: 150px;
@@ -177,7 +212,7 @@ body{
   position: absolute;
   left: 0;
   right: 0;
-  top: 3500px;
+  top: 4700px;
   border-top: 8px solid #ffe033;
 }
 

@@ -88,23 +88,15 @@ h1.finaltest{
   font-size: 80px;
 }
 
-/* Réinitialisation de certains styles par défaut */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-}
-
 /* Style général du formulaire */
 form#qcmForm {
   max-width: 600px;
-  margin: 40px auto;
+  margin: 200px auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center;
 }
 
 /* Container pour les champs Nom et Prénom */
@@ -125,6 +117,7 @@ form#qcmForm {
   font-size: 16px;
   color: #333;
   margin-bottom: 5px;
+  text-align: left;
 }
 
 .form-field input[type="text"] {
