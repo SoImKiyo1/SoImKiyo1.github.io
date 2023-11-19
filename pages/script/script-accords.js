@@ -40,5 +40,5 @@ function openImg2() {
 }
 
 function openImg3() {
-    playAudio("../audio/magic 4.mp3"); // Assure-toi que le nom de fichier est correct
+    playAudio("../audio/magic4.mp3"); // 
 }
