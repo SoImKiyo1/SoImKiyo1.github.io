@@ -312,14 +312,14 @@ body{
 .nextbutton {
   background-color: #ffe033;
   color: white;
-  padding: 145px 155px;
+  padding: 100px 115px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 60px;
   transition: transform 0.5s;
   margin-top: 150px;
-  margin-left: 850px;
+  margin-left: 1750px;
 }
 
 /* l'image sur le boutton pour accéder au cours suivant */
@@ -340,7 +340,7 @@ body{
   position: absolute;
   left: 0;
   right: 0;
-  top: 3200px;
+  top: 5200px;
   border-top: 8px solid #ffe033;
 }
 
