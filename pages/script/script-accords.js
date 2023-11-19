@@ -20,3 +20,27 @@
         }
     });
 });
+
+function openImg() 
+{
+    var source = "../audio/magic.mp3"; 
+    window.open(source);   
+}
+
+function openImg1()
+{
+    var source = "../audio/magic2.mp3"; 
+    window.open(source);   
+}
+
+function openImg2() 
+{
+    var source = "../audio/magic3.mp3"; 
+    window.open(source);   
+}
+
+function openImg3() 
+{
+    var source = "../audio/magic 4.mp3"; 
+    window.open(source);   
+}
