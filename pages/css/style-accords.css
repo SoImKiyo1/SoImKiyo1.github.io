@@ -308,6 +308,10 @@ body{
     text-align: right;
 }
 
+.accord7maj:hover, .accord7min3:hover, .accordmajeur:hover, .accordmineur:hover {
+  opacity: 0.3;
+}
+
 /* Boutton pour accéder au cours suivant */
 .nextbutton {
   background-color: #ffe033;

@@ -21,26 +21,24 @@
     });
 });
 
-function openImg() 
-{
-    var source = "../audio/magic.mp3"; 
-    window.open(source);   
+function playAudio(source) {
+    var audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.src = source;
+    audioPlayer.play();
 }
 
-function openImg1()
-{
-    var source = "../audio/magic2.mp3"; 
-    window.open(source);   
+function openImg() {
+    playAudio("../audio/magic.mp3");
 }
 
-function openImg2() 
-{
-    var source = "../audio/magic3.mp3"; 
-    window.open(source);   
+function openImg1() {
+    playAudio("../audio/magic2.mp3");
 }
 
-function openImg3() 
-{
-    var source = "../audio/magic 4.mp3"; 
-    window.open(source);   
+function openImg2() {
+    playAudio("../audio/magic3.mp3");
+}
+
+function openImg3() {
+    playAudio("../audio/magic 4.mp3"); // Assure-toi que le nom de fichier est correct
 }
