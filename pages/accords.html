@@ -102,12 +102,44 @@
 
     <!-- Button menant au Prochain Cours -->
     <a href="finaltest.html" class="nextbutton">
-        Prochain Cours 
+        Accéder au Test Final
         <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
     </a>
     
     <!-- Barre de séparation -->
     <div class="separateur"></div>
+
+    <!-- Titre "Test" -->
+    <h1 class="test">À toi de jouer !!!</h1>
+
+    <!-- Contenu -->
+    <div class="test">
+        <h2> Maintenant, c'est à toi de trouver les notes d'un accord !</h2>
+        <h3>Ton but est d'identifier qu'elle est la tonalité de l'accord </h3>   
+        <p>Quelle est la fondamentale de cette accords?
+        <select name="fondamentale">
+            <option value="sol">Sol</option>
+            <option value="si">Si bémol</option>
+            <option value="re">Ré</option>
+        </select>
+        <br>Quel est l'intervalle entre la fondamentale et si bémol?
+        <select name="intervalle">
+            <option value="1ton">1 ton</option>
+            <option value="1,5ton">1 ton et demi</option>
+            <option value="2ton">2 tons</option>
+        </select>
+        <br>Enfin, identifie quel est la dernière note par rapport à sa fondamentale
+        <select name="quinte juste">
+            <option value="tiercemineure">tierce mineure</option>
+            <option value="quintejuste">quinte juste</option>
+            <option value="septièmemajeure">septième majeure</option>
+        </select>
+        <br>Quel est la tonalité de l'accord?
+        <input type="text" id="answer1" placeholder="Entrez la tonalité">
+        </p>
+        <img src="../images/accordtest.png" class="accordtest1">
+        <button onclick="verifierReponses()">Vérifier</button>
+    </div>
 
 
     <!-- Pied de Page (Footer) -->
