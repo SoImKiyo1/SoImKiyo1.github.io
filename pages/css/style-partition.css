@@ -384,6 +384,12 @@ footer .bottom {
   text-align: justify;
 }
 
+/* Titre Paragraphes 2 */
+.partition h2.second {
+  margin-right: 730px;
+}
+
+
 /* Paragraphes 4 */
 .partition p.fourth {
   margin-top: 30px;
@@ -393,6 +399,12 @@ footer .bottom {
   font-size: 25px;
   text-align: justify;
 }
+
+/* Titre Paragraphes 4 */
+.partition h2.fourth {
+  margin-right: 680px;
+}
+
 
   .partition img {
     width: 700px;
