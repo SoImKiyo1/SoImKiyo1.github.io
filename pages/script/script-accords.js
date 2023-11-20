@@ -11,7 +11,7 @@
         event.preventDefault();
 
         // Affiche une boîte de dialogue de confirmation avec un message personnalisé
-        var confirmation = confirm("Êtes-vous sûr de vouloir passer au test final ? Assurez-vous d'avoir complété toutes les lessons.");
+        var confirmation = confirm("Êtes-vous sûr de vouloir passer au test final ? Assurez-vous d'avoir complété toutes les leçons.");
 
         // Si l'utilisateur confirme
         if (confirmation) {
