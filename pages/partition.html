@@ -68,6 +68,28 @@
         <!-- Titre "Test" -->
         <h1 class="test">À toi de jouer !!!</h1>
 
+
+    <!-- Contenu -->
+    <div class="test">
+        <h2> Maintenant, c'est à toi de déterminer les rythmes et les notes d'une partition !</h2>
+        <h3>Commençons par la lecture de note, ton but est d'identifier qu'elle est la partition que tu entends !</h3>  
+        <img src="../images/imgtest.png" class="piano" onclick="openImg()"> 
+        <input type="checkbox" id="part1" name="partition1">
+        <label for="par1">
+            <img src="../images/partest1.png" class="par1">
+        </label>
+        <input type="checkbox" id="part2" name="partition2">
+        <label for="part2">
+            <img src="../images/partest2.png" class="par2">
+        </label>
+        <input type="checkbox" id="part3" name="partition3">
+        <label for="part3">
+            <img src="../images/partest3.png" class="par3">
+        </label>
+        <button onclick="verifierReponses()">Vérifier</button>
+    </div>
+    <audio id="audioPlayer" src="" style="display:none;"></audio>
+
         
     
 

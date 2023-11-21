@@ -21,3 +21,12 @@
     });
 });
 
+function playAudio(source) {
+    var audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.src = source;
+    audioPlayer.play();
+}
+
+function openImg() {
+    playAudio("../audio/test1.mp3");
+}
