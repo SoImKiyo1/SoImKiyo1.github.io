@@ -1341,7 +1341,6 @@ h1.test{
   border-radius: 15px;
   transition: transform 0.2s;
 }
-}
 
 /* Boutton pour accéder au cours suivant */
 .nextbutton {
@@ -1577,6 +1576,7 @@ h1.test{
   font-size: 20px;
   text-align: justify;
 }
+
 
 .qp {
   margin-left: 200px;
