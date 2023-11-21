@@ -876,6 +876,132 @@ h1.test{
     margin-right: 40px;
   }
 
+
+  
+/* Titre texte 1,3 et 5 */
+.histoire h2.first, h2.third, h2.fifth {
+  font-size: 30px;
+}
+
+/* Paragraphes 1, 3, et 5 */
+.histoire p.first, p.third, p.fifth {
+  font-size: 20px;
+}
+
+.histoire img {
+  width: 500px;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.pp {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+
+/* Titre texte 2 */
+.histoire h2.second {
+  margin-top: 100px;
+  margin-right: 100px;
+  font-size: 30px;
+  text-align: right;
+}
+
+/* Titre texte 4 */
+.histoire h2.fourth {
+  margin-top: 150px;
+  margin-right: 100px;
+  font-size: 30px;
+  text-align: right;
+}
+
+/* Paragraphes 2 */
+.histoire p.second {
+  margin-top: 30px;
+  margin-left:700px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.dp {
+  margin-left: 150px;
+  margin-top:-300px;
+  margin-bottom: 150px;
+}
+
+/*Paragraphe 3 */
+.tp {
+  margin-top:50px;
+  margin-left:100px;
+}
+
+/* Paragraphes 4 */
+.histoire p.fourth {
+  margin-top: 30px; 
+  margin-left:600px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.qp {
+  margin-left: 50px;
+  margin-top:-900px;
+  margin-bottom: 150px;
+}
+
+.cp {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+}
+
+/* Bar horizontal pour séparer la lesson du test */
+.separateur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4600px;
+  border-top: 8px solid #ffe033;
+}
+
+/* Titre du test */
+h1.test{
+  margin-top: 250px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  font-size: 65px;
+  color: #ffe033; 
+}
+
+/* Styles pour la section du test */
+.exam{
+  border: 5px solid #000;
+  padding: 10px;
+  width: 1150px;
+  margin-left: 100px;
+}
+
+/* Styles pour les paragraphes dans la section du test */
+.exam p{
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+ /* Styles pour le bouton dans la section du test */
+ .exam button{
+  margin-left: 450px;
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+  background-color: #ffe033;
+  border: 0px solid #000;
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
 /* Boutton pour accéder au cours suivant */
 .nextbutton {
   background-color: #ffe033;
@@ -977,6 +1103,246 @@ h1.test{
 }
 
 
+
+/* Paragraphes 1, 3, et 5 */
+.histoire p.first, p.third, p.fifth {
+  font-size: 20px;
+}
+
+.histoire img {
+  width: 500px;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.pp {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+
+/* Titre texte 2 */
+.histoire h2.second {
+  margin-top: 100px;
+  margin-right: 100px;
+  font-size: 30px;
+  text-align: right;
+}
+
+/* Titre texte 4 */
+.histoire h2.fourth {
+  margin-top: 150px;
+  margin-right: 100px;
+  font-size: 30px;
+  text-align: right;
+}
+
+/* Paragraphes 2 */
+.histoire p.second {
+  margin-top: 30px;
+  margin-left:700px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.dp {
+  margin-left: 150px;
+  margin-top:-300px;
+  margin-bottom: 150px;
+}
+
+/*Paragraphe 3 */
+.tp {
+  margin-top:50px;
+  margin-left:100px;
+}
+
+/* Paragraphes 4 */
+.histoire p.fourth {
+  margin-top: 30px; 
+  margin-left:600px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.qp {
+  margin-left: 50px;
+  margin-top:-900px;
+  margin-bottom: 150px;
+}
+
+.cp {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+}
+
+/* Bar horizontal pour séparer la lesson du test */
+.separateur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4400px;
+  border-top: 8px solid #ffe033;
+}
+
+/* Titre du test */
+h1.test{
+  margin-top: 250px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  font-size: 65px;
+  color: #ffe033; 
+}
+
+/* Styles pour la section du test */
+.exam{
+  border: 5px solid #000;
+  padding: 10px;
+  width: 950px;
+  margin-left: 100px;
+}
+
+/* Styles pour les paragraphes dans la section du test */
+.exam p{
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+ /* Styles pour le bouton dans la section du test */
+ .exam button{
+  margin-left: 380px;
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+  background-color: #ffe033;
+  border: 0px solid #000;
+  border-radius: 15px;
+  transition: transform 0.2s;
+ }
+
+/* Paragraphes 1, 3, et 5 */
+.histoire p.first, p.third, p.fifth {
+  font-size: 20px;
+}
+
+.histoire img {
+  width: 500px;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.pp {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+
+/* Titre texte 2 */
+.histoire h2.second {
+  margin-top: 100px;
+  margin-right: 100px;
+  font-size: 30px;
+  text-align: right;
+}
+
+/* Titre texte 4 */
+.histoire h2.fourth {
+  margin-top: 150px;
+  margin-right: 100px;
+  font-size: 30px;
+  text-align: right;
+}
+
+/* Paragraphes 2 */
+.histoire p.second {
+  margin-top: 30px;
+  margin-left:700px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.dp {
+  margin-left: 150px;
+  margin-top:-300px;
+  margin-bottom: 150px;
+}
+
+/*Paragraphe 3 */
+.tp {
+  margin-top:50px;
+  margin-left:100px;
+}
+
+/* Paragraphes 4 */
+.histoire p.fourth {
+  margin-top: 30px; 
+  margin-left:600px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.qp {
+  margin-left: 50px;
+  margin-top:-900px;
+  margin-bottom: 150px;
+}
+
+.cp {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+}
+
+/* Bar horizontal pour séparer la lesson du test */
+.separateur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4600px;
+  border-top: 8px solid #ffe033;
+}
+
+/* Titre du test */
+h1.test{
+  margin-top: 250px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  font-size: 65px;
+  color: #ffe033; 
+}
+
+/* Styles pour la section du test */
+.exam{
+  border: 5px solid #000;
+  padding: 10px;
+  width: 1150px;
+  margin-left: 100px;
+}
+
+/* Styles pour les paragraphes dans la section du test */
+.exam p{
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+ /* Styles pour le bouton dans la section du test */
+ .exam button{
+  margin-left: 450px;
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+  background-color: #ffe033;
+  border: 0px solid #000;
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+}
+
 /* Boutton pour accéder au cours suivant */
 .nextbutton {
   background-color: #ffe033;
@@ -1042,7 +1408,96 @@ h1.test{
     margin-right: 620px;
     margin-left: 30px;
     text-align: center;
-  }
+  } 
+
+/* Paragraphes 2 */
+.histoire p.second {
+  margin-top: 30px;
+  margin-left:300px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.dp {
+  margin-left: 400px;
+  margin-top:50px;
+  margin-bottom: 150px;
+}
+
+
+/* Paragraphes 4 */
+.histoire p.fourth {
+  margin-top: 30px; 
+  margin-left:300px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.qp {
+  margin-left: 400px;
+  margin-top:50px;
+  margin-bottom: 150px;
+}
+
+
+/* Bar horizontal pour séparer la lesson du test */
+.separateur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5100px;
+  border-top: 8px solid #ffe033;
+}
+
+/* Titre du test */
+h1.test{
+  margin-top: 250px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  font-size: 65px;
+  color: #ffe033; 
+}
+
+/* Styles pour la section du test */
+.exam{
+  border: 5px solid #000;
+  padding: 10px;
+  width: 800px;
+  margin-left: 100px;
+}
+
+/* Styles pour les paragraphes dans la section du test */
+.exam p{
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+ /* Styles pour le bouton dans la section du test */
+ .exam button{
+  margin-left: 300px;
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+  background-color: #ffe033;
+  border: 0px solid #000;
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+/* Boutton pour accéder au cours suivant */
+.nextbutton {
+  background-color: #ffe033;
+  color: white;
+  padding: 85px 95px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 60px;
+  transition: transform 0.5s;
+  margin-left: 200px;
+  margin-top: 100px;
+}
 }
 
 
@@ -1055,6 +1510,145 @@ h1.test{
     margin-left: 30px;
     text-align: center;
   }
+
+  .histoire p.first, p.third, p.fifth {
+    font-size: 20px;
+    margin-right:50px;
+  }
+
+  .histoire h2.first {
+    margin-left: 200px;
+  }
+
+  .histoire h2.fifth {
+    margin-left: 300px;
+  }
+  
+/* Paragraphes 2 */
+.histoire p.second {
+  margin-top: 30px;
+  margin-left:100px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.pp {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+}
+
+/* Titre texte 2 */
+.histoire h2.second {
+  margin-top: 100px;
+  margin-right: 150px;
+  font-size: 30px;
+  text-align: right;
+}
+
+.histoire h2.third {
+  margin-right: 220px;
+  text-align: right;
+}
+
+/* Titre texte 4 */
+.histoire h2.fourth {
+  margin-top: 150px;
+  margin-right: 100px;
+  font-size: 30px;
+  text-align: right;
+}
+
+.dp {
+  margin-left: 200px;
+  margin-top:50px;
+  margin-bottom: 150px;
+}
+
+.tp {
+  margin-top:50px;
+  margin-left:200px;
+}
+
+/* Paragraphes 4 */
+.histoire p.fourth {
+  margin-top: 30px; 
+  margin-left:100px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.qp {
+  margin-left: 200px;
+  margin-top:50px;
+  margin-bottom: 150px;
+}
+
+.cp {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 200px;
+}
+
+/* Bar horizontal pour séparer la lesson du test */
+.separateur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5100px;
+  border-top: 8px solid #ffe033;
+}
+
+/* Titre du test */
+h1.test{
+  margin-top: 250px;
+  margin-bottom: 100px;
+  margin-left: 250px;
+  font-size: 65px;
+  color: #ffe033; 
+}
+
+/* Styles pour la section du test */
+.exam{
+  border: 5px solid #000;
+  padding: 10px;
+  width: 670px;
+  margin-left: 100px;
+}
+
+/* Styles pour les paragraphes dans la section du test */
+.exam p{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+ /* Styles pour le bouton dans la section du test */
+ .exam button{
+  margin-left: 230px;
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+  background-color: #ffe033;
+  border: 0px solid #000;
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+/* Boutton pour accéder au cours suivant */
+.nextbutton {
+  background-color: #ffe033;
+  color: white;
+  padding: 85px 95px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 60px;
+  transition: transform 0.5s;
+  margin-left: 130px;
+  margin-top: 100px;
+}
+  
 }
 
 
@@ -1071,6 +1665,139 @@ h1.test{
   }
 
 
+  .histoire h2.first {
+    margin-left: 100px;
+  }
+
+  .histoire h2.fifth {
+    margin-left: 250px;
+  }
+  
+/* Paragraphes 2 */
+.histoire p.second {
+  margin-top: 30px;
+  margin-left:100px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.pp {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+/* Titre texte 2 */
+.histoire h2.second {
+  margin-top: 100px;
+  margin-right: 150px;
+  font-size: 30px;
+  text-align: right;
+}
+
+.histoire h2.third {
+  margin-right: 220px;
+  text-align: right;
+}
+
+/* Titre texte 4 */
+.histoire h2.fourth {
+  margin-top: 150px;
+  margin-right: 100px;
+  font-size: 30px;
+  text-align: right;
+}
+
+.dp {
+  margin-left: 100px;
+  margin-top:50px;
+  margin-bottom: 150px;
+}
+
+.tp {
+  margin-top:50px;
+  margin-left:100px;
+}
+
+/* Paragraphes 4 */
+.histoire p.fourth {
+  margin-top: 30px; 
+  margin-left:100px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.qp {
+  margin-left: 100px;
+  margin-top:50px;
+  margin-bottom: 150px;
+}
+
+.cp {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+}
+
+/* Bar horizontal pour séparer la lesson du test */
+.separateur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5900px;
+  border-top: 8px solid #ffe033;
+}
+
+/* Titre du test */
+h1.test{
+  margin-top: 250px;
+  margin-bottom: 100px;
+  margin-left: 180px;
+  font-size: 65px;
+  color: #ffe033; 
+}
+
+/* Styles pour la section du test */
+.exam{
+  border: 5px solid #000;
+  padding: 10px;
+  width: 600px;
+  margin-left: 50px;
+}
+
+/* Styles pour les paragraphes dans la section du test */
+.exam p{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+ /* Styles pour le bouton dans la section du test */
+ .exam button{
+  margin-left: 200px;
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+  background-color: #ffe033;
+  border: 0px solid #000;
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+/* Boutton pour accéder au cours suivant */
+.nextbutton {
+  background-color: #ffe033;
+  color: white;
+  padding: 65px 75px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 60px;
+  transition: transform 0.5s;
+  margin-left:60px;
+  margin-top: 100px;
+}
+  
 
   /* FOOTER */
   footer img {
