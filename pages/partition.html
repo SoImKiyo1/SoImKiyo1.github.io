@@ -1,18 +1,26 @@
+<!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/partition.html -->
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Learn-Solfege</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-partition.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Nom du site -->
+        <title>Learn-Solfege</title>
+        <!-- Lien vers le fichier CSS externe -->
+        <link rel="stylesheet" href="css/style-partition.css">
+        <!-- Favicon du site -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
 <body>
-        <!-- En-tête (Header) -->
+        <!-- Section En-Tete -->
         <div class="header">
+            <!-- Le logo et les liens vers les pages -->
             <a href="../index.html" class="logo">
                 <img src="../images/logo2.png" />
             </a>
             <a class="button" href="../pages/histoire.html">Histoire</a>
-            <a href="../pages/partition.html" class="button">Lire une partition</a>
+            <a href="../pages/partition.html" class="active">Lire une partition</a>
             <a href="../pages/tonalite.html" class="button">Tonalités</a>
             <a href="../pages/accords.html" class="button">Accords</a>
             
@@ -21,13 +29,17 @@
             </div>
         </div>
 
+    <!-- Contenu de la page -->
     <div class="partition">
+        <!-- Titre de la Page -->
         <h1>Apprendre à lire une partition</h1>
 
+        <!-- Premier paragraphe -->
         <h2 class="first">Introduction</h2>
         <p class="first">Dans cette leçon, nous allons voir qu'est-ce qu'une partition et à quoi elle sert. De plus, nous vous expliquerons les notes de musique sur une portée.</p>
         <img class="pp" src="../images/partition.jpg"/>
 
+        <!-- Second paragraphe -->
         <h2 class="second">La portée</h2>
         <p class="second">Une portée est composée de cinq barres horizontales. Celle-ci est composée principalement de boules noirs ou blanches munies de différentes queues. Ces symboles sont des notes.
         <br>On peut voir aussi qu'une portée débute par une clé noire appelée clé de sol ou clé de fa selon l'instrument que l'on joue. Aussi on peut voir que cette clé est composée d'une armure : groupe de dièse ou de bémol définissant la tonalité du morceau (nous en parlerons dans une prochaine leçon).
@@ -36,11 +48,13 @@
         </p>
         <img class="dp" src="../images/porte 3.png"/>
 
+        <!-- Troisième paragraphe -->
         <h2 class="third">Les notes</h2>
         <p class="third">Comme vu précédemment les notes sont des boules blanches et noires munies d'une queue. Il y a sept notes différentes : do, ré, mi, fa, sol, la, si. Cependant on peut les jouer sur différentes octaves c'est à dire un registre au dessus ou en dessous. Pour lire une note, on se réfère à sa position sur la portée. On peut voir que le centre de la clé de Sol indique la hauteur du Sol sur la portée. Ainsi, nous pouvons lire la totalité des notes lorsque l'on monte la note Sol d'un cran on obtient un La. Différentes notes permettent de se repérer dans la portée, le Do qui est un trait au dessous de la portée, le Mi se situant sur la première ligne et le Sol la note de référence se trouvant à la hauteur de la clé. Ainsi nous pouvons lire la gamme de do majeur en clé de sol.
         <br>Cependant lorsque la portée est en clé de Fa, la hauteur des notes sur la portée n'est pas la même. En effet, en clé de Fa on se réfère à la note Fa se trouvant à la haiteur de la clé. Celle-ci se trouve donc sur la 4e ligne. Comme avec la clé de Sol, des notes de références nous permettent de lire plus facilement la partition : le Sol se situe sur la 1ère ligne ainsi que le Do se situant juste au dessus de la 2e ligne.</p>
         <img class="tp" src="../images/note.jpg"/>
 
+        <!-- Quatrième paragraphe -->
         <h2 class="fourth">Les rythmes</h2>
         <p class="fourth">Maintenant que nous savons lire les notes d'une partition, on va apprendre à lire les rythmes écrits sur la portée.
         <br>Le rythme détermine la durée de la note. Nous allons d'abord nous intéresser aux rythmes longs :
@@ -56,7 +70,7 @@
         <img class="qp" src="../images/rythme.png"/>
     </div>
 
-    <!-- Button menant au Prochain Cours -->
+    <!-- Bouton pour accéder au prochain cours -->
         <a href="tonalite.html" class="nextbutton">
             Prochain Cours 
             <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
@@ -69,7 +83,7 @@
         <h1 class="test">À toi de jouer !!!</h1>
 
 
-    <!-- Contenu -->
+    <!-- Test -->
     <div class="test">
         <h2> Maintenant, c'est à toi de déterminer les rythmes et les notes d'une partition !</h2>
         <h3>Commençons par la lecture de note, ton but est d'identifier quelle est la partition que tu entends !</h3>  
@@ -87,6 +101,7 @@
             <img src="../images/partest3.png" class="par3">
         </label>
         <button onclick="verifierReponses()">Vérifier</button>
+        <!-- Zone où sera afficher le résultat -->
         <p id="resultat"></p>
     </div>
     <audio id="audioPlayer" src="" style="display:none;"></audio>
@@ -111,8 +126,8 @@
     <p class="bottom"></p>
 </footer>
 
+    <!-- Lien vers le fichier JavaScript externe (script.js) -->
     <script type="text/javascript" src="script/script-partition.js"></script>
 </body>
-</head>
 </html>
 

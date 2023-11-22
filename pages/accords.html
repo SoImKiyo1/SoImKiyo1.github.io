@@ -1,28 +1,37 @@
+<!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/accords.html -->
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Learn-Solfege</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-accords.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Nom du site -->
+        <title>Learn-Solfege</title>
+        <!-- Lien vers le fichier CSS externe -->
+        <link rel="stylesheet" href="css/style-accords.css">
+        <!-- Favicon du site -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
 <body>
-        <!-- En-tête (Header) -->
+        <!-- Section En-Tete -->
         <div class="header">
+            <!-- Le logo et les liens vers les pages -->
             <a href="../index.html" class="logo">
                 <img src="../images/logo2.png" />
             </a>
             <a class="button" href="../pages/histoire.html">Histoire</a>
             <a href="../pages/partition.html" class="button">Lire une partition</a>
             <a href="../pages/tonalite.html" class="button">Tonalités</a>
-            <a href="../pages/accords.html" class="button">Accords</a>
+            <a href="../pages/accords.html" class="active">Accords</a>
             
             <div class="header-droit">
                 <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
             </div>
         </div>
 
-    <!-- Titre de la Page -->
+    <!-- Contenu de la page -->
     <div class="accords">
+        <!-- Titre de la Page -->
         <h1 >Qu'est ce qu'un accord?</h1>
 
     <!-- Premier paragraphe -->
@@ -100,7 +109,7 @@
     (Bien évidemment, cette progression peut évoluer au fur et à mesure du morceau, mais vous avez compris l'idée).    
     </p>
 
-    <!-- Button menant au Prochain Cours -->
+    <!-- Bouton pour accéder au test final -->
     <a href="finaltest.html" class="nextbutton">
         Accéder au Test Final
         <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
@@ -112,7 +121,7 @@
     <!-- Titre "Test" -->
     <h1 class="test">À toi de jouer !!!</h1>
 
-    <!-- Contenu -->
+    <!-- Test -->
     <div class="test">
         <h2> Maintenant, c'est à toi de trouver les notes d'un accord !</h2>
         <h3>Ton but est d'identifier qu'elle est la tonalité de l'accord </h3>   
@@ -139,6 +148,7 @@
         </p>
         <img src="../images/accordtest.png" class="accordtest1">
         <button onclick="verifierReponses()">Vérifier</button>
+        <!-- Zone où sera afficher le résultat -->
         <p id="resultat"></p>
     </div>
 
@@ -159,8 +169,8 @@
         <p class="bottom"></p>
     </footer>
 
+    <!-- Lien vers le fichier JavaScript externe (script.js) -->
     <script type="text/javascript" src="script/script-accords.js"></script>
 </body>
-</head>
 </html>
 

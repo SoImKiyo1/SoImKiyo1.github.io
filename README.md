@@ -12,17 +12,110 @@ TO-DO LIST :
 - Finalisation de la page histoire V
 - Finalisation de la page finaltest V
 - Finalisation de la page accords V
-- Finalisation de la page tonalite
+- Finalisation de la page tonalite X
 - Finalisation de la page resultat V
 - Ajout d'un systeme pour recuperer des infos pour la page resultat (peutetre du php) V
 - Ajouts de tout les tests V
 - Ajouts des pop up en JavaScript V
 - Ajouts de toutes les images V
-- Resolution des bugs
+- Resolution des bugs X
+
 - Optimisation du code
+    - HTML :
+        - Tonalite X
+        - Accords X
+        - Index V
+         - 404 V
+         - resultats X
+         - histoire X
+         - finaltest X
+         - partition X
+    - CSS :
+        - Tonalite X
+        - Accords X
+        - Index X
+        - 404 X
+        - resultats X 
+        - histoire X 
+        - finaltest X 
+        - partition X
+    - JS : 
+        - Tonalite X
+        - Accords X
+        - Index X
+        - resultats X
+        - histoire X
+        - finaltest X
+        - partition X 
+
 - Responsive
-- Amelioration SEO
+    - Tonalite X
+    - Accords X
+    - Index V
+    - 404 V
+    - resultats X
+    - histoire V
+    - finaltest V
+    - partition X
+
+- Amelioration SEO X
+
 - Documentation Wiki + Code
-- Correction fautes d'orthographes
+    - CODE :
+        - HTML :
+            - Tonalite V
+            - Accords V
+            - Index V
+            - 404 V
+            - resultats V
+            - histoire V
+            - finaltest V
+            - partition V
+        - CSS :
+            - Tonalite X
+            - Accords X
+            - Index X
+            - 404 X
+            - resultats X
+            - histoire X 
+            - finaltest X
+            - partition X
+        - JS : 
+            - Tonalite X
+            - Accords X
+            - Index X
+            - resultats X
+            - histoire X
+            - finaltest X
+            - partition X 
+    - WIKI :
+        - HTML :
+            - Tonalite X
+            - Accords X
+            - Index V
+            - 404 X
+            - resultats X
+            - histoire X
+            - finaltest X
+            - partition X
+        - CSS :
+            - Tonalite X
+            - Accords X
+            - Index X
+            - 404 X
+            - resultats X
+            - histoire X 
+            - finaltest X
+            - partition X
+        - JS : 
+            - Tonalite
+            - Accords
+            - Index
+            - resultats
+            - histoire
+            - finaltest
+            - partition
+
+- Correction fautes d'orthographes X
 - Creation de la Video V 
-- Compréhension du code (Par tout le monde)
+- Compréhension du code (Par tout le monde) X

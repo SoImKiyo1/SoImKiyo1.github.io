@@ -1,15 +1,22 @@
+<!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/finaltest.html -->
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nom du site -->
     <title>Learn-Solfege</title>
+    <!-- Lien vers le fichier CSS externe -->
     <link rel="stylesheet" href="css/style-finaltest.css">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <!-- Favicon du site -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
 <body>
-    <!-- En-tête (Header) -->
+    <!-- Section En-Tete -->
     <div class="header">
+        <!-- Le logo et les liens vers les pages -->
         <a href="../index.html" class="logo">
             <img src="../images/logo2.png" />
         </a>
@@ -28,6 +35,7 @@
     <!-- Description de la page -->
     <p class="finaltest"></p>
 
+    <!-- Test -->
     <form id="qcmForm">
       <!-- Les champs pour le nom et le prénom -->
       <div class="form-row">
@@ -65,7 +73,6 @@
     <input type="checkbox" id="q3faux" name="question3" value="faux">
     <label for="q3faux">Faux</label>
 </div>
-      <!-- Fin du bloc question -->
 
       <input type="button" value="Vérifier" onclick="verifierReponses()">
   </form>
@@ -89,7 +96,7 @@
     </footer>
 
 </body>
-</head>
 </html>
 
+<!-- Lien vers le fichier JavaScript externe (script.js) -->
 <script type="text/javascript" src="script/script-finaltest.js"></script>

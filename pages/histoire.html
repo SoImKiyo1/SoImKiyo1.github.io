@@ -1,17 +1,23 @@
+<!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/histoire.html -->
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-histoire.css">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <!-- Nom du site -->
     <title>Learn-Solfege</title>
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="css/style-histoire.css">
+    <!-- Favicon du site -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
-    <!-- En-tête (Header) -->
+    <!-- Section En-Tete -->
     <div class="header">
+        <!-- Le logo et les liens vers les pages -->
         <a href="../index.html" class="logo">
             <img src="../images/logo2.png" alt="Logo Learn-Solfege" />
         </a>
@@ -25,8 +31,9 @@
         </div>
     </div>
 
-    <!-- Titre de la Page -->
+    <!-- Contenu de la page -->
     <div class="histoire">
+        <!-- Titre de la Page -->
         <h1>Histoire de la musique :</h1>
 
         <!-- Premier Paragraphe -->
@@ -67,7 +74,7 @@
         <img class="cp" src="../images/histoirep5.png"/>
     </div>
 
-    <!-- Button menant au Prochain Cours -->
+    <!-- Bouton pour accéder au prochain cours -->
     <a href="partition.html" class="nextbutton">
         Prochain Cours 
         <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
@@ -88,6 +95,7 @@
         <p>L'époque baroque a émergé avec l'<input type="text" id="mot14"> et la <input type="text" id="mot15">, mais la polyphonie a progressivement cédé la place aux grands ensembles musicaux et à l'<input type="text" id="mot16">. Le XVIIIe siècle a vu l'émergence des <input type="text" id="mot17"><input type="text" id="mot18"> et <input type="text" id="mot19">, privilégiés pour leur expressivité et leur <input type="text" id="mot20"> musicale.</p>
     
         <button onclick="verifierReponses()">Vérifier</button>
+        <!-- Zone où sera afficher le résultat -->
         <p id="resultat"></p>
     </div>
 
@@ -107,7 +115,7 @@
         <p class="bottom"></p>
     </footer>
 
+    <!-- Lien vers le fichier JavaScript externe (script.js) -->
     <script type="text/javascript" src="script/script-histoire.js"></script>
 </body>
-
 </html>

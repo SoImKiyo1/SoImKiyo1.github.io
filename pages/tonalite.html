@@ -1,20 +1,28 @@
+<!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/tonalite.html -->
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Learn-Solfege</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-tonalite.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Nom du site -->
+        <title>Learn-Solfege</title>
+        <!-- Lien vers le fichier CSS externe -->
+        <link rel="stylesheet" href="css/style-tonalite.css">
+        <!-- Favicon du site -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
 <body>
 
-        <!-- En-tête (Header) -->
+        <!-- Section En-Tete -->
         <div class="header">
+            <!-- Le logo et les liens vers les pages -->
             <a href="../index.html" class="logo">
                 <img src="../images/logo2.png" />
             </a>
             <a class="button" href="../pages/histoire.html">Histoire</a>
             <a href="../pages/partition.html" class="button">Lire une partition</a>
-            <a href="../pages/tonalite.html" class="button">Tonalités</a>
+            <a href="../pages/tonalite.html" class="active">Tonalités</a>
             <a href="../pages/accords.html" class="button">Accords</a>
             
             <div class="header-droit">
@@ -22,8 +30,9 @@
             </div>
         </div>
 
-    <!-- Titre de la Page -->
+    <!-- Contenu de la page -->
     <div class="tonalite">
+        <!-- Titre de la Page -->
          <h1>Apprendre à trouver la tonalité d'un morceaux</h1>
 
     <!-- Premier paragraphe -->
@@ -63,6 +72,7 @@
     <img src="../images/bemol.jpg" class="imgbemol">
 </div>
 
+<!-- Bouton pour accéder au prochain cours -->
 <a href="accords.html" class="nextbutton">
     Prochain Cours
     <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
@@ -77,23 +87,22 @@
 <!-- Titre "Test" -->
 <h1 class="test">À toi de jouer !!!</h1>
 
-
+<!-- Test -->
 <div id="test-container">
-    <!-- Exemple de partition 1 -->
+    <!-- Partition 1 -->
     <div class="partition">
         <img src="path_to_partition_image_1.png" alt="Partition 1">
         <input type="text" id="answer1" placeholder="Entrez la tonalité">
     </div>
     
-    <!-- Exemple de partition 2 -->
+    <!-- Partition 2 -->
     <div class="partition">
         <img src="path_to_partition_image_2.png" alt="Partition 2">
         <input type="text" id="answer2" placeholder="Entrez la tonalité">
     </div>
-    
-    <!-- Ajouter plus de partitions si nécessaire -->
 
     <button onclick="checkAnswers()">Vérifier les réponses</button>
+    <!-- Zone où sera afficher le résultat -->
     <div id="result"></div>
 </div>
 
@@ -113,8 +122,8 @@
     <p class="bottom"></p>
 </footer>
 
+    <!-- Lien vers le fichier JavaScript externe (script.js) -->
     <script type="text/javascript" src="script/script-tonalite.js"></script>
 </body>
-</head>
 </html>
 
