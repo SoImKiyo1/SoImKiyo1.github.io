@@ -20,9 +20,9 @@ TO-DO LIST :
 - Ajouts de toutes les images V
 - Resolution des bugs X
 
-- Optimisation du code X
+- Optimisation du code V
 
-- ResponsiveS
+- Responsive
     - Tonalite X
     - Accords X
     - Index V
