@@ -266,7 +266,8 @@ footer .bottom {
 	}
 }
 
-/* Taille d'écran (1600x900 pixels) */
+
+/* Taille d'écran (1600x900) */
 @media screen and (max-width: 1600px) {
 
 	/* En-Tête */
@@ -310,7 +311,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-
 	/* FOOTER */
 	footer img {
 		width: 200px;
@@ -351,7 +351,6 @@ footer .bottom {
 		transform: scale(1.1);
 	}
 }
-
 
 /* Taille d'écran (1366x768) */
 @media screen and (max-width: 1366px) {
@@ -439,7 +438,6 @@ footer .bottom {
 	}
 }
 
-
 /* Taille d'écran "pc portable" (max 1200 pixels en largeur) */
 @media screen and (max-width: 1200px) {
 
@@ -525,9 +523,51 @@ footer .bottom {
 	}
 }
 
-
 /* Taille d'écran "tablette en mode paysage" (max 1024 pixels en largeur) */
 @media screen and (max-width: 1024px) {
+
+	/* En-Tête */
+	.header img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.header {
+		padding: 20px 5%;
+	}
+
+	.header a {
+		float: left;
+		color: white;
+		text-align: center;
+		padding: 12px;
+		text-decoration: none;
+		font-size: 16px;
+	}
+
+	.header .button {
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+
+	.header .logo {
+		font-size: 20px;
+		font-weight: bold;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+
+	.header-droit {
+		float: right;
+		margin-top: 20px;
+	}
+
+	.header-droit .finalexam {
+		border: 2px solid rgb(255, 214, 30);
+		margin-right: 30px;
+	}
+
+	/* FOOTER */
 	footer .button {
 		font-size: 20px;
 		margin-top: 20px;
@@ -563,6 +603,7 @@ footer .bottom {
 	.header-droit {
 		float: none;
 	}
+
 
 
 	/* FOOTER */
