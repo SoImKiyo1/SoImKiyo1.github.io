@@ -20,35 +20,9 @@ TO-DO LIST :
 - Ajouts de toutes les images V
 - Resolution des bugs X
 
-- Optimisation du code
-    - HTML :
-        - Tonalite X
-        - Accords X
-        - Index V
-         - 404 V
-         - resultats X
-         - histoire X
-         - finaltest X
-         - partition X
-    - CSS :
-        - Tonalite X
-        - Accords X
-        - Index X
-        - 404 X
-        - resultats X 
-        - histoire X 
-        - finaltest X 
-        - partition X
-    - JS : 
-        - Tonalite X
-        - Accords X
-        - Index X
-        - resultats X
-        - histoire X
-        - finaltest X
-        - partition X 
+- Optimisation du code X
 
-- Responsive
+- ResponsiveS
     - Tonalite X
     - Accords X
     - Index V

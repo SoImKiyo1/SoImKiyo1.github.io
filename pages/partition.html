@@ -1,6 +1,6 @@
 <!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/partition.html -->
 <!DOCTYPE html>
-<html>
+<html lang="fr">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
       <div class="header">
          <!-- Le logo et les liens vers les pages -->
          <a href="../index.html" class="logo">
-         <img src="../images/logo2.png" />
+         <img src="../images/logo2.png" alt="Logo Learn-Solfege"/>
          </a>
          <a class="button" href="../pages/histoire.html">Histoire</a>
          <a href="../pages/partition.html" class="active">Lire une partition</a>
@@ -33,7 +33,7 @@
          <!-- Premier paragraphe -->
          <h2 class="first">Introduction</h2>
          <p class="first">Dans cette leçon, nous allons voir qu'est-ce qu'une partition et à quoi elle sert. De plus, nous vous expliquerons les notes de musique sur une portée.</p>
-         <img class="pp" src="../images/partition.jpg"/>
+         <img class="pp" src="../images/partition.jpg" alt="Image PremierParagraphe1"/>
          <!-- Second paragraphe -->
          <h2 class="second">La portée</h2>
          <p class="second">Une portée est composée de cinq barres horizontales. Celle-ci est composée principalement de boules noirs ou blanches munies de différentes queues. Ces symboles sont des notes.
@@ -41,13 +41,13 @@
             <br>Mais alors pourquoi on utilise la clé de Fa dans certains instruments alors une autre clé existe déjà ?
             <br>L'usage d'une deuxième portée utilisant la clé de Fa permet à des instruments comme le piano de jouer des deux mains. On observe que les deux portées sont jouées simultanément, avec la main droite qui joue la clé de sol et la gauche la clé de Fa. 
          </p>
-         <img class="dp" src="../images/porte 3.png"/>
+         <img class="dp" src="../images/porte 3.png" alt="Image DeuxiemeParagraphe2"/>
          <!-- Troisième paragraphe -->
          <h2 class="third">Les notes</h2>
          <p class="third">Comme vu précédemment les notes sont des boules blanches et noires munies d'une queue. Il y a sept notes différentes : do, ré, mi, fa, sol, la, si. Cependant on peut les jouer sur différentes octaves c'est à dire un registre au dessus ou en dessous. Pour lire une note, on se réfère à sa position sur la portée. On peut voir que le centre de la clé de Sol indique la hauteur du Sol sur la portée. Ainsi, nous pouvons lire la totalité des notes lorsque l'on monte la note Sol d'un cran on obtient un La. Différentes notes permettent de se repérer dans la portée, le Do qui est un trait au dessous de la portée, le Mi se situant sur la première ligne et le Sol la note de référence se trouvant à la hauteur de la clé. Ainsi nous pouvons lire la gamme de do majeur en clé de sol.
             <br>Cependant lorsque la portée est en clé de Fa, la hauteur des notes sur la portée n'est pas la même. En effet, en clé de Fa on se réfère à la note Fa se trouvant à la haiteur de la clé. Celle-ci se trouve donc sur la 4e ligne. Comme avec la clé de Sol, des notes de références nous permettent de lire plus facilement la partition : le Sol se situe sur la 1ère ligne ainsi que le Do se situant juste au dessus de la 2e ligne.
          </p>
-         <img class="tp" src="../images/note.jpg"/>
+         <img class="tp" src="../images/note.jpg" alt="Image TroisiemeParagraphe3"/>
          <!-- Quatrième paragraphe -->
          <h2 class="fourth">Les rythmes</h2>
          <p class="fourth">Maintenant que nous savons lire les notes d'une partition, on va apprendre à lire les rythmes écrits sur la portée.
@@ -61,7 +61,7 @@
             <br>
             <br>Grâce à cette leçon, vous savez maintenant comment lire une partition dans son intégralité. Vous pouvez ainsi décrypter les notes et les rythmes d'une portée.
          </p>
-         <img class="qp" src="../images/rythme.png"/>
+         <img class="qp" src="../images/rythme.png" alt="Image QuatriemeParagraphe4"/>
       </div>
       <!-- Bouton pour accéder au prochain cours -->
       <a href="tonalite.html" class="nextbutton">
@@ -76,28 +76,28 @@
       <div class="test">
          <h2> Maintenant, c'est à toi de déterminer les rythmes et les notes d'une partition !</h2>
          <h3>Commençons par la lecture de note, ton but est d'identifier quelle est la partition que tu entends !</h3>
-         <img src="../images/imgtest.png" class="piano" onclick="openImg()"> 
+         <img src="../images/imgtest.png" class="piano" alt="ImagePiano1" onclick="openImg()"> 
          <input type="checkbox" id="part1" name="partition">
          <label for="part1">
-         <img src="../images/partest1.png" class="par1">
+         <img src="../images/partest1.png" alt="ImagePiano2" class="par1">
          </label>
          <input type="checkbox" id="part2" name="partition">
          <label for="part2">
-         <img src="../images/partest2.png" class="par2">
+         <img src="../images/partest2.png" alt="ImagePiano3" class="par2">
          </label>
          <input type="checkbox" id="part3" name="partition">
          <label for="part3">
-         <img src="../images/partest3.png" class="par3">
+         <img src="../images/partest3.png" alt="ImagePiano4" class="par3">
          </label>
          <button onclick="verifierReponses()">Vérifier</button>
          <!-- Zone où sera afficher le résultat -->
          <p id="resultat"></p>
       </div>
-      <audio id="audioPlayer" src="" style="display:none;"></audio>
+      <audio id="audioPlayer" style="display:none;"></audio>
       <!-- Pied de Page (Footer) -->
       <footer>
          <a href="../index.html">
-         <img src="../images/logo.png" />
+         <img src="../images/logo.png" alt="Logo Learn-Solfege"/>
          </a>
          <p class="top"></p>
          <h1>Description</h1>
@@ -110,6 +110,6 @@
          <p class="bottom"></p>
       </footer>
       <!-- Lien vers le fichier JavaScript externe (script.js) -->
-      <script type="text/javascript" src="script/script-partition.js"></script>
+      <script src="script/script-partition.js"></script>
    </body>
 </html>
