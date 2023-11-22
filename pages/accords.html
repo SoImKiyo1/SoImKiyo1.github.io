@@ -1,176 +1,160 @@
 <!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/accords.html -->
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Nom du site -->
-        <title>Learn-Solfege</title>
-        <!-- Lien vers le fichier CSS externe -->
-        <link rel="stylesheet" href="css/style-accords.css">
-        <!-- Favicon du site -->
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    </head>
-<body>
-        <!-- Section En-Tete -->
-        <div class="header">
-            <!-- Le logo et les liens vers les pages -->
-            <a href="../index.html" class="logo">
-                <img src="../images/logo2.png" />
-            </a>
-            <a class="button" href="../pages/histoire.html">Histoire</a>
-            <a href="../pages/partition.html" class="button">Lire une partition</a>
-            <a href="../pages/tonalite.html" class="button">Tonalités</a>
-            <a href="../pages/accords.html" class="active">Accords</a>
-            
-            <div class="header-droit">
-                <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
-            </div>
-        </div>
-
-    <!-- Contenu de la page -->
-    <div class="accords">
-        <!-- Titre de la Page -->
-        <h1 >Qu'est ce qu'un accord?</h1>
-
-    <!-- Premier paragraphe -->
-    <h2 class="first">Introduction</h2>
-    <p class="first">Un accord est constitué de plusieurs sons joués en même temps, c'est un empilement vertical de sons.
-    <br>Voici quelques exemples d'accords:   
-    <br><i>(Clique sur les accords pour entendre leurs sonorité)</i>
-    </p>
-    <img src="../images/exemples-d-accords.png" class="exaccord">
-
-    <!-- Deuxieme paragraphe -->
-    <h2 class="second">L'accord parfait</h2>
-    <p class="second">L'accord parfait est un accord composé de 3 notes à l'état fondamental et dont la quinte est juste.
-    Il existe deux familles d'accord parfait, le majeur et le mineur.
-    </p> 
-    <h3 class="first">L'accord parfait majeur</h3>
-    <p class="third">Commençons par l'accord parfait majeur. L'accord parfait majeur est sans 
-    aucun doute l'accord qui sonne le mieux, et c'est l'accord typique de la musique occidentale (ou musique savante).
-    L'accord parfait majeur est basé sur sa note fondamentale, note la plus grave qui base l'accord. Celle-ci est suivie par une tierce
-    majeure, c'est à dire qu'il faut avoir un écart de 2 tons entre la fondamentale et la deuxième note. Enfin, la dernière note
-    est la quinte juste de la fondamentale, c'est à dire un intervalle de 5 notes entre la fondamentale et la dernière note.
-    <br>Par exemple, si nous prenons l'accord parfait de do majeur, il sera composé de la fondamentale do, suivie de mi une tierce 
-    majeure au-dessus de do, et enfin de sol qui se situe 5 notes au-dessus de la fondamentale.
-    <br>Cependant, Attention!!! Une tierce majeure ne signifie pas un écart de 2 notes mais bien de 2 tons avec la fondamentale. 
-    Comme évoqué dans la leçon précedente, l'intervalle si/do est égale à 1/2 ton comme l'intervalle mi/fa.
-    <br>Si la fondamentale de notre accord est ré, alors la deuxième note sera fa#. 
-    </p>
-    <img src="../images/accord do majeur.png" class="accordmajeur" onclick="openImg()">
-    <h3 class="second">L'accord parfait mineur</h3>
-    <p class="fourth">L'accord parfait mineur est structuré de la même manière que l'accord parfait majeur cependant 
-    l'intervalle entre les notes n'est pas le même.
-    <br>L'accord parfait est toujours composé de sa fondamentale définissant la tonalité de l'accord, cependant la seconde note
-    est la tierce mineure de la fondamentale. Il faut qu'il y ait un intervalle de 1,5 ton entre la fondamentale et la deuxième note
-    l'accord. Et enfin la dernière note est une quinte juste par rapport à la fondamentale de l'accord.
-    <br>Par exemple, notre accord parfait de do mineur sera composé de notre fondamentale, do. Suivie de sa tierce mineure, mi bémol et 
-    de sa quinte juste, sol.
-    <br>Cependant, Attention!!! Une tierce mineure ne signifie pas un écart d'une note mais bien de 1,5 tons avec la fondamentale. 
-    Comme évoqué dans la leçon précedente, l'intervalle si/do est égale à 1/2 ton comme l'intervalle mi/fa.
-    <br>Si la fondamentale de notre accord est ré, alors la tierce mineure sera fa.
-    </p>
-    <img src="../images/accord do mineur.png" class="accordmineur" onclick="openImg1()">
-
-
-    <!-- Troisième paragraphe -->
-    <h2 class="third">L'accord de septième</h2>
-    <p class="fifth">Les accords de septième sont des accords à quatre sons. Et quand on dit « accords à quatre sons », 
-    cela veut dire que ce sont des accords ayant quatre notes différentes. Les accords de septième sont plus riches que les accords à trois sons. 
-    Ils s'avèrent donc très utiles en composition
-    </p>
-    <h3 class="third">L'accord de septième majeur</h3>
-    <p class="sixth">L'accord de septième majeur est basé sur 4 notes, il commence comme les accords à trois notes par sa fondamentale. 
-    Ensuite la première note est suivie d'une tierce majeure (vue dans la leçon précédente). Puis la troisième note de l'accord constitue la quinte juste (vu dans la leçon précédente)
-    de la fondamentale, pour finir sur la septième majeur de la fondamentale, c'est à dire un intervalle de 5,5 tons entre la fondamentale et la dernière note.
-    <br>Par exemple, l'accord de septième majeur de do, se base sur do, la fondamentale. Suivie de mi (une tierce majeure au-dessus). La note suivante sera le sol qui constitue la quinte
-    juste de do, et enfin nous terminerons par la septième majeure de la fondamentale qui est si
-    </p>
-    <img src="../images/accord7maj.jpg" class="accord7maj" onclick="openImg2()">
-    <h3 class="fourth">L'accord de septième mineur</h3>
-    <p class="seventh">L'accord de septième mineur est aussi basé sur 4 notes, il commence comme les accords à trois notes par sa fondamentale. 
-    Ensuite la première note est suivie d'une tierce mineure (vue dans la leçon précédente). Puis la troisième note de l'accord constitue la quinte juste (vu dans la leçon précédente)
-    de la fondamentale, pour finir sur la septième mineure de la fondamentale, c'est à dire un intervalle de 5 tons entre la fondamentale et la dernière note.
-    <br>Par exemple, l'accord de septième mineur de do, se base sur do, la fondamentale. Suivie de mi bémol (une tierce mineure au-dessus). La note suivante sera le sol qui constitue la quinte
-    juste de do, et enfin nous terminerons par la septième mineure de la fondamentale qui est si bémol.
-    </p>
-    <img src="../images/accord7min3.png" class="accord7min3" onclick="openImg3()">
-    <audio id="audioPlayer" src="" style="display:none;"></audio>
-
-
-    <!-- Dernier paragraphe -->
-    <h2 class="fourth">À quoi servent donc les accords?</h2>
-    <p class="eighth">Les accords permettent de créer la partie accompagnement d'une chanson. 
-    Lorsque l'on regroupe ensemble différents accords, on crée ce qu'on appelle une progression d'accords.
-    Cette progression est alors répétée tout au long du morceau afin d'en constituer l'accompagnement. 
-    Par exemple dans le morceau « The Scientist » de Coldplay on a 4 accords qui sont répétés en boucle. 
-    (Bien évidemment, cette progression peut évoluer au fur et à mesure du morceau, mais vous avez compris l'idée).    
-    </p>
-
-    <!-- Bouton pour accéder au test final -->
-    <a href="finaltest.html" class="nextbutton">
-        Accéder au Test Final
-        <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
-    </a>
-    
-    <!-- Barre de séparation -->
-    <div class="separateur"></div>
-
-    <!-- Titre "Test" -->
-    <h1 class="test">À toi de jouer !!!</h1>
-
-    <!-- Test -->
-    <div class="test">
-        <h2> Maintenant, c'est à toi de trouver les notes d'un accord !</h2>
-        <h3>Ton but est d'identifier qu'elle est la tonalité de l'accord </h3>   
-        <p>Quelle est la fondamentale de cette accords?
-        <select name="fondamentale">
-            <option value="sol">Sol</option>
-            <option value="si">Si bémol</option>
-            <option value="re">Ré</option>
-        </select>
-        <br>Quel est l'intervalle entre la fondamentale et si bémol?
-        <select name="intervalle">
-            <option value="1ton">1 ton</option>
-            <option value="1,5ton">1 ton et demi</option>
-            <option value="2ton">2 tons</option>
-        </select>
-        <br>Enfin, identifie quel est la dernière note par rapport à sa fondamentale
-        <select name="quinte juste">
-            <option value="tiercemineure">tierce mineure</option>
-            <option value="quintejuste">quinte juste</option>
-            <option value="septièmemajeure">septième majeure</option>
-        </select>
-        <br>Quel est la tonalité de l'accord?
-        <input type="text" id="answer1" placeholder="Entrez la tonalité">
-        </p>
-        <img src="../images/accordtest.png" class="accordtest1">
-        <button onclick="verifierReponses()">Vérifier</button>
-        <!-- Zone où sera afficher le résultat -->
-        <p id="resultat"></p>
-    </div>
-
-
-    <!-- Pied de Page (Footer) -->
-    <footer>
-        <a href="../index.html">
-            <img src="../images/logo.png" />
-        </a>
-        <p class="top"></p>
-        <h1>Description</h1>
-        <p>“Learn-Solfege” est un site d'apprentissage en ligne dédié à l'enseignement du solfège et de la musique. 
-        <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l'écriture musicale, des
-        <br>quiz, des jeux et des exercices pour s'entraîner, ainsi que des utilitaires pour tous les musiciens. 
-        </p>
-        <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
-        <p class="copyright">© Copyright 2023 Learn-Solfege</p>
-        <p class="bottom"></p>
-    </footer>
-
-    <!-- Lien vers le fichier JavaScript externe (script.js) -->
-    <script type="text/javascript" src="script/script-accords.js"></script>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Nom du site -->
+      <title>Learn-Solfege</title>
+      <!-- Lien vers le fichier CSS externe -->
+      <link rel="stylesheet" href="css/style-accords.css">
+      <!-- Favicon du site -->
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+   </head>
+   <body>
+      <!-- Section En-Tete -->
+      <div class="header">
+         <!-- Le logo et les liens vers les pages -->
+         <a href="../index.html" class="logo">
+         <img src="../images/logo2.png" />
+         </a>
+         <a class="button" href="../pages/histoire.html">Histoire</a>
+         <a href="../pages/partition.html" class="button">Lire une partition</a>
+         <a href="../pages/tonalite.html" class="button">Tonalités</a>
+         <a href="../pages/accords.html" class="active">Accords</a>
+         <div class="header-droit">
+            <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
+         </div>
+      </div>
+      <!-- Contenu de la page -->
+      <div class="accords">
+      <!-- Titre de la Page -->
+      <h1 >Qu'est ce qu'un accord?</h1>
+      <!-- Premier paragraphe -->
+      <h2 class="first">Introduction</h2>
+      <p class="first">Un accord est constitué de plusieurs sons joués en même temps, c'est un empilement vertical de sons.
+         <br>Voici quelques exemples d'accords:   
+         <br><i>(Clique sur les accords pour entendre leurs sonorité)</i>
+      </p>
+      <img src="../images/exemples-d-accords.png" class="exaccord">
+      <!-- Deuxieme paragraphe -->
+      <h2 class="second">L'accord parfait</h2>
+      <p class="second">L'accord parfait est un accord composé de 3 notes à l'état fondamental et dont la quinte est juste.
+         Il existe deux familles d'accord parfait, le majeur et le mineur.
+      </p>
+      <h3 class="first">L'accord parfait majeur</h3>
+      <p class="third">Commençons par l'accord parfait majeur. L'accord parfait majeur est sans 
+         aucun doute l'accord qui sonne le mieux, et c'est l'accord typique de la musique occidentale (ou musique savante).
+         L'accord parfait majeur est basé sur sa note fondamentale, note la plus grave qui base l'accord. Celle-ci est suivie par une tierce
+         majeure, c'est à dire qu'il faut avoir un écart de 2 tons entre la fondamentale et la deuxième note. Enfin, la dernière note
+         est la quinte juste de la fondamentale, c'est à dire un intervalle de 5 notes entre la fondamentale et la dernière note.
+         <br>Par exemple, si nous prenons l'accord parfait de do majeur, il sera composé de la fondamentale do, suivie de mi une tierce 
+         majeure au-dessus de do, et enfin de sol qui se situe 5 notes au-dessus de la fondamentale.
+         <br>Cependant, Attention!!! Une tierce majeure ne signifie pas un écart de 2 notes mais bien de 2 tons avec la fondamentale. 
+         Comme évoqué dans la leçon précedente, l'intervalle si/do est égale à 1/2 ton comme l'intervalle mi/fa.
+         <br>Si la fondamentale de notre accord est ré, alors la deuxième note sera fa#. 
+      </p>
+      <img src="../images/accord do majeur.png" class="accordmajeur" onclick="openImg()">
+      <h3 class="second">L'accord parfait mineur</h3>
+      <p class="fourth">L'accord parfait mineur est structuré de la même manière que l'accord parfait majeur cependant 
+         l'intervalle entre les notes n'est pas le même.
+         <br>L'accord parfait est toujours composé de sa fondamentale définissant la tonalité de l'accord, cependant la seconde note
+         est la tierce mineure de la fondamentale. Il faut qu'il y ait un intervalle de 1,5 ton entre la fondamentale et la deuxième note
+         l'accord. Et enfin la dernière note est une quinte juste par rapport à la fondamentale de l'accord.
+         <br>Par exemple, notre accord parfait de do mineur sera composé de notre fondamentale, do. Suivie de sa tierce mineure, mi bémol et 
+         de sa quinte juste, sol.
+         <br>Cependant, Attention!!! Une tierce mineure ne signifie pas un écart d'une note mais bien de 1,5 tons avec la fondamentale. 
+         Comme évoqué dans la leçon précedente, l'intervalle si/do est égale à 1/2 ton comme l'intervalle mi/fa.
+         <br>Si la fondamentale de notre accord est ré, alors la tierce mineure sera fa.
+      </p>
+      <img src="../images/accord do mineur.png" class="accordmineur" onclick="openImg1()">
+      <!-- Troisième paragraphe -->
+      <h2 class="third">L'accord de septième</h2>
+      <p class="fifth">Les accords de septième sont des accords à quatre sons. Et quand on dit « accords à quatre sons », 
+         cela veut dire que ce sont des accords ayant quatre notes différentes. Les accords de septième sont plus riches que les accords à trois sons. 
+         Ils s'avèrent donc très utiles en composition
+      </p>
+      <h3 class="third">L'accord de septième majeur</h3>
+      <p class="sixth">L'accord de septième majeur est basé sur 4 notes, il commence comme les accords à trois notes par sa fondamentale. 
+         Ensuite la première note est suivie d'une tierce majeure (vue dans la leçon précédente). Puis la troisième note de l'accord constitue la quinte juste (vu dans la leçon précédente)
+         de la fondamentale, pour finir sur la septième majeur de la fondamentale, c'est à dire un intervalle de 5,5 tons entre la fondamentale et la dernière note.
+         <br>Par exemple, l'accord de septième majeur de do, se base sur do, la fondamentale. Suivie de mi (une tierce majeure au-dessus). La note suivante sera le sol qui constitue la quinte
+         juste de do, et enfin nous terminerons par la septième majeure de la fondamentale qui est si
+      </p>
+      <img src="../images/accord7maj.jpg" class="accord7maj" onclick="openImg2()">
+      <h3 class="fourth">L'accord de septième mineur</h3>
+      <p class="seventh">L'accord de septième mineur est aussi basé sur 4 notes, il commence comme les accords à trois notes par sa fondamentale. 
+         Ensuite la première note est suivie d'une tierce mineure (vue dans la leçon précédente). Puis la troisième note de l'accord constitue la quinte juste (vu dans la leçon précédente)
+         de la fondamentale, pour finir sur la septième mineure de la fondamentale, c'est à dire un intervalle de 5 tons entre la fondamentale et la dernière note.
+         <br>Par exemple, l'accord de septième mineur de do, se base sur do, la fondamentale. Suivie de mi bémol (une tierce mineure au-dessus). La note suivante sera le sol qui constitue la quinte
+         juste de do, et enfin nous terminerons par la septième mineure de la fondamentale qui est si bémol.
+      </p>
+      <img src="../images/accord7min3.png" class="accord7min3" onclick="openImg3()">
+      <audio id="audioPlayer" src="" style="display:none;"></audio>
+      <!-- Dernier paragraphe -->
+      <h2 class="fourth">À quoi servent donc les accords?</h2>
+      <p class="eighth">Les accords permettent de créer la partie accompagnement d'une chanson. 
+         Lorsque l'on regroupe ensemble différents accords, on crée ce qu'on appelle une progression d'accords.
+         Cette progression est alors répétée tout au long du morceau afin d'en constituer l'accompagnement. 
+         Par exemple dans le morceau « The Scientist » de Coldplay on a 4 accords qui sont répétés en boucle. 
+         (Bien évidemment, cette progression peut évoluer au fur et à mesure du morceau, mais vous avez compris l'idée).    
+      </p>
+      <!-- Bouton pour accéder au test final -->
+      <a href="finaltest.html" class="nextbutton">
+      Accéder au Test Final
+      <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
+      </a>
+      <!-- Barre de séparation -->
+      <div class="separateur"></div>
+      <!-- Titre "Test" -->
+      <h1 class="test">À toi de jouer !!!</h1>
+      <!-- Test -->
+      <div class="test">
+         <h2> Maintenant, c'est à toi de trouver les notes d'un accord !</h2>
+         <h3>Ton but est d'identifier qu'elle est la tonalité de l'accord </h3>
+         <p>
+            Quelle est la fondamentale de cette accords?
+            <select name="fondamentale">
+               <option value="sol">Sol</option>
+               <option value="si">Si bémol</option>
+               <option value="re">Ré</option>
+            </select>
+            <br>Quel est l'intervalle entre la fondamentale et si bémol?
+            <select name="intervalle">
+               <option value="1ton">1 ton</option>
+               <option value="1,5ton">1 ton et demi</option>
+               <option value="2ton">2 tons</option>
+            </select>
+            <br>Enfin, identifie quel est la dernière note par rapport à sa fondamentale
+            <select name="quinte juste">
+               <option value="tiercemineure">tierce mineure</option>
+               <option value="quintejuste">quinte juste</option>
+               <option value="septièmemajeure">septième majeure</option>
+            </select>
+            <br>Quel est la tonalité de l'accord?
+            <input type="text" id="answer1" placeholder="Entrez la tonalité">
+         </p>
+         <img src="../images/accordtest.png" class="accordtest1">
+         <button onclick="verifierReponses()">Vérifier</button>
+         <!-- Zone où sera afficher le résultat -->
+         <p id="resultat"></p>
+      </div>
+      <!-- Pied de Page (Footer) -->
+      <footer>
+         <a href="../index.html">
+         <img src="../images/logo.png" />
+         </a>
+         <p class="top"></p>
+         <h1>Description</h1>
+         <p>“Learn-Solfege” est un site d'apprentissage en ligne dédié à l'enseignement du solfège et de la musique. 
+            <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l'écriture musicale, des
+            <br>quiz, des jeux et des exercices pour s'entraîner, ainsi que des utilitaires pour tous les musiciens. 
+         </p>
+         <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
+         <p class="copyright">© Copyright 2023 Learn-Solfege</p>
+         <p class="bottom"></p>
+      </footer>
+      <!-- Lien vers le fichier JavaScript externe (script.js) -->
+      <script type="text/javascript" src="script/script-accords.js"></script>
+   </body>
 </html>
-
