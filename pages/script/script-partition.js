@@ -30,3 +30,33 @@ function playAudio(source) {
 function openImg() {
     playAudio("../audio/test1.mp3");
 }
+
+   // Gestion des cases à cocher pour qu'une seule case puisse être cochée
+   function gererCheckboxes() {
+    var checkboxes = document.querySelectorAll('input[type=checkbox][name="partition"]');
+    checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+            checkboxes.forEach(function(other) {
+                if (other !== checkbox) other.checked = false;
+            });
+        });
+    });
+}
+
+// Vérification des réponses
+function verifierReponses() {
+    var bonneReponse = "part1"; // Remplacer par l'ID de la bonne case à cocher
+    var reponseUtilisateur = document.querySelector('input[type=checkbox][name="partition"]:checked');
+
+    var resultat = document.getElementById("resultat");
+    if (reponseUtilisateur && reponseUtilisateur.id === bonneReponse) {
+        resultat.innerHTML = "Bonne réponse!";
+        resultat.style.color = "green";
+    } else {
+        resultat.innerHTML = "Mauvaise réponse.";
+        resultat.style.color = "red";
+    }
+}
+
+// Initialiser la gestion des cases à cocher
+gererCheckboxes();
