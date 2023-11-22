@@ -13,7 +13,7 @@ body {
 
 /* En-Tete */
 header {
-	background-image: url(images/background.png);
+	background-image: url(images/background-min.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -154,7 +154,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	background-image: url(images/backgroundcard1.png);
+	background-image: url(images/backgroundcard1-min.jpg);
 }
 
 /* Carte de la seconde partie quand on passe dessus */
@@ -210,7 +210,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	background-image: url(images/backgroundcard1.png);
+	background-image: url(images/backgroundcard1-min.jpg);
 }
 
 .SecondPart .card2:hover {
@@ -260,7 +260,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	background-image: url(images/backgroundcard1.png);
+	background-image: url(images/backgroundcard1-min.jpg);
 }
 
 .SecondPart .card3:hover {
@@ -310,7 +310,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	background-image: url(images/backgroundcard1.png);
+	background-image: url(images/backgroundcard1-min.jpg);
 }
 
 .SecondPart .card4:hover {
