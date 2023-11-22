@@ -118,6 +118,10 @@ finaltest.html :
    </body>
 </html>
 
+2. Mise à jour de script-finaltest.js
+Puisque le serveur Flask va gérer la soumission et l'évaluation des réponses, le script JavaScript n'a pas besoin de la logique de vérification. Tu peux soit supprimer ce fichier, soit le laisser vide.
+
+
 Mise à jour du serveur Flask :
 
 from flask import Flask, render_template, request
