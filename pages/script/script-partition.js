@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
  function openImg() {
     playAudio("../audio/test1.mp3");
  }
+
+ function openImg1() {
+   playAudio("../audio/test1.mp3");
+}
  
  // Gestion des cases à cocher pour qu'une seule case puisse être cochée
  function gererCheckboxes() {
