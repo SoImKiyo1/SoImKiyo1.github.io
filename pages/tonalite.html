@@ -1,120 +1,111 @@
+<!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/tonalite.html -->
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Learn-Solfege</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-tonalite.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-<body>
-
-        <!-- En-tête (Header) -->
-        <div class="header">
-            <a href="../index.html" class="logo">
-                <img src="../images/logo2.png" />
-            </a>
-            <a class="button" href="../pages/histoire.html">Histoire</a>
-            <a href="../pages/partition.html" class="button">Lire une partition</a>
-            <a href="../pages/tonalite.html" class="button">Tonalités</a>
-            <a href="../pages/accords.html" class="button">Accords</a>
-            
-            <div class="header-droit">
-                <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
-            </div>
-        </div>
-
-    <!-- Titre de la Page -->
-    <div class="tonalite">
-         <h1>Apprendre à trouver la tonalité d'un morceaux</h1>
-
-    <!-- Premier paragraphe -->
-        <h2 class="first">L'armure</h2>
-        <p class="first">Pour determiner la tonalité d'un morceau il faut d'abord analyser l'armure.
-    Celle-ci se situe juste à côté de la clé, elle exprime les dièses ou bémols du morceaux. C'est eux qui définissent la tonalité de la musique.
-    <br>Tout d'abord nous intéresserons aux dièses, ils sont modélisés par le signe "#" et ont pour but d'élever la note d'un demi ton.
-    En sachant que tout les notes sont espacés d'un ton sauf si/do et mi/fa. Si nous avons un fa # nous jouerons une note situe à mi hauteur entre fa et sol.
-    <br>Pour les bémols, c'est le même principe cependant ils sont modélisés par "â™­" et baisse la note d'un demi-ton. Autrement dit si nous avons un solâ™­ alors nous jouerons une note entre le fa et le sol.
-    Finalement fa# = sol#
-    <br> Exception !!!
-    <br> Si nous avons un si# il faut procéder autrement. En effet, comme expliquer auparavant il n'y a qu'un demi-ton entre le si et le do. Le dièse a pour fonction de monter d'un demi-ton, un si# donnera donc un do.
-    <br>Cette technique s'applique de la même manière avec les bémols, un doâ™­ donnera un si
-    </p>
-    <img src="../images/diese.png" class="imgdiese1">
-        <!-- Deuxième paragraphe -->
-        <h2 class="second">Les tonalités</h2>
-        <p class="second">Maintenant que nous connaissont l'armure et que nous savons à quoi elle sert. Nous allons maintenant voir que c'est elle qui donne la tonalité au morceau.
-        </p>
-        <!-- Premier sous-paragraphe -->
-        <h3 class="first">Les dièses</h3>
-        <p class="third">Si nous avons des dièses à la clé nous devons prendre le dernier dièse et le monter d'un demi-ton.
-         Une fois que nous avons identifier le dernier dièse, nous devons le monter d'un demi-ton afin d'obtenir la tonalité du morceau.
-        <br>Si nous avons deux dièses à la clé (fa et do): nous prenons le dernier dièse, do#, puis nous l'élevons d'un demi-ton.
-        Le morceau sera donc en ré. Nous pouvons déterminer si la tonalité est majeure ou mineure mais nous n'élaborerons pas le sujet dans cette leçon.
-        </p>
-        <img src="../images/tonalite.png" class="imgdiese">
-
-        <!-- Deuxième sous-paragraphe -->>
-        <h3 class="second">Les bémols</h3>
-        <p class="fourth">Si nous avons des bémols à la clé, il faut prendre l'avant dernier bémol qui nous donnera la tonalité du morceau
-    Si nous avons deux bémols à la clé (si et mi), on prend l'avant dernier bémol, si. Le morceau est donc en si bémol.
-    <br>Attention: si nous avons qu'un bémol à la clé, donc si bémol, on prend automatiquement le fa comme c'est le dernier bémol.
-    En effet, lorsque l'on a qu'un seul bémol, c'est comme si on revenai en arrière et que l'on prenait le dernier bémol.
-    Si nous avons qu'un si bémol, la tonalité sera en fa.
-    </p>
-    <img src="../images/bemol.jpg" class="imgbemol">
-</div>
-
-<a href="accords.html" class="nextbutton">
-    Prochain Cours
-    <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
-</a>
-
-
-
-
-<!-- Barre de séparation -->
-<div class="separateur"></div>
-    
-<!-- Titre "Test" -->
-<h1 class="test">À toi de jouer !!!</h1>
-
-
-<div id="test-container">
-    <!-- Exemple de partition 1 -->
-    <div class="partition">
-        <img src="path_to_partition_image_1.png" alt="Partition 1">
-        <input type="text" id="answer1" placeholder="Entrez la tonalité">
-    </div>
-    
-    <!-- Exemple de partition 2 -->
-    <div class="partition">
-        <img src="path_to_partition_image_2.png" alt="Partition 2">
-        <input type="text" id="answer2" placeholder="Entrez la tonalité">
-    </div>
-    
-    <!-- Ajouter plus de partitions si nécessaire -->
-
-    <button onclick="checkAnswers()">Vérifier les réponses</button>
-    <div id="result"></div>
-</div>
-
-<!-- Pied de Page (Footer) -->
-<footer>
-    <a href="../index.html">
-        <img src="../images/logo.png" />
-    </a>
-    <p class="top"></p>
-    <h1>Description</h1>
-    <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique. 
-        <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des
-        <br>quiz, des jeux et des exercices pour s’entraîner, ainsi que des utilitaires pour tous les musiciens. 
-    </p>
-    <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
-    <p class="copyright">© Copyright 2023 Learn-Solfege</p>
-    <p class="bottom"></p>
-</footer>
-
-    <script type="text/javascript" src="script/script-tonalite.js"></script>
-</body>
-</head>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Nom du site -->
+      <title>Learn-Solfege</title>
+      <!-- Lien vers le fichier CSS externe -->
+      <link rel="stylesheet" href="css/style-tonalite.css">
+      <!-- Favicon du site -->
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+   </head>
+   <body>
+      <!-- Section En-Tête -->
+      <div class="header">
+         <!-- Le logo et les liens vers les pages -->
+         <a href="../index.html" class="logo">
+         <img src="../images/logo2-min.png" alt="Logo Learn-Solfège"/>
+         </a>
+         <a class="button" href="../pages/histoire.html">Histoire</a>
+         <a href="../pages/partition.html" class="button">Lire une partition</a>
+         <a href="../pages/tonalite.html" class="active">Tonalités</a>
+         <a href="../pages/accords.html" class="button">Accords</a>
+         <div class="header-droit">
+            <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
+         </div>
+      </div>
+      <!-- Contenu de la page -->
+      <div class="tonalite">
+         <!-- Titre de la Page -->
+         <h1>Apprendre à trouver la tonalité d'un morceau</h1>
+         <!-- Premier paragraphe -->
+         <h2 class="first">L'armure</h2>
+         <p class="first">Pour déterminer la tonalité d'un morceau, il faut d'abord analyser l'armure.
+            Celle-ci se situe juste à côté de la clé, elle exprime les dièses ou bémols du morceau. Ce sont eux qui définissent la tonalité de la musique.
+            <br>Tout d'abord, nous nous intéresserons aux dièses, ils sont représentés par le signe "#". Ils ont pour but d'élever la note d'un demi-ton.
+            En sachant que toutes les notes sont espacées d'un ton, sauf si/do et mi/fa. Si nous avons un fa#, nous jouerons une note située à mi-hauteur entre fa et sol.
+            <br>Pour les bémols, représentés par le signe "♭", c'est le même principe, mais ils abaissent la note d'un demi-ton. Ainsi, si nous avons un sol♭, nous jouerons une note entre fa et sol.
+            En conclusion, fa# est équivalent à sol♭.
+            <br> Exception !!!
+            <br> Si nous avons un si#, il faut procéder autrement. En effet, comme expliqué auparavant, il n'y a qu'un demi-ton entre si et do. Le dièse a pour fonction de monter d'un demi-ton, un si# donnera donc un do.
+            <br>Cette technique s'applique de la même manière avec les bémols, un do♭ donnera un si.
+         </p>
+         <img src="../images/diese-min.jpg" class="imgdiese1" alt="imagediese1">
+         <!-- Deuxième paragraphe -->
+         <h2 class="second">Les tonalités</h2>
+         <p class="second">Maintenant que nous connaissons l'armure et que nous savons à quoi elle sert, nous allons voir qu'elle détermine la tonalité du morceau.
+         </p>
+         <!-- Premier sous-paragraphe -->
+         <h3 class="first">Les dièses</h3>
+         <p class="third">Si nous avons des dièses à la clé, nous devons prendre le dernier dièse et le monter d'un demi-ton.
+            Une fois que nous avons identifié le dernier dièse, nous devons le monter d'un demi-ton afin d'obtenir la tonalité du morceau.
+            <br>Si nous avons deux dièses à la clé (fa et do), nous prenons le dernier dièse, do#, puis nous l'élevons d'un demi-ton.
+            Le morceau sera donc en ré. Nous pouvons déterminer si la tonalité est majeure ou mineure, mais nous n'aborderons pas le sujet dans cette leçon.
+         </p>
+         <img src="../images/tonalite.png" class="imgdiese" alt="imagediese2">
+         <!-- Deuxième sous-paragraphe -->
+         <h3 class="second">Les bémols</h3>
+         <p class="fourth">Si nous avons des bémols à la clé, il faut prendre l'avant-dernier bémol, qui indiquera la tonalité du morceau.
+            Si nous avons deux bémols à la clé (si et mi), on prend l'avant-dernier bémol, si. Le morceau est donc en si bémol.
+            <br>Attention : si nous avons un seul bémol à la clé, c'est-à-dire si bémol, on prend automatiquement le fa, car c'est le dernier bémol.
+            En effet, lorsque l'on a un seul bémol, c'est comme si on revenait en arrière et que l'on prenait le dernier bémol.
+            Si nous avons un si bémol, la tonalité sera en fa.
+         </p>
+         <img src="../images/bemol-min.jpg" class="imgbemol" alt="imagediese3">
+      </div>
+      <!-- Bouton pour accéder au prochain cours -->
+      <a href="accords.html" class="nextbutton">
+      Prochain Cours
+      <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
+      </a>
+      <!-- Barre de séparation -->
+      <div class="separateur"></div>
+      <!-- Titre "Test" -->
+      <h1 class="test">À toi de jouer !!!</h1>
+      <!-- Test -->
+      <div id="test-container">
+         <!-- Partition 1 -->
+         <div class="partition">
+            <img src="path_to_partition_image_1.png" alt="Partition 1">
+            <input type="text" id="answer1" placeholder="Entrez la tonalité">
+         </div>
+         <!-- Partition 2 -->
+         <div class="partition">
+            <img src="path_to_partition_image_2.png" alt="Partition 2">
+            <input type="text" id="answer2" placeholder="Entrez la tonalité">
+         </div>
+         <button onclick="checkAnswers()">Vérifier les réponses</button>
+         <!-- Zone où sera affiché le résultat -->
+         <div id="result"></div>
+      </div>
+      <!-- Pied de Page (Footer) -->
+      <footer>
+         <a href="../index.html">
+         <img src="../images/logo-min.png" alt="Logo Learn-Solfège"/>
+         </a>
+         <p class="top"></p>
+         <h1>Description</h1>
+         <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique.
+            <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des
+            <br>quiz, des jeux et des exercices pour s’entraîner, ainsi que des utilitaires pour tous les musiciens.
+         </p>
+         <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
+         <p class="copyright">© Copyright 2023 Learn-Solfège</p>
+         <p class="bottom"></p>
+      </footer>
+      <!-- Lien vers le fichier JavaScript externe (script.js) -->
+      <script src="script/script-tonalite.js"></script>
+   </body>
 </html>
-

@@ -1,95 +1,88 @@
+<!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/finaltest.html -->
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn-Solfege</title>
-    <link rel="stylesheet" href="css/style-finaltest.css">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-<body>
-    <!-- En-tête (Header) -->
-    <div class="header">
-        <a href="../index.html" class="logo">
-            <img src="../images/logo2.png" />
-        </a>
-        <a class="button" href="../pages/histoire.html">Histoire</a>
-        <a href="../pages/partition.html" class="button">Lire une partition</a>
-        <a href="../pages/tonalite.html" class="button">Tonalités</a>
-        <a href="../pages/accords.html" class="button">Accords</a>
-        
-        <div class="header-droit">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Nom du site -->
+      <title>Learn-Solfege</title>
+      <!-- Lien vers le fichier CSS externe -->
+      <link rel="stylesheet" href="css/style-finaltest.css">
+      <!-- Favicon du site -->
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+   </head>
+   <body>
+      <!-- Section En-Tete -->
+      <div class="header">
+         <!-- Le logo et les liens vers les pages -->
+         <a href="../index.html" class="logo">
+         <img src="../images/logo2-min.png" alt="Logo Learn-Solfege"/>
+         </a>
+         <a class="button" href="../pages/histoire.html">Histoire</a>
+         <a href="../pages/partition.html" class="button">Lire une partition</a>
+         <a href="../pages/tonalite.html" class="button">Tonalités</a>
+         <a href="../pages/accords.html" class="button">Accords</a>
+         <div class="header-droit">
             <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
-        </div>
-    </div>
-
-    <!-- Titre de la page -->
-    <h1 class="finaltest">Test Final</h1>
-    <!-- Description de la page -->
-    <p class="finaltest"></p>
-
-    <form id="qcmForm">
-      <!-- Les champs pour le nom et le prénom -->
-      <div class="form-row">
-        <div class="form-field">
-            <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" required>
-        </div>
-        <div class="form-field">
-            <label for="prenom">Prénom:</label>
-            <input type="text" id="prenom" name="prenom" required>
-        </div>
-    </div>
-
-      <!-- Questions -->
-      <div class="question">
-        <p>Question 1: Le fromage</p>
-        <input type="checkbox" id="q1vrai" name="question1" value="vrai">
-        <label for="q1vrai">Vrai</label>
-        <input type="checkbox" id="q1faux" name="question1" value="faux">
-        <label for="q1faux">Faux</label>
-    </div>
-
-    <div class="question">
-      <p>Question 2: Le fromage</p>
-      <input type="checkbox" id="q2vrai" name="question2" value="vrai">
-      <label for="q2vrai">Vrai</label>
-      <input type="checkbox" id="q2faux" name="question2" value="faux">
-      <label for="q2faux">Faux</label>
-  </div>
-
-  <div class="question">
-    <p>Question 3: Le fromage</p>
-    <input type="checkbox" id="q3vrai" name="question3" value="vrai">
-    <label for="q3vrai">Vrai</label>
-    <input type="checkbox" id="q3faux" name="question3" value="faux">
-    <label for="q3faux">Faux</label>
-</div>
-      <!-- Fin du bloc question -->
-
-      <input type="button" value="Vérifier" onclick="verifierReponses()">
-  </form>
-
-
-
-    <!-- Pied de Page (Footer) -->
-    <footer>
-        <a href="../index.html">
-            <img src="../images/logo.png" />
-        </a>
-        <p class="top"></p>
-        <h1>Description</h1>
-        <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique. 
-          <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des
-          <br>quiz, des jeux et des exercices pour s’entraîner, ainsi que des utilitaires pour tous les musiciens. 
-        </p>
-        <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
-        <p class="copyright">© Copyright 2023 Learn-Solfege</p>
-        <p class="bottom"></p>
-    </footer>
-
-</body>
-</head>
+         </div>
+      </div>
+      <!-- Titre de la page -->
+      <h1 class="finaltest">Test Final</h1>
+      <!-- Description de la page -->
+      <p class="finaltest"></p>
+      <!-- Test -->
+      <form id="qcmForm">
+         <!-- Les champs pour le nom et le prénom -->
+         <div class="form-row">
+            <div class="form-field">
+               <label for="nom">Nom:</label>
+               <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-field">
+               <label for="prenom">Prénom:</label>
+               <input type="text" id="prenom" name="prenom" required>
+            </div>
+         </div>
+         <!-- Questions -->
+         <div class="question">
+            <p>Question 1: Le fromage</p>
+            <input type="checkbox" id="q1vrai" name="question1" value="vrai">
+            <label for="q1vrai">Vrai</label>
+            <input type="checkbox" id="q1faux" name="question1" value="faux">
+            <label for="q1faux">Faux</label>
+         </div>
+         <div class="question">
+            <p>Question 2: Le fromage</p>
+            <input type="checkbox" id="q2vrai" name="question2" value="vrai">
+            <label for="q2vrai">Vrai</label>
+            <input type="checkbox" id="q2faux" name="question2" value="faux">
+            <label for="q2faux">Faux</label>
+         </div>
+         <div class="question">
+            <p>Question 3: Le fromage</p>
+            <input type="checkbox" id="q3vrai" name="question3" value="vrai">
+            <label for="q3vrai">Vrai</label>
+            <input type="checkbox" id="q3faux" name="question3" value="faux">
+            <label for="q3faux">Faux</label>
+         </div>
+         <input type="button" value="Vérifier" onclick="verifierReponses()">
+      </form>
+      <!-- Pied de Page (Footer) -->
+      <footer>
+         <a href="../index.html">
+         <img src="../images/logo-min.png" alt="Logo Learn-Solfege"/>
+         </a>
+         <p class="top"></p>
+         <h1>Description</h1>
+         <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique.
+            <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des
+            <br>quiz, des jeux et des exercices pour s’entraîner, ainsi que des utilitaires pour tous les musiciens.
+         </p>
+         <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
+         <p class="copyright">© Copyright 2023 Learn-Solfege</p>
+         <p class="bottom"></p>
+      </footer>
+      <!-- Lien vers le fichier JavaScript externe (script.js) -->
+      <script src="script/script-finaltest.js"></script>
+   </body>
 </html>
-
-<script type="text/javascript" src="script/script-finaltest.js"></script>

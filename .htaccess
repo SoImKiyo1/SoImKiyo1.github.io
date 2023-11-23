@@ -1,1 +1,2 @@
+<!-- Permet au site de comprendre que si le client rencontre l'erreur 404 alors on le renvoie sur la page 404.html -->
 ErrorDocument 404 404.html

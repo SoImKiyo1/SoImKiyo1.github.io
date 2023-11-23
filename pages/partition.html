@@ -1,136 +1,134 @@
+<!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/partition.html -->
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Learn-Solfege</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-partition.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-<body>
-        <!-- En-tête (Header) -->
-        <div class="header">
-            <a href="../index.html" class="logo">
-                <img src="../images/logo2.png" />
-            </a>
-            <a class="button" href="../pages/histoire.html">Histoire</a>
-            <a href="../pages/partition.html" class="button">Lire une partition</a>
-            <a href="../pages/tonalite.html" class="button">Tonalités</a>
-            <a href="../pages/accords.html" class="button">Accords</a>
-            
-            <div class="header-droit">
-                <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
-            </div>
-        </div>
-
-    <div class="partition">
-        <h1>Apprendre à lire une partition</h1>
-
-        <h2 class="first">Introduction</h2>
-        <p class="first">Dans cette leçon, nous allons voir qu'est-ce qu'une partition et à quoi elle sert. De plus, nous vous expliquerons les notes de musique sur une portée.</p>
-        <img class="pp" src="../images/partition.jpg"/>
-
-        <h2 class="second">La portée</h2>
-        <p class="second">Une portée est composée de cinq barres horizontales. Celle-ci est composée principalement de boules noirs ou blanches munies de différentes queues. Ces symboles sont des notes.
-        <br>On peut voir aussi qu'une portée débute par une clé noire appelée clé de sol ou clé de fa selon l'instrument que l'on joue. Aussi on peut voir que cette clé est composée d'une armure : groupe de dièse ou de bémol définissant la tonalité du morceau (nous en parlerons dans une prochaine leçon).
-        <br>Mais alors pourquoi on utilise la clé de Fa dans certains instruments alors une autre clé existe déjà ?
-        <br>L'usage d'une deuxième portée utilisant la clé de Fa permet à des instruments comme le piano de jouer des deux mains. On observe que les deux portées sont jouées simultanément, avec la main droite qui joue la clé de sol et la gauche la clé de Fa. 
-        </p>
-        <img class="dp" src="../images/porte 3.png"/>
-
-        <h2 class="third">Les notes</h2>
-        <p class="third">Comme vu précédemment les notes sont des boules blanches et noires munies d'une queue. Il y a sept notes différentes : do, ré, mi, fa, sol, la, si. Cependant on peut les jouer sur différentes octaves c'est à dire un registre au dessus ou en dessous. Pour lire une note, on se réfère à sa position sur la portée. On peut voir que le centre de la clé de Sol indique la hauteur du Sol sur la portée. Ainsi, nous pouvons lire la totalité des notes lorsque l'on monte la note Sol d'un cran on obtient un La. Différentes notes permettent de se repérer dans la portée, le Do qui est un trait au dessous de la portée, le Mi se situant sur la première ligne et le Sol la note de référence se trouvant à la hauteur de la clé. Ainsi nous pouvons lire la gamme de do majeur en clé de sol.
-        <br>Cependant lorsque la portée est en clé de Fa, la hauteur des notes sur la portée n'est pas la même. En effet, en clé de Fa on se réfère à la note Fa se trouvant à la haiteur de la clé. Celle-ci se trouve donc sur la 4e ligne. Comme avec la clé de Sol, des notes de références nous permettent de lire plus facilement la partition : le Sol se situe sur la 1ère ligne ainsi que le Do se situant juste au dessus de la 2e ligne.</p>
-        <img class="tp" src="../images/note.jpg"/>
-
-        <h2 class="fourth">Les rythmes</h2>
-        <p class="fourth">Maintenant que nous savons lire les notes d'une partition, on va apprendre à lire les rythmes écrits sur la portée.
-        <br>Le rythme détermine la durée de la note. Nous allons d'abord nous intéresser aux rythmes longs :
-        <br>On observe qu'un point noir avec une queue non ratachée à une autre note signifie que la note durera un temps : c'est une noire.
-        <br>Une blanche par contre à les mêmes spécificités visuelles que la noire cependant la note est blanche et non remplie. Une blanche dure deux temps.
-        <br>Le rythme le plus long est la ronde elle est écrite comme la blanche cependant elle n'a pas de queue et elle doit être jouée sur quatre temps. 
-        <br>Maintenant nous allons nous intéresser aux rythmes courts :
-        <br>La croche a les mêmes aspects visuels que la noire cependant sa queue est ratachée à une autre queue, elle dure 1/2 temps.
-        <br>Enfin, nous allons nous intéresser à la double croche : elle a les mêmes aspects visuels que la croche mais elle est reliée à l'autre double-croche par une double-barre. Ce rythme dure 1/4 temps.
-        <br>
-        <br>Grâce à cette leçon, vous savez maintenant comment lire une partition dans son intégralité. Vous pouvez ainsi décrypter les notes et les rythmes d'une portée.
-        </p>
-        <img class="qp" src="../images/rythme.png"/>
-    </div>
-
-    <!-- Button menant au Prochain Cours -->
-        <a href="tonalite.html" class="nextbutton">
-            Prochain Cours 
-            <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
-        </a>
-    
-        <!-- Barre de séparation -->
-        <div class="separateur"></div>
-    
-        <!-- Titre "Test" -->
-        <h1 class="test">À toi de jouer !!!</h1>
-
-
-    <!-- Contenu -->
-    <div class="test">
-        <h2> Maintenant, c'est à toi de déterminer les rythmes et les notes d'une partition !</h2>
-        <h3>Commençons par la lecture de note, ton but est d'identifier qu'elle est la partition que tu entends !</h3>  
-        <img src="../images/imgtest.png" class="piano" onclick="openImg()"> 
-        <input type="checkbox" id="part1" name="partition1">
-        <label for="par1">
-            <img src="../images/partest1.png" class="par1">
-        </label>
-        <input type="checkbox" id="part2" name="partition2">
-        <label for="part2">
-            <img src="../images/partest2.png" class="par2">
-        </label>
-        <input type="checkbox" id="part3" name="partition3">
-        <label for="part3">
-            <img src="../images/partest3.png" class="par3">
-        </label>
-        <button onclick="verifierReponses()">Vérifier</button>
-    </div>
-    <audio id="audioPlayer" src="" style="display:none;"></audio>
-    <br>
-    <div class="test2">
-        <h3>Maintenant tu vas te tester sur la lecture rythmique</h3>  
-        <img src="../images/imgbatterie.png" class="batterie" onclick="openImg1()"> 
-        <input type="checkbox" id="rythm1" name="rythm1">
-        <label for="par1">
-            <img src="../images/partest1.png" class="ryt1">
-        </label>
-        <input type="checkbox" id="rythm2" name="rythm2">
-        <label for="part2">
-            <img src="../images/partest2.png" class="ryt2">
-        </label>
-        <input type="checkbox" id="rythm3" name="rythm3">
-        <label for="part3">
-            <img src="../images/partest3.png" class="ryt3">
-        </label>
-        <button onclick="verifierReponses()">Vérifier</button>
-    </div>
-    <audio id="audioPlayer" src="" style="display:none;"></audio>
-    </div>
-
-        
-    
-
-<!-- Pied de Page (Footer) -->
-<footer>
-    <a href="../index.html">
-        <img src="../images/logo.png" />
-    </a>
-    <p class="top"></p>
-    <h1>Description</h1>
-    <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique. 
-        <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des
-        <br>quiz, des jeux et des exercices pour s’entraîner, ainsi que des utilitaires pour tous les musiciens. 
-    </p>
-    <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
-    <p class="copyright">© Copyright 2023 Learn-Solfege</p>
-    <p class="bottom"></p>
-</footer>
-
-    <script type="text/javascript" src="script/script-partition.js"></script>
-</body>
-</head>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Nom du site -->
+      <title>Learn-Solfege</title>
+      <!-- Lien vers le fichier CSS externe -->
+      <link rel="stylesheet" href="css/style-partition.css">
+      <!-- Favicon du site -->
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+   </head>
+   <body>
+      <!-- Section En-Tête -->
+      <div class="header">
+         <!-- Le logo et les liens vers les pages -->
+         <a href="../index.html" class="logo">
+         <img src="../images/logo2-min.png" alt="Logo Learn-Solfège"/>
+         </a>
+         <a class="button" href="../pages/histoire.html">Histoire</a>
+         <a href="../pages/partition.html" class="active">Lire une partition</a>
+         <a href="../pages/tonalite.html" class="button">Tonalités</a>
+         <a href="../pages/accords.html" class="button">Accords</a>
+         <div class="header-droit">
+            <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
+         </div>
+      </div>
+      <!-- Contenu de la page -->
+      <div class="partition">
+         <!-- Titre de la Page -->
+         <h1>Apprendre à lire une partition</h1>
+         <!-- Premier paragraphe -->
+         <h2 class="first">Introduction</h2>
+         <p class="first">Dans cette leçon, nous allons voir ce qu'est une partition et à quoi elle sert. De plus, nous vous expliquerons les notes de musique sur une portée.</p>
+         <img class="pp" src="../images/partition.jpg" alt="Image PremierParagraphe1"/>
+         <!-- Second paragraphe -->
+         <h2 class="second">La portée</h2>
+         <p class="second">Une portée est composée de cinq barres horizontales. Celle-ci est composée principalement de boules noires ou blanches munies de différentes queues. Ces symboles sont des notes.
+            <br>On peut voir aussi qu'une portée débute par une clé noire appelée clé de sol ou clé de fa selon l'instrument que l'on joue. Aussi, on peut voir que cette clé est composée d'une armure : groupe de dièses ou de bémols définissant la tonalité du morceau (nous en parlerons dans une prochaine leçon).
+            <br>Mais alors pourquoi utilise-t-on la clé de Fa dans certains instruments alors qu'une autre clé existe déjà ?
+            <br>L'usage d'une deuxième portée utilisant la clé de Fa permet à des instruments comme le piano de jouer des deux mains. On observe que les deux portées sont jouées simultanément, avec la main droite qui joue la clé de sol et la gauche la clé de Fa. 
+         </p>
+         <img class="dp" src="../images/porte3.png" alt="Image DeuxiemeParagraphe2"/>
+         <!-- Troisième paragraphe -->
+         <h2 class="third">Les notes</h2>
+         <p class="third">Comme vu précédemment, les notes sont des boules blanches et noires munies d'une queue. Il y a sept notes différentes : do, ré, mi, fa, sol, la, si. Cependant, on peut les jouer sur différentes octaves, c'est-à-dire un registre au-dessus ou en dessous. Pour lire une note, on se réfère à sa position sur la portée. On peut voir que le centre de la clé de Sol indique la hauteur du Sol sur la portée. Ainsi, nous pouvons lire la totalité des notes ; lorsque l'on monte la note Sol d'un cran, on obtient un La. Différentes notes permettent de se repérer dans la portée, le Do qui est un trait en dessous de la portée, le Mi se situant sur la première ligne et le Sol, la note de référence, se trouvant à la hauteur de la clé. Ainsi, nous pouvons lire la gamme de do majeur en clé de sol.
+            <br>Cependant, lorsque la portée est en clé de Fa, la hauteur des notes sur la portée n'est pas la même. En effet, en clé de Fa, on se réfère à la note Fa se trouvant à la hauteur de la clé. Celle-ci se trouve donc sur la 4e ligne. Comme avec la clé de Sol, des notes de référence nous permettent de lire plus facilement la partition : le Sol se situe sur la 1ère ligne ainsi que le Do se situant juste au-dessus de la 2e ligne.
+         </p>
+         <img class="tp" src="../images/note-min.jpg" alt="Image TroisiemeParagraphe3"/>
+         <!-- Quatrième paragraphe -->
+         <h2 class="fourth">Les rythmes</h2>
+         <p class="fourth">Maintenant que nous savons lire les notes d'une partition, on va apprendre à lire les rythmes écrits sur la portée.
+            <br>Le rythme détermine la durée de la note. Nous allons d'abord nous intéresser aux rythmes longs :
+            <br>On observe qu'un point noir avec une queue non rattachée à une autre note signifie que la note durera un temps : c'est une noire.
+            <br>Une blanche, par contre, a les mêmes spécificités visuelles que la noire, cependant la note est blanche et non remplie. Une blanche dure deux temps.
+            <br>Le rythme le plus long est la ronde ; elle est écrite comme la blanche, cependant elle n'a pas de queue et elle doit être jouée sur quatre temps. 
+            <br>Maintenant, nous allons nous intéresser aux rythmes courts :
+            <br>La croche a les mêmes aspects visuels que la noire, cependant sa queue est rattachée à une autre queue ; elle dure 1/2 temps.
+            <br>Enfin, nous allons nous intéresser à la double croche : elle a les mêmes aspects visuels que la croche, mais elle est reliée à l'autre double-croche par une double-barre. Ce rythme dure 1/4 temps.
+            <br>
+            <br>Grâce à cette leçon, vous savez maintenant comment lire une partition dans son intégralité. Vous pouvez ainsi décrypter les notes et les rythmes d'une portée.
+         </p>
+         <img class="qp" src="../images/rythme.png" alt="Image QuatriemeParagraphe4"/>
+      </div>
+      <!-- Bouton pour accéder au prochain cours -->
+      <a href="tonalite.html" class="nextbutton">
+      Prochain Cours
+      <img src="../images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
+      </a>
+      <!-- Barre de séparation -->
+      <div class="separateur"></div>
+      <!-- Titre "Test" -->
+      <h1 class="test">À toi de jouer !!!</h1>
+      <!-- Test -->
+      <div class="test">
+         <h2>Maintenant, c'est à toi de déterminer les rythmes et les notes d'une partition !</h2>
+         <h3>Commençons par la lecture de note, ton but est d'identifier quelle est la partition que tu entends !</h3>
+         <img src="../images/imgtest-min.jpg" class="piano" alt="ImagePiano1" onclick="openImg()"> 
+         <input type="checkbox" id="part1" name="partition">
+         <label for="part1">
+         <img src="../images/partest1.png" alt="ImagePiano2" class="par1">
+         </label>
+         <input type="checkbox" id="part2" name="partition">
+         <label for="part2">
+         <img src="../images/partest2.png" alt="ImagePiano3" class="par2">
+         </label>
+         <input type="checkbox" id="part3" name="partition">
+         <label for="part3">
+         <img src="../images/partest3.png" alt="ImagePiano4" class="par3">
+         </label>
+         <button onclick="verifierReponses()">Vérifier</button>
+         <!-- Zone où sera affiché le résultat -->
+         <p id="resultat"></p>
+      </div>
+      <audio id="audioPlayer" style="display:none;"></audio>
+      <div class="test2">
+        <h3>Maintenant tu vas te tester sur la lecture rythmique</h3>
+         <img src="../images/imgbatterie.png" class="batterie" alt="Imgbatterie" onclick="openImg1()"> 
+         <input type="checkbox" id="ryt1" name="rythme">
+         <label for="ryt1">
+         <img src="../images/parythm1.png" alt="Img2" class="ryt1">
+         </label>
+         <input type="checkbox" id="ryt2" name="rythme">
+         <label for="ryt2">
+         <img src="../images/parythm2.png" alt="Img3" class="ryt2">
+         </label>
+         <input type="checkbox" id="ryt3" name="rythme">
+         <label for="ryt3">
+         <img src="../images/parythm3.png" alt="Img4" class="ryt3">
+         </label>
+         <button onclick="verifierReponses()">Vérifier</button>
+         <!-- Zone où sera affiché le résultat -->
+         <p id="resultat"></p>
+      </div>
+      <!-- Pied de Page (Footer) -->
+      <footer>
+         <a href="../index.html">
+         <img src="../images/logo-min.png" alt="Logo Learn-Solfege"/>
+         </a>
+         <p class="top"></p>
+         <h1>Description</h1>
+         <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique.
+            <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des
+            <br>quiz, des jeux et des exercices pour s’entraîner, ainsi que des utilitaires pour tous les musiciens.
+         </p>
+         <a href="https://alkhwarizmique.go.yo.fr" class="button">- Site cours NSI</a>
+         <p class="copyright">© Copyright 2023 Learn-Solfege</p>
+         <p class="bottom"></p>
+      </footer>
+      <!-- Lien vers le fichier JavaScript externe (script.js) -->
+      <script src="script/script-partition.js"></script>
+   </body>
 </html>
-
