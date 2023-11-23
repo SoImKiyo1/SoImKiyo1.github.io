@@ -12,14 +12,15 @@ TO-DO LIST :
 - Finalisation de la page histoire V
 - Finalisation de la page finaltest V
 - Finalisation de la page accords V
-- Finalisation de la page tonalite X
+- Finalisation de la page tonalite V
 - Finalisation de la page resultat V
-- Ajout d'un systeme pour recuperer des infos pour la page resultat (peutetre du php) V
+- Ajout d'un systeme pour recuperer des infos pour la page resultat (peutetre du python) V
 - Ajouts de tout les tests V
 - Ajouts des pop up en JavaScript V
 - Ajouts de toutes les images V
 - Resolution des bugs V
 - Optimisation du code V
+- Amelioration SEO V
 
 - Responsive
     - Tonalite X
@@ -29,141 +30,54 @@ TO-DO LIST :
     - resultats V
     - histoire V
     - finaltest V
-    - partition X
+    - partition V (sauf le test)
 
-- Amelioration SEO X
-
-- Documentation Wiki + Code
-    - CODE :
-        - HTML :
-            - Tonalite V
-            - Accords V
-            - Index V
-            - 404 V
-            - resultats V
-            - histoire V
-            - finaltest V
-            - partition V
-        - CSS :
-            - Tonalite X
-            - Accords X
-            - Index X
-            - 404 X
-            - resultats X
-            - histoire X 
-            - finaltest X
-            - partition X
-        - JS : 
-            - Tonalite X
-            - Accords X
-            - Index X
-            - resultats X
-            - histoire X
-            - finaltest X
-            - partition X 
-    - WIKI :
-        - HTML :
-            - Tonalite X
-            - Accords X
-            - Index V
-            - 404 X
-            - resultats X
-            - histoire X
-            - finaltest X
-            - partition X
-        - CSS :
-            - Tonalite X
-            - Accords X
-            - Index X
-            - 404 X
-            - resultats X
-            - histoire X 
-            - finaltest X
-            - partition X
-        - JS : 
-            - Tonalite
-            - Accords
-            - Index
-            - resultats
-            - histoire
-            - finaltest
-            - partition
+- Documentation Code
+    - HTML :
+        - Tonalite V
+        - Accords V
+        - Index V
+        - 404 V
+        - resultats V
+        - histoire V
+        - finaltest V
+         - partition V
+    - CSS :
+        - Tonalite X
+        - Accords X
+        - Index X
+        - 404 X
+        - resultats X
+        - histoire X 
+        - finaltest X
+        - partition V
+    - JS : 
+        - Tonalite X
+        - Accords X
+        - Index X
+        - resultats X
+        - histoire X
+        - finaltest X
+        - partition X 
+    - Python X
 
 - Correction fautes d'orthographes X
 - Creation de la Video V 
 - Compréhension du code (Par tout le monde) X
 
-- !!!!!!! CHANGER LE RESULTAT QCM POUR QUIL SOIT GERER PAR PYTHON !!!!!!
-
-finaltest.html : 
-
-<!DOCTYPE html>
-<html lang="fr">
-   <head>
-      <!-- ... (le reste de l'en-tête reste inchangé) ... -->
-   </head>
-   <body>
-      <!-- ... (le reste du corps reste inchangé) ... -->
-      <!-- Modification du formulaire -->
-      <form id="qcmForm" action="/resultat" method="post">
-         <!-- Les champs pour le nom et le prénom -->
-         <div class="form-row">
-            <!-- ... (les champs Nom et Prénom restent inchangés) ... -->
-         </div>
-         <!-- Questions -->
-         <!-- ... (les questions restent inchangées) ... -->
-         <input type="submit" value="Vérifier">
-      </form>
-      <!-- ... (le reste du corps reste inchangé) ... -->
-   </body>
-</html>
-
-2. Mise à jour de script-finaltest.js
-Puisque le serveur Flask va gérer la soumission et l'évaluation des réponses, le script JavaScript n'a pas besoin de la logique de vérification. Tu peux soit supprimer ce fichier, soit le laisser vide.
-
-
-Mise à jour du serveur Flask :
-
-from flask import Flask, render_template, request
-
-app = Flask(__name__)
-
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    return render_template("index.html")
-
-@app.route('/resultat', methods=['GET', 'POST'])
-def resultat():
-    if request.method == 'POST':
-        result = request.form
-        score = 0
-        reponses_correctes = {'question1': 'vrai', 'question2': 'faux', 'question3': 'vrai'}
-        for key, value in reponses_correctes.items():
-            if result.get(key) == value:
-                score += 1
-        data = {'nom': result.get('nom'), 'prenom': result.get('prenom'), 'score': score}
-        return render_template("resultats.html", data=data)
-    return render_template("index.html")
-
-if __name__ == "__main__":
-    app.run(debug=True)
-
-
-resultats.html :
-
-<!DOCTYPE html>
-<html lang="fr">
-   <head>
-      <!-- ... (le reste de l'en-tête reste inchangé) ... -->
-   </head>
-   <body>
-      <!-- ... (le reste du corps reste inchangé) ... -->
-      <!-- Zone d'affichage des résultats -->
-      <div id="resultats">
-         <h1>Résultats pour {{ data.prenom }} {{ data.nom }}</h1>
-         <p>Score: {{ data.score }} sur le total des questions</p>
-         <!-- Autres détails si nécessaire -->
-      </div>
-      <!-- ... (le reste du corps reste inchangé) ... -->
-   </body>
-</html>
+- ETAPES final :
+ 1. Verifier tout les boutons sur le site
+ 2. Verifier que tout les tests renvoie les bonnes réponses et prend correctement en compte les réponses et que les cases ne peuvent pas être cocher simultanément
+ 3. Verifier que sa ne lag pas/qu'il n'y a pas d'erreur dans la console
+ 4. Verifier que le Python marche correctement 
+ 5. Verifier qu'il ne manque pas d'elements visuel/sonore
+ 6. Verifier le responsive pour toutes les pages/tailles
+ 7. Verifier que tout les codes sont correctement documenté
+ 8. Verifier tout les codes pour eviter les doublons
+ 9. Verifier les fautes d'orthographes
+ 10. Passer tout les codes aux moulinettes (Formatter (Exemple : https://www.freeformatter.com/css-beautifier.html) et verif des bug sur https://validator.w3.org/)
+ 11. Verifier que le site repond à toutes les attentes
+ 12. Verifier que la répartition nommé dans le code est bien faite et que tout les codes sont bien répartie
+ 13. Verifier que toutes les redirections/liens fonctionnent
+ 14. Relire et comprendre le code pour que si on nous interroge tout le monde sache decrire ce qui a etait fait
+ 15. Tester la compatibilité du site sur différents navigateurs
