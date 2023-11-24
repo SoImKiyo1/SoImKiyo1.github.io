@@ -248,8 +248,8 @@ h1.test {
 	width: 100%;
 	margin-top: 100px;
 	margin-left: 100px;
-	width: 600px;
-	height: 100px;
+	width: 300px;
+	height: 1000px;
 	text-align: left;
 }
 
@@ -257,17 +257,47 @@ h1.test {
 	width: 100%;
 	margin-top: 100px;
 	margin-left: 1200px;
-	width: 600px;
-	height: 150px;
+	width: 200px;
+	height: 600px;
 	text-align: left;
 }
+
+.answer2 {
+	width: 100%;
+	margin-top: 100px;
+	margin-left: 1200px;
+	width: 200px;
+	height: 600px;
+	text-align: left;
+}
+
+/* Boutton pour vérifier */
+.test button {
+	background-color: #ffe033;
+	color: white;
+	padding: 145px 155px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 60px;
+	transition: transform 0.5s;
+	margin-top: 150px;
+	margin-left: 1700px;
+}
+
+
+/* le Boutton pour accéder au cours suivant quand on passe dessus */
+.test button:hover {
+	transform: scale(1.1);
+}
+
 
 .Partition2 {
 	width: 100%;
 	margin-top: 100px;
 	margin-left: 100px;
-	width: 600px;
-	height: 100px;
+	width: 300px;
+	height: 1000px;
 	text-align: left;
 }
 
