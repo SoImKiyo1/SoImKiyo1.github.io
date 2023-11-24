@@ -247,11 +247,30 @@ h1.test {
 .Partition1 {
 	width: 100%;
 	margin-top: 100px;
-	margin-right: 100px;
-	width: 100px;
-	height: 600px;
-	text-align: right;
+	margin-left: 100px;
+	width: 600px;
+	height: 100px;
+	text-align: left;
 }
+
+.answer1 {
+	width: 100%;
+	margin-top: 100px;
+	margin-left: 1200px;
+	width: 600px;
+	height: 150px;
+	text-align: left;
+}
+
+.Partition2 {
+	width: 100%;
+	margin-top: 100px;
+	margin-left: 100px;
+	width: 600px;
+	height: 100px;
+	text-align: left;
+}
+
 
 #result {
 	margin-top: 20px;
