@@ -84,7 +84,7 @@ body {
 /******* FIN DU HEADER *******/
 
 
-/* Style du conteneur de résultats */
+/* Style du conteneur du résultat */
 #resultats {
 	max-width: 1000px;
 	margin: 200px auto;
@@ -97,11 +97,11 @@ body {
 /* Style des titres */
 #resultats h1 {
 	color: #fada05;
-	/* Couleur jaune dominante */
 	margin-bottom: 20px;
 	font-size: 60px;
 }
 
+/* Titre de la section correction */
 #resultats h2 {
 	color: #333;
 	margin-top: 20px;
@@ -109,51 +109,43 @@ body {
 	font-size: 45px;
 }
 
-/* Style des paragraphes et des réponses */
+/* Style des questions et des réponses */
 #resultats p {
 	margin-bottom: 10px;
 	background-color: #fff;
 	border-left: 4px solid #fada05;
-	/* Ligne jaune à gauche pour les corrections */
 	padding: 10px;
 	font-size: 30px;
 }
 
 /* Style pour le score */
 #resultats p:first-of-type {
-	font-size: 1.2em;
 	font-weight: bold;
 	font-size: 30px;
 }
 
+/* Style pour le conteneur (div) des credits */
 #credits {
 	max-width: 800px;
 	margin: 0 auto 30px auto;
-	/* Centre la div et ajoute une marge en bas */
 	padding: 15px;
 	background-color: #f9f9f9;
-	/* Couleur de fond légère */
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	/* Ombre douce pour la profondeur */
 	text-align: center;
-	/* Centrer le texte */
 }
 
+/* Style pour le titre de la section credits */
 #credits h3 {
 	color: #333;
-	/* Couleur du texte pour le titre */
 	margin-bottom: 10px;
-	/* Espace entre le titre et les noms */
 }
 
+/* Style pour le texte de la section credits */
 #credits p {
 	color: #666;
-	/* Couleur du texte pour les noms */
 	margin-bottom: 5px;
-	/* Espace entre les noms */
 	font-style: italic;
-	/* Style des noms */
 }
 
 
@@ -232,11 +224,11 @@ footer .bottom {
 
 
 /******* RESPONSIVE *******/
+/* Tout est pareile mais avec des tailles/valeurs différentes */
 
 /* Taille d'écran "normal" (max 1920 pixels en largeur) */
 @media screen and (max-width: 1920px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -277,8 +269,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -319,10 +309,9 @@ footer .bottom {
 	}
 }
 
-/* Taille d'écran (1600x900 pixels) */
+/* Taille d'écran "Moyen ecran" (max 1600 pixels en largeur) */
 @media screen and (max-width: 1600px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -363,8 +352,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -406,10 +393,9 @@ footer .bottom {
 }
 
 
-/* Taille d'écran (1366x768) */
+/* Taille d'écran "Petit ecran" (max 1366 pixels en largeur) */
 @media screen and (max-width: 1366px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -450,8 +436,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -496,7 +480,6 @@ footer .bottom {
 /* Taille d'écran "pc portable" (max 1200 pixels en largeur) */
 @media screen and (max-width: 1200px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -537,7 +520,6 @@ footer .bottom {
 		margin-right: 30px;
 	}
 
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -606,7 +588,6 @@ footer .bottom {
 /* Taille d'écran "téléphone" (max 720 pixels en largeur) */
 @media screen and (max-width: 720px) {
 
-	/* En-Tête */
 	.header a {
 		float: none;
 		display: block;
@@ -617,8 +598,6 @@ footer .bottom {
 		float: none;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 150px;
 		height: 150px;

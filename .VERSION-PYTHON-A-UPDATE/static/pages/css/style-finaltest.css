@@ -76,7 +76,7 @@ body {
 
 /******* FIN DU HEADER *******/
 
-
+/* Titre (principal) de la page */
 h1.finaltest {
 	font-size: 80px;
 	color: #ffe033;
@@ -96,21 +96,21 @@ form#qcmForm {
 	text-align: center;
 }
 
-/* Container pour les champs Nom et Prénom */
+/* Container pour les entrées pour le Nom et Prénom */
 .form-row {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 20px;
 }
 
-/* Style pour chaque champ de texte */
+/* Style pour chaque entrées de texte (Nom et prénom) */
 .form-field {
 	display: flex;
 	flex-direction: column;
 	width: 48%;
-	/* Permet de mettre les deux champs sur une même ligne */
 }
 
+/* Texte (Nom/Prénom) des entrées de texte */
 .form-field label {
 	font-size: 16px;
 	color: #333;
@@ -118,6 +118,7 @@ form#qcmForm {
 	text-align: left;
 }
 
+/* Style pour les entrées de texte */
 .form-field input[type="text"] {
 	padding: 10px;
 	border-radius: 5px;
@@ -125,23 +126,26 @@ form#qcmForm {
 	font-size: 14px;
 }
 
-/* Style des questions et des checkbox */
+/* Style du conteneur (div) des questions et checkbox */
 .question {
 	margin-bottom: 20px;
 }
 
+/* Texte des questions */
 .question p {
 	font-size: 18px;
 	color: #333;
 	margin-bottom: 10px;
 }
 
+/* Texte pour chaque réponses possible */
 .question label {
 	margin-right: 10px;
 	font-size: 16px;
 	color: #333;
 }
 
+/* Style des checkbox */
 .question input[type="checkbox"] {
 	margin-right: 5px;
 }
@@ -150,7 +154,6 @@ form#qcmForm {
 input[type="submit"] {
 	padding: 10px 20px;
 	background-color: #fada05;
-	/* Couleur jaune du thème */
 	color: #333;
 	border: none;
 	border-radius: 5px;
@@ -160,9 +163,9 @@ input[type="submit"] {
 	transition: background-color 0.3s ease;
 }
 
+/* Bouton de vérification quand on passe au dessus */
 input[type="submit"]:hover {
 	background-color: #e1c204;
-	/* Une teinte de jaune plus foncée pour le survol */
 }
 
 
@@ -241,11 +244,11 @@ footer .bottom {
 
 
 /******* RESPONSIVE *******/
+/* Tout est pareile mais avec des tailles/valeurs différentes */
 
 /* Taille d'écran "normal" (max 1920 pixels en largeur) */
 @media screen and (max-width: 1920px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -286,8 +289,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -328,10 +329,9 @@ footer .bottom {
 	}
 }
 
-/* Taille d'écran (1600x900 pixels) */
+/* Taille d'écran "Moyen ecran" (max 1600 pixels en largeur) */
 @media screen and (max-width: 1600px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -372,8 +372,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -415,10 +413,9 @@ footer .bottom {
 }
 
 
-/* Taille d'écran (1366x768) */
+/* Taille d'écran "Petit ecran" (max 1366 pixels en largeur) */
 @media screen and (max-width: 1366px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -459,8 +456,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -505,7 +500,6 @@ footer .bottom {
 /* Taille d'écran "pc portable" (max 1200 pixels en largeur) */
 @media screen and (max-width: 1200px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -546,7 +540,6 @@ footer .bottom {
 		margin-right: 30px;
 	}
 
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -615,7 +608,6 @@ footer .bottom {
 /* Taille d'écran "téléphone" (max 720 pixels en largeur) */
 @media screen and (max-width: 720px) {
 
-	/* En-Tête */
 	.header a {
 		float: none;
 		display: block;
@@ -627,7 +619,6 @@ footer .bottom {
 	}
 
 
-	/* FOOTER */
 	footer img {
 		width: 150px;
 		height: 150px;

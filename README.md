@@ -26,7 +26,6 @@ TO-DO LIST :
     - Tonalite X
     - Accords X
     - Index V
-    - 404 V
     - resultats V
     - histoire V
     - finaltest V
@@ -37,19 +36,17 @@ TO-DO LIST :
         - Tonalite V
         - Accords V
         - Index V
-        - 404 V
         - resultats V
         - histoire V
         - finaltest V
          - partition V
     - CSS :
-        - Tonalite X
-        - Accords X
-        - Index X
-        - 404 X
-        - resultats X
-        - histoire X 
-        - finaltest X
+        - Tonalite V
+        - Accords V
+        - Index V
+        - resultats V
+        - histoire V
+        - finaltest V
         - partition V
     - JS : 
         - Tonalite X
@@ -64,6 +61,7 @@ TO-DO LIST :
 - Correction fautes d'orthographes V
 - Creation de la Video V 
 - Compréhension du code (Par tout le monde) X
+- Faire un JavaScript/HTML TEST raccord X
 
 - ETAPES final :
  1. Verifier tout les boutons sur le site

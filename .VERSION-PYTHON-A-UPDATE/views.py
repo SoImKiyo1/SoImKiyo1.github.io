@@ -7,10 +7,6 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/templates/404.html')
-def error404():
-    return render_template("404.html")
-
 @app.route('/pages/accords.html')
 def accords():
     return render_template("/pages/accords.html")

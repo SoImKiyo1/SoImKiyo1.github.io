@@ -203,6 +203,7 @@ header {
 /*** FIN DE LA CARD 1 ***/
 
 /*** CARD 2 ***/
+/* Même procédé que pour la première carte*/
 .SecondPart .card2 {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: transform 0.5s;
@@ -253,6 +254,7 @@ header {
 /*** FIN DE LA CARD 2 ***/
 
 /*** CARD 3 ***/
+/* Même procédé que pour la première carte*/
 .SecondPart .card3 {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: transform 0.5s;
@@ -303,6 +305,7 @@ header {
 /*** FIN DE LA CARD 3 ***/
 
 /*** CARD 4 ***/
+/* Même procédé que pour la première carte*/
 .SecondPart .card4 {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: transform 0.5s;
@@ -429,11 +432,11 @@ footer .bottom {
 
 
 /******* RESPONSIVE *******/
+/* Tout est pareile mais avec des tailles/valeurs différentes */
 
 /* Taille d'écran "normal" (max 1920 pixels en largeur) */
 @media screen and (max-width: 1920px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -474,7 +477,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-	/* FIRST PART */
 	.FirstPart iframe {
 		width: 80%;
 		height: 720px;
@@ -486,7 +488,6 @@ footer .bottom {
 		border: 1px solid black;
 	}
 
-	/* SECOND PART */
 	.SecondPart .card1,
 	.SecondPart .card2,
 	.SecondPart .card3,
@@ -519,8 +520,6 @@ footer .bottom {
 		margin-top: 110px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -562,10 +561,9 @@ footer .bottom {
 }
 
 
-/* Taille d'écran (1600x900) */
+/* Taille d'écran "Moyen ecran" (max 1600 pixels en largeur) */
 @media screen and (max-width: 1600px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -606,7 +604,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-	/* FIRST PART */
 	.FirstPart iframe {
 		width: 80%;
 		height: 720px;
@@ -618,7 +615,6 @@ footer .bottom {
 		border: 1px solid black;
 	}
 
-	/* SECOND PART */
 	.SecondPart .card1,
 	.SecondPart .card2,
 	.SecondPart .card3,
@@ -652,8 +648,6 @@ footer .bottom {
 		margin-top: 100px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -694,10 +688,9 @@ footer .bottom {
 	}
 }
 
-/* Taille d'écran (1366x768) */
+/* Taille d'écran "Petit ecran" (max 1366 pixels en largeur) */
 @media screen and (max-width: 1366px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -738,7 +731,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-	/* FIRST PART */
 	.FirstPart iframe {
 		width: 80%;
 		height: 720px;
@@ -750,7 +742,6 @@ footer .bottom {
 		border: 1px solid black;
 	}
 
-	/* SECOND PART */
 	.SecondPart .card1,
 	.SecondPart .card2,
 	.SecondPart .card3,
@@ -784,8 +775,6 @@ footer .bottom {
 		margin-top: 80px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -829,7 +818,6 @@ footer .bottom {
 /* Taille d'écran "pc portable" (max 1200 pixels en largeur) */
 @media screen and (max-width: 1200px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -870,7 +858,6 @@ footer .bottom {
 		margin-right: 30px;
 	}
 
-	/* FIRST PART */
 	.FirstPart iframe {
 		width: 80%;
 		height: 600px;
@@ -882,7 +869,6 @@ footer .bottom {
 		border: 1px solid black;
 	}
 
-	/* SECOND PART */
 	.SecondPart .card1,
 	.SecondPart .card2,
 	.SecondPart .card3,
@@ -943,7 +929,6 @@ footer .bottom {
 		margin-top: 120px;
 	}
 
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -987,7 +972,6 @@ footer .bottom {
 /* Taille d'écran "tablette en mode paysage" (max 1024 pixels en largeur) */
 @media screen and (max-width: 1024px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -1028,7 +1012,6 @@ footer .bottom {
 		margin-right: 30px;
 	}
 
-	/* FIRST PART */
 	.FirstPart iframe {
 		width: 80%;
 		height: 600px;
@@ -1040,7 +1023,6 @@ footer .bottom {
 		border: 1px solid black;
 	}
 
-	/* SECOND PART */
 	.SecondPart .card1,
 	.SecondPart .card2,
 	.SecondPart .card3,
@@ -1101,7 +1083,6 @@ footer .bottom {
 		margin-top: 120px;
 	}
 
-	/* FOOTER */
 	footer .button {
 		font-size: 20px;
 		margin-top: 20px;
@@ -1127,7 +1108,6 @@ footer .bottom {
 /* Taille d'écran "téléphone" (max 720 pixels en largeur) */
 @media screen and (max-width: 720px) {
 
-	/* En-Tête */
 	.header a {
 		float: none;
 		display: block;
@@ -1138,7 +1118,6 @@ footer .bottom {
 		float: none;
 	}
 
-	/* FIRST PART */
 	.FirstPart iframe {
 		width: 90%;
 		height: 400px;
@@ -1147,7 +1126,6 @@ footer .bottom {
 		margin-top: 50px;
 	}
 
-	/* SECOND PART */
 	.SecondPart .card1,
 	.SecondPart .card2,
 	.SecondPart .card3,
@@ -1224,7 +1202,6 @@ footer .bottom {
 		margin-top: 80px;
 	}
 
-	/* FOOTER */
 	footer img {
 		width: 150px;
 		height: 150px;

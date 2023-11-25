@@ -1,4 +1,3 @@
-<!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/partition.html -->
 <!DOCTYPE html>
 <html lang="fr">
    <head>
@@ -74,6 +73,7 @@
       <h1 class="test">À toi de jouer !!!</h1>
       <!-- Test -->
       <div class="test">
+         <!-- Explication du Test basé sur les notes -->
          <h2>Maintenant, c'est à toi de déterminer les rythmes et les notes d'une partition !</h2>
          <h3>Commençons par la lecture de note, ton but est d'identifier quelle est la partition que tu entends !</h3>
          <img src="/static/images/imgtest-min.jpg" class="piano" alt="ImagePiano1" onclick="openImg()"> 
@@ -92,6 +92,7 @@
          <button onclick="verifierReponses()">Vérifier</button>
          <!-- Zone où sera affiché le résultat -->
          <p id="resultat"></p>
+          <!-- Explication du second "Test" basé sur les rythmes -->
          <h3 class="tbatterie">Maintenant tu vas te tester sur la lecture rythmique</h3>
          <img src="/static/images/imgbatterie.png" class="batterie" alt="Imgbatterie" onclick="openImg1()"> 
          <input type="checkbox" id="ryt1" name="rythme">
@@ -107,7 +108,7 @@
          <img src="/static/images/testbatterie3.png" alt="Img3" class="ryt3">
          </label>
          <button onclick="verifierReponses2()">Vérifier</button>
-         <!-- Zone où sera affiché le résultat -->
+         <!-- Zone où sera affiché le résultat du second "test" -->
          <p id="resultat1"></p>
       </div>
       <audio id="audioPlayer" style="display:none;"></audio>

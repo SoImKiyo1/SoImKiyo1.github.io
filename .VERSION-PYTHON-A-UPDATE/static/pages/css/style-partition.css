@@ -93,14 +93,16 @@ body {
 }
 
 /* Titre texte 1 et 3 */
-.partition h2.first, h2.third {
+.partition h2.first,
+h2.third {
 	margin-top: 50px;
 	margin-left: 100px;
 	font-size: 40px;
 }
 
 /* Paragraphes 1 et 3 */
-.partition p.first, p.third {
+.partition p.first,
+p.third {
 	margin-top: 30px;
 	margin-left: 100px;
 	font-size: 25px;
@@ -252,8 +254,16 @@ h1.test {
 	text-align: right;
 }
 
+/* Image de Piano du Test quand on passe dessus */
+.piano:hover {
+	opacity: 0.3;
+}
+
+
 /* Trois Images de Partition du Test */
-.par1, .par2, .par3 {
+.par1,
+.par2,
+.par3 {
 	margin-top: -200px;
 	font-size: 25px;
 	margin-left: 100px;
@@ -269,7 +279,6 @@ h1.test {
 	width: 30px;
 	height: 30px;
 }
-
 
 /* Styles pour le bouton de vérification dans la section du test */
 .test button {
@@ -289,11 +298,7 @@ h1.test {
 	transform: scale(1.1);
 }
 
-.piano:hover {
-	opacity: 0.3;
-}
-
-/* piano */
+/* Image de Batterie du Test */
 .batterie {
 	margin-top: -100px;
 	font-size: 25px;
@@ -303,12 +308,15 @@ h1.test {
 	text-align: right;
 }
 
+/* Image de Batterie du Test Quand on passe dessus */
 .batterie:hover {
 	opacity: 0.3;
 }
 
-/* 1 part*/
-.ryt1, .ryt2, .ryt3 {
+/* Trois Images de Partition du Test (Rythmes) */
+.ryt1,
+.ryt2,
+.ryt3 {
 	margin-top: -200px;
 	font-size: 25px;
 	margin-left: 100px;
@@ -317,7 +325,7 @@ h1.test {
 	text-align: right;
 }
 
-/* Texte du Test */
+/* Texte du Test mais pour la partie rythme */
 .test h3.tbatterie {
 	margin-top: 200px;
 }
@@ -330,13 +338,13 @@ h1.test {
 	margin-left: 100px;
 }
 
+/* Styles pour le texte de resultat (javascript) dans la section du test pour le "deuxième" test (rythme) */
 #resultat1 {
 	margin-top: 10px;
 	font-weight: bold;
 	font-size: 30px;
 	margin-left: 100px;
 }
-
 
 
 /******* FOOTER *******/
@@ -551,51 +559,55 @@ footer .bottom {
 		text-align: right;
 	}
 
-.par1, .par2, .par3 {
-	margin-top: -200px;
-	font-size: 25px;
-	margin-left: 50px;
-	width: 336px;
-	height: 108px;
-	text-align: right;
-}
+	.par1,
+	.par2,
+	.par3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 336px;
+		height: 108px;
+		text-align: right;
+	}
 
-.test input[type="checkbox"] {
-	margin-top: 250px;
-	margin-left: 140px;
-	width: 30px;
-	height: 30px;
-}
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 140px;
+		width: 30px;
+		height: 30px;
+	}
 
-.test button {
-	margin-left: 850px;
-	margin-top: 200px;
-	font-size: 30px;
-	width: 200px;
-	height: 100px;
-	background-color: #ffe033;
-	border: 0px solid #000;
-	border-radius: 15px;
-	transition: transform 0.2s;
-}
+	.test button {
+		margin-left: 850px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
 
-.batterie {
-	margin-top: -100px;
-	font-size: 25px;
-	margin-left: 1100px;
-	width: 722px;
-	height: 640px;
-	text-align: right;
-}
+	.batterie {
+		margin-top: -100px;
+		font-size: 25px;
+		margin-left: 1100px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
 
-.ryt1, .ryt2, .ryt3 {
-	margin-top: -200px;
-	font-size: 25px;
-	margin-left: 50px;
-	width: 336px;
-	height: 70px;
-	text-align: right;
-}
+	.ryt1,
+	.ryt2,
+	.ryt3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 336px;
+		height: 70px;
+		text-align: right;
+	}
 
 	footer img {
 		width: 200px;
@@ -766,13 +778,13 @@ footer .bottom {
 		max-width: 700px;
 	}
 
-.test h3 {
-	margin-top: 20px;
-	margin-bottom: 100px;
-	margin-left: 100px;
-	font-size: 35px;
-	max-width: 650px;
-}
+	.test h3 {
+		margin-top: 20px;
+		margin-bottom: 100px;
+		margin-left: 100px;
+		font-size: 35px;
+		max-width: 650px;
+	}
 
 	.piano {
 		margin-top: -450px;
@@ -783,51 +795,55 @@ footer .bottom {
 		text-align: right;
 	}
 
-.par1, .par2, .par3 {
-	margin-top: -200px;
-	font-size: 25px;
-	margin-left: 50px;
-	width: 306px;
-	height: 98px;
-	text-align: right;
-}
+	.par1,
+	.par2,
+	.par3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 306px;
+		height: 98px;
+		text-align: right;
+	}
 
-.test input[type="checkbox"] {
-	margin-top: 250px;
-	margin-left: 100px;
-	width: 30px;
-	height: 30px;
-}
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 100px;
+		width: 30px;
+		height: 30px;
+	}
 
-.test button {
-	margin-left: 740px;
-	margin-top: 200px;
-	font-size: 30px;
-	width: 200px;
-	height: 100px;
-	background-color: #ffe033;
-	border: 0px solid #000;
-	border-radius: 15px;
-	transition: transform 0.2s;
-}
+	.test button {
+		margin-left: 740px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
 
-.batterie {
-	margin-top: -100px;
-	font-size: 25px;
-	margin-left: 850px;
-	width: 722px;
-	height: 640px;
-	text-align: right;
-}
+	.batterie {
+		margin-top: -100px;
+		font-size: 25px;
+		margin-left: 850px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
 
-.ryt1, .ryt2, .ryt3 {
-	margin-top: -200px;
-	font-size: 25px;
-	margin-left: 50px;
-	width: 290px;
-	height: 70px;
-	text-align: right;
-}
+	.ryt1,
+	.ryt2,
+	.ryt3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 290px;
+		height: 70px;
+		text-align: right;
+	}
 
 	footer img {
 		width: 200px;
@@ -998,70 +1014,74 @@ footer .bottom {
 		max-width: 1000px;
 	}
 
-.test h3 {
-	margin-top: 20px;
-	margin-bottom: 100px;
-	margin-left: 100px;
-	font-size: 35px;
-	max-width: 950px;
-}
+	.test h3 {
+		margin-top: 20px;
+		margin-bottom: 100px;
+		margin-left: 100px;
+		font-size: 35px;
+		max-width: 950px;
+	}
 
 	.piano {
 		margin-top: 50px;
 		font-size: 25px;
 		margin-left: 260px;
-		padding-right:300px;
+		padding-right: 300px;
 		width: 722px;
 		height: 640px;
 		text-align: right;
 	}
 
-.par1, .par2, .par3 {
-	margin-top: -200px;
-	font-size: 25px;
-	margin-left: 50px;
-	width: 290px;
-	height: 98px;
-	text-align: right;
-}
+	.par1,
+	.par2,
+	.par3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 290px;
+		height: 98px;
+		text-align: right;
+	}
 
-.test input[type="checkbox"] {
-	margin-top: 250px;
-	margin-left: 50px;
-	width: 30px;
-	height: 30px;
-}
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 50px;
+		width: 30px;
+		height: 30px;
+	}
 
-.test button {
-	margin-left: 600px;
-	margin-top: 200px;
-	font-size: 30px;
-	width: 200px;
-	height: 100px;
-	background-color: #ffe033;
-	border: 0px solid #000;
-	border-radius: 15px;
-	transition: transform 0.2s;
-}
+	.test button {
+		margin-left: 600px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
 
-.batterie {
-	margin-top: 50px;
-	font-size: 25px;
-	margin-left: 400px;
-	padding-right:300px;
-	width: 722px;
-	height: 640px;
-	text-align: right;
-}
+	.batterie {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 400px;
+		padding-right: 300px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
 
-.ryt1, .ryt2, .ryt3 {
-	margin-top: -200px;
-	font-size: 25px;
-	margin-left: 50px;
-	width: 290px;
-	height: 70px;
-	text-align: right;
-}
+	.ryt1,
+	.ryt2,
+	.ryt3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 290px;
+		height: 70px;
+		text-align: right;
+	}
 
 	footer img {
 		width: 200px;
@@ -1227,42 +1247,46 @@ footer .bottom {
 	}
 
 
-.par1, .par2, .par3 {
-	margin-top: -200px;
-	font-size: 25px;
-	margin-left: 25px;
-	width: 260px;
-	height: 90px;
-	text-align: right;
-}
+	.par1,
+	.par2,
+	.par3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 25px;
+		width: 260px;
+		height: 90px;
+		text-align: right;
+	}
 
-.test input[type="checkbox"] {
-	margin-top: 250px;
-	margin-left: 50px;
-	width: 30px;
-	height: 30px;
-}
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 50px;
+		width: 30px;
+		height: 30px;
+	}
 
-.test button {
-	margin-left: 550px;
-	margin-top: 200px;
-	font-size: 30px;
-	width: 200px;
-	height: 100px;
-	background-color: #ffe033;
-	border: 0px solid #000;
-	border-radius: 15px;
-	transition: transform 0.2s;
-}
+	.test button {
+		margin-left: 550px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
 
-.ryt1, .ryt2, .ryt3 {
-	margin-top: -200px;
-	font-size: 25px;
-	margin-left: 25px;
-	width: 260px;
-	height: 70px;
-	text-align: right;
-}
+	.ryt1,
+	.ryt2,
+	.ryt3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 25px;
+		width: 260px;
+		height: 70px;
+		text-align: right;
+	}
 
 	footer img {
 		width: 200px;
@@ -1359,7 +1383,7 @@ footer .bottom {
 		border-top: 8px solid #ffe033;
 	}
 
-	
+
 	.test h2 {
 		margin-top: 50px;
 		margin-bottom: 100px;
@@ -1368,13 +1392,13 @@ footer .bottom {
 		max-width: 950px;
 	}
 
-.test h3 {
-	margin-top: 20px;
-	margin-bottom: 100px;
-	margin-left: 100px;
-	font-size: 35px;
-	max-width: 900px;
-}
+	.test h3 {
+		margin-top: 20px;
+		margin-bottom: 100px;
+		margin-left: 100px;
+		font-size: 35px;
+		max-width: 900px;
+	}
 
 	.piano {
 		margin-top: 50px;
@@ -1385,43 +1409,45 @@ footer .bottom {
 		text-align: right;
 	}
 
-.par1, .par2, .par3 {
-	margin-top: -200px;
-	font-size: 25px;
-	margin-left: 25px;
-	width: 290px;
-	height: 98px;
-	text-align: right;
-}
+	.par1,
+	.par2,
+	.par3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 25px;
+		width: 290px;
+		height: 98px;
+		text-align: right;
+	}
 
-.test input[type="checkbox"] {
-	margin-top: 250px;
-	margin-left: 380px;
-	width: 30px;
-	height: 30px;
-}
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 380px;
+		width: 30px;
+		height: 30px;
+	}
 
-.test button {
-	margin-left: 450px;
-	margin-top: 200px;
-	font-size: 30px;
-	width: 200px;
-	height: 100px;
-	background-color: #ffe033;
-	border: 0px solid #000;
-	border-radius: 15px;
-	transition: transform 0.2s;
-}
+	.test button {
+		margin-left: 450px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
 
-.batterie {
-	margin-top: 50px;
-	font-size: 25px;
-	margin-left: 200px;
-	padding-right:300px;
-	width: 722px;
-	height: 640px;
-	text-align: right;
-}
+	.batterie {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 200px;
+		padding-right: 300px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
 }
 
 
@@ -1471,13 +1497,13 @@ footer .bottom {
 		border-top: 8px solid #ffe033;
 	}
 
-h1.test {
-	margin-top: 650px;
-	margin-bottom: 100px;
-	margin-left: 200px;
-	font-size: 80px;
-	color: #ffe033;
-}
+	h1.test {
+		margin-top: 650px;
+		margin-bottom: 100px;
+		margin-left: 200px;
+		font-size: 80px;
+		color: #ffe033;
+	}
 
 	.test h2 {
 		margin-top: 50px;
@@ -1487,13 +1513,14 @@ h1.test {
 		max-width: 950px;
 	}
 
-.test h3 {
-	margin-top: 20px;
-	margin-bottom: 100px;
-	margin-left: 50px;
-	font-size: 35px;
-	max-width: 900px;
-}
+	.test h3 {
+		margin-top: 20px;
+		margin-bottom: 100px;
+		margin-left: 50px;
+		font-size: 35px;
+		max-width: 900px;
+	}
+
 	.piano {
 		margin-top: 50px;
 		font-size: 25px;
@@ -1503,33 +1530,33 @@ h1.test {
 		text-align: right;
 	}
 
-.test input[type="checkbox"] {
-	margin-top: 250px;
-	margin-left: 300px;
-	width: 30px;
-	height: 30px;
-}
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 300px;
+		width: 30px;
+		height: 30px;
+	}
 
-.test button {
-	margin-left: 380px;
-	margin-top: 200px;
-	font-size: 30px;
-	width: 200px;
-	height: 100px;
-	background-color: #ffe033;
-	border: 0px solid #000;
-	border-radius: 15px;
-	transition: transform 0.2s;
-}
+	.test button {
+		margin-left: 380px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
 
-.batterie {
-	margin-top: 50px;
-	font-size: 25px;
-	margin-left: 150px;
-	width: 722px;
-	height: 640px;
-	text-align: right;
-}
+	.batterie {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 150px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
 }
 
 
@@ -1590,22 +1617,23 @@ h1.test {
 		font-size: 80px;
 		color: #ffe033;
 	}
-		.piano {
-			margin-top: 50px;
-			font-size: 25px;
-			margin-left: 20px;
-			width: 662px;
-			height: 580px;
-			text-align: right;
-		}
-	
+
+	.piano {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 20px;
+		width: 662px;
+		height: 580px;
+		text-align: right;
+	}
+
 	.test input[type="checkbox"] {
 		margin-top: 250px;
 		margin-left: 200px;
 		width: 30px;
 		height: 30px;
 	}
-	
+
 	.test button {
 		margin-left: 280px;
 		margin-top: 200px;
@@ -1617,7 +1645,7 @@ h1.test {
 		border-radius: 15px;
 		transition: transform 0.2s;
 	}
-	
+
 	.batterie {
 		margin-top: 50px;
 		font-size: 25px;

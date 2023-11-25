@@ -99,7 +99,7 @@ body {
 	font-size: 40px;
 }
 
-/* Paragraphes 1 */
+/* Paragraphe 1 */
 .tonalite p.first {
 	margin-top: 30px;
 	margin-left: 100px;
@@ -116,8 +116,7 @@ body {
 	font-size: 40px;
 }
 
-
-/*paragraphes 2 */
+/* Paragraphe 2 */
 .tonalite p.second {
 	margin-top: 30px;
 	margin-right: 100px;
@@ -126,7 +125,7 @@ body {
 	text-align: justify;
 }
 
-/* titre sous-aragraphes 1 */
+/* Titre sous-paragraphe 1 */
 .tonalite h3.first {
 	margin-top: 30px;
 	margin-right: 100px;
@@ -134,7 +133,7 @@ body {
 	font-size: 25px;
 }
 
-/* sous-aragraphes 1 */
+/* Sous-paragraphe 1 */
 .tonalite p.third {
 	margin-top: 30px;
 	margin-right: 100px;
@@ -143,14 +142,14 @@ body {
 	text-align: justify;
 }
 
-/* titre sous-aragraphes 2 */
+/* Titre sous-paragraphe 2 */
 .tonalite h3.second {
 	margin-top: 200px;
 	margin-left: 100px;
 	font-size: 25px;
 }
 
-/* sous-aragraphes 2 */
+/* Sous-paragraphe 2 */
 .tonalite p.fourth {
 	margin-top: 20px;
 	margin-left: 100px;
@@ -159,17 +158,7 @@ body {
 	max-width: 800px;
 }
 
-/* image dièse2 */
-.imgdiese {
-	margin-top: -600px;
-	font-size: 25px;
-	margin-left: 100px;
-	width: 700px;
-	height: 700px;
-	text-align: left;
-}
-
-/* image dièse1 */
+/* Image paragraphe 1 */
 .imgdiese1 {
 	margin-top: -900px;
 	font-size: 25px;
@@ -179,7 +168,17 @@ body {
 	text-align: right;
 }
 
-/* image bémol */
+/* Image paragraphe 2  */
+.imgdiese {
+	margin-top: -600px;
+	font-size: 25px;
+	margin-left: 100px;
+	width: 700px;
+	height: 700px;
+	text-align: left;
+}
+
+/* Image sous-paragraphe 2 */
 .imgbemol {
 	margin-top: -900px;
 	font-size: 25px;
@@ -234,10 +233,12 @@ h1.test {
 	color: #ffe033;
 }
 
+/* Conteneur (div) du Test avec les partitions */
 .partition {
 	margin-bottom: 20px;
 }
 
+/* Titre (questions) du test */
 .partition h3 {
 	margin-top: 150px;
 	margin-left: 100px;
@@ -245,6 +246,7 @@ h1.test {
 	text-align: justify;
 }
 
+/* Première Image de partition dans le test */
 .Partition1 {
 	width: 100%;
 	margin-top: 100px;
@@ -254,6 +256,7 @@ h1.test {
 	text-align: left;
 }
 
+/* Entrée pour que l'utilisateur mette une réponse */
 .partition input {
 	margin-top: 30px;
 	margin-left: 1100px;
@@ -262,13 +265,12 @@ h1.test {
 	height: 60px;
 }
 
-
 /* Styles pour le bouton dans la section du test */
 .partition button {
-	margin-left: 1800px;
+	margin-left: 1200px;
 	margin-top: 200px;
 	font-size: 30px;
-	width: 400px;
+	width: 200px;
 	height: 100px;
 	background-color: #ffe033;
 	border: 0px solid #000;
@@ -281,7 +283,7 @@ h1.test {
 	transform: scale(1.1);
 }
 
-
+/* Seconde Image de partition dans le test */
 .Partition2 {
 	width: 100%;
 	margin-top: 100px;
@@ -291,12 +293,12 @@ h1.test {
 	text-align: left;
 }
 
-
-#result {
-	margin-top: 20px;
-	margin-left: 100px;
-	font-size: 50px;
+/* Styles pour le texte de resultat (javascript) dans la section du test */
+#resultat {
+	margin-top: 10px;
 	font-weight: bold;
+	font-size: 30px;
+	margin-left: 100px;
 }
 
 
@@ -375,11 +377,11 @@ footer .bottom {
 
 
 /******* RESPONSIVE *******/
+/* Tout est pareile mais avec des tailles/valeurs différentes */
 
 /* Taille d'écran "normal" (max 1920 pixels en largeur) */
 @media screen and (max-width: 1920px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -420,7 +422,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-	/* Boutton pour accéder au cours suivant */
 	.nextbutton {
 		background-color: #ffe033;
 		color: white;
@@ -434,7 +435,6 @@ footer .bottom {
 		margin-top: 100px;
 	}
 
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -475,7 +475,7 @@ footer .bottom {
 	}
 }
 
-/* Taille d'écran (1600x900 pixels) */
+/* Taille d'écran "Moyen ecran" (max 1600 pixels en largeur) */
 @media screen and (max-width: 1600px) {
 
 	/* En-Tête */
@@ -519,7 +519,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-	/* Boutton pour accéder au cours suivant */
 	.nextbutton {
 		background-color: #ffe033;
 		color: white;
@@ -533,8 +532,6 @@ footer .bottom {
 		margin-top: 100px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -576,10 +573,9 @@ footer .bottom {
 }
 
 
-/* Taille d'écran (1366x768) */
+/* Taille d'écran "Petit ecran" (max 1366 pixels en largeur) */
 @media screen and (max-width: 1366px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -620,7 +616,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-	/* Boutton pour accéder au cours suivant */
 	.nextbutton {
 		background-color: #ffe033;
 		color: white;
@@ -635,7 +630,6 @@ footer .bottom {
 	}
 
 
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -680,7 +674,6 @@ footer .bottom {
 /* Taille d'écran "pc portable" (max 1200 pixels en largeur) */
 @media screen and (max-width: 1200px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -722,7 +715,6 @@ footer .bottom {
 	}
 
 
-	/* Boutton pour accéder au cours suivant */
 	.nextbutton {
 		background-color: #ffe033;
 		color: white;
@@ -737,7 +729,6 @@ footer .bottom {
 	}
 
 
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;

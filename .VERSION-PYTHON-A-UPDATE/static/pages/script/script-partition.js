@@ -61,11 +61,11 @@ document.addEventListener('DOMContentLoaded', function () {
  
  // Vérification des réponses
  function verifierReponses() {
-    var bonneReponse = "part1"; // Remplacer par l'ID de la bonne case à cocher
+    var reponsesCorrectes = "part1"; // Remplacer par l'ID de la bonne case à cocher
     var reponseUtilisateur = document.querySelector('input[type=checkbox][name="partition"]:checked');
  
     var resultat = document.getElementById("resultat");
-    if (reponseUtilisateur && reponseUtilisateur.id === bonneReponse) {
+    if (reponseUtilisateur && reponseUtilisateur.id === reponsesCorrectes) {
        resultat.innerHTML = "Bonne réponse!";
        resultat.style.color = "green";
     } else {
@@ -79,11 +79,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Vérification des réponses
   function verifierReponses2() {
-   var bonneReponse = "ryt3"; // Remplacer par l'ID de la bonne case à cocher
+   var reponsesCorrectes = "ryt3"; // Remplacer par l'ID de la bonne case à cocher
    var reponseUtilisateur = document.querySelector('input[type=checkbox][name="rythme"]:checked');
 
    var resultat = document.getElementById("resultat1");
-   if (reponseUtilisateur && reponseUtilisateur.id === bonneReponse) {
+   if (reponseUtilisateur && reponseUtilisateur.id === reponsesCorrectes) {
       resultat.innerHTML = "Bonne réponse!";
       resultat.style.color = "green";
    } else {

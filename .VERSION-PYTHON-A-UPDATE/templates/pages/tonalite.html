@@ -1,4 +1,3 @@
-<!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/tonalite.html -->
 <!DOCTYPE html>
 <html lang="fr">
    <head>
@@ -81,15 +80,14 @@
             <h3>Quel est la tonalité de ce morceau?</h3>
             <img src="/static/images/Imgtestonalite.png" class="Partition1">
             <input type="text" id="answer1" placeholder="Entrez la tonalité">
-         </div>
-         <!-- Partition 2 -->
-         <div class="partition">
+            <!-- Partition 2 -->
             <h3>Quel est la tonalité de ce morceau?</h3>
             <img src="/static/images/Imgtestonalite2.png" class="Partition2">
             <input type="text" id="answer2" placeholder="Entrez la tonalité">
-            <button onclick="checkAnswers()">Vérifier les réponses</button>
+            <button onclick="verifierReponses()">Vérifier</button>
+         </div>
          <!-- Zone où sera affiché le résultat -->
-         <div id="result"></div>
+         <p id="resultat"></p>
       </div>
       <!-- Pied de Page (Footer) -->
       <footer>

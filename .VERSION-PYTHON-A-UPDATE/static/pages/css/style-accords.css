@@ -92,14 +92,14 @@ body {
 	color: #ffe033;
 }
 
-/* Titre texte 1 */
+/* Titre paragraphe 1 */
 .accords h2.first {
 	margin-top: 50px;
 	margin-left: 100px;
 	font-size: 40px;
 }
 
-/* Paragraphes 1 */
+/* Paragraphe 1 */
 .accords p.first {
 	margin-top: 30px;
 	margin-left: 100px;
@@ -118,7 +118,7 @@ body {
 }
 
 
-/*paragraphes 2 */
+/* Paragraphe 2 */
 .accords p.second {
 	margin-top: 20px;
 	margin-right: 100px;
@@ -127,7 +127,7 @@ body {
 	text-align: justify;
 }
 
-/* titre sous-aragraphes 1 */
+/* Titre sous-paragraphe 1 */
 .accords h3.first {
 	margin-top: 20px;
 	margin-right: 100px;
@@ -135,7 +135,7 @@ body {
 	font-size: 25px;
 }
 
-/* sous-aragraphes 1 */
+/* Sous-paragraphe 1 */
 .accords p.third {
 	margin-top: 30px;
 	margin-right: 100px;
@@ -144,21 +144,14 @@ body {
 	text-align: justify;
 }
 
-/* description image 2 */
-.accords h3.sixth {
-	margin-top: 150px;
-	margin-left: 1600px;
-	font-size: 40px;
-}
-
-/* titre sous-aragraphes 2 */
+/* Titre sous-paragraphe 2 */
 .accords h3.second {
 	margin-top: 150px;
 	margin-left: 100px;
 	font-size: 25px;
 }
 
-/* sous-aragraphes 2 */
+/* Sous-paragraphe 2 */
 .accords p.fourth {
 	margin-top: 20px;
 	margin-left: 100px;
@@ -174,7 +167,7 @@ body {
 	font-size: 40px;
 }
 
-/* Texte */
+/* Paragraphe 3 */
 .accords p.fifth {
 	margin-top: 30px;
 	margin-left: 100px;
@@ -184,7 +177,7 @@ body {
 }
 
 
-/* Titre sous paragraphe 1 */
+/* Titre sous-paragraphe 3 */
 .accords h3.third {
 	margin-top: 300px;
 	margin-left: 1580px;
@@ -192,7 +185,7 @@ body {
 }
 
 
-/*texte */
+/* Sous-paragraphe 3 */
 .accords p.sixth {
 	margin-top: 30px;
 	margin-left: 1580px;
@@ -201,7 +194,7 @@ body {
 	max-width: 800px;
 }
 
-/* titre sous-aragraphes 2*/
+/* Titre sous-paragraphe 4 */
 .accords h3.fourth {
 	margin-top: 150px;
 	margin-left: 100px;
@@ -209,7 +202,7 @@ body {
 	max-width: 800px;
 }
 
-/* texte */
+/* Sous-paragraphe 4 */
 .accords p.seventh {
 	margin-top: 30px;
 	margin-left: 100px;
@@ -219,7 +212,7 @@ body {
 }
 
 
-/* paragraphe 4*/
+/* Titre paragraphe 4 */
 .accords h2.fourth {
 	margin-top: 200px;
 	margin-left: 1020px;
@@ -227,7 +220,7 @@ body {
 	text-align: left;
 }
 
-/* texte */
+/* Paragraphe 4 */
 .accords p.eighth {
 	margin-top: 20px;
 	margin-left: 800px;
@@ -236,7 +229,7 @@ body {
 	max-width: 1000px;
 }
 
-/* accord 1 */
+/* Image du premier paragraphe */
 .exaccord {
 	margin-top: -1500px;
 	font-size: 25px;
@@ -246,7 +239,7 @@ body {
 	text-align: right;
 }
 
-/* accord 2 */
+/* Image du second paragraphe */
 .accordmajeur {
 	margin-top: -1300px;
 	font-size: 25px;
@@ -256,7 +249,7 @@ body {
 	text-align: left;
 }
 
-/* accord 3 */
+/* Image du second sous-paragraphe */
 .accordmineur {
 	margin-top: -600px;
 	font-size: 25px;
@@ -266,7 +259,7 @@ body {
 	text-align: right;
 }
 
-/* accord 4 */
+/* Image du troisième sous-paragraphe */
 .accord7maj {
 	margin-top: -800px;
 	font-size: 25px;
@@ -276,7 +269,7 @@ body {
 	text-align: right;
 }
 
-/* accord 5 */
+/* Image du quatrième sous-paragraphe */
 .accord7min3 {
 	margin-top: -550px;
 	font-size: 25px;
@@ -286,6 +279,7 @@ body {
 	text-align: right;
 }
 
+/* Image du second paragraphe et second/troisième/quatrième paragraphe quand on passe dessus  */
 .accord7maj:hover,
 .accord7min3:hover,
 .accordmajeur:hover,
@@ -337,7 +331,7 @@ h1.test {
 	color: #ffe033;
 }
 
-/* Titre du test */
+/* Titre explicatif (général) du test */
 .test h2 {
 	margin-top: 120px;
 	margin-bottom: 100px;
@@ -345,7 +339,7 @@ h1.test {
 	font-size: 50px;
 }
 
-/* Titre du test */
+/* Titre explicatif du test */
 .test h3 {
 	margin-top: 120px;
 	margin-bottom: 100px;
@@ -353,7 +347,7 @@ h1.test {
 	font-size: 40px;
 }
 
-/* texte */
+/* Texte du test */
 .test p {
 	margin-top: 120px;
 	margin-bottom: 100px;
@@ -362,21 +356,22 @@ h1.test {
 	max-width: 1400px;
 }
 
-/* Styles pour le bouton dans la section du test */
+/* Menus déroulant dans le test */
 .test select {
 	font-size: 30px;
 	width: 280px;
 	height: 60px;
 }
 
-/* Styles pour le bouton dans la section du test */
+/* Entrée pour que l'utilisateur donne sa réponse dans le test */
 .test input {
 	font-size: 30px;
 	width: 400px;
 	height: 60px;
+	text-align: center;
 }
 
-/* accord 6 */
+/* Image dans la section du test */
 .accordtest1 {
 	margin-top: -550px;
 	font-size: 25px;
@@ -402,13 +397,6 @@ h1.test {
 /* Styles pour le bouton dans la section du test quand on passe dessus */
 .test button:hover {
 	transform: scale(1.1);
-}
-
-/* Styles pour le entrées (trou pour le texte à trou) dans la section du test */
-input {
-	width: 80px;
-	font-size: 20px;
-	text-align: center;
 }
 
 /* Styles pour le texte de resultat (javascript) dans la section du test */
@@ -494,11 +482,11 @@ footer .bottom {
 
 
 /******* RESPONSIVE *******/
+/* Tout est pareile mais avec des tailles/valeurs différentes */
 
 /* Taille d'écran "normal" (max 1920 pixels en largeur) */
 @media screen and (max-width: 1920px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -539,7 +527,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-	/* Boutton pour accéder au cours suivant */
 	.nextbutton {
 		background-color: #ffe033;
 		color: white;
@@ -553,7 +540,6 @@ footer .bottom {
 		margin-top: 100px;
 	}
 
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -594,10 +580,9 @@ footer .bottom {
 	}
 }
 
-/* Taille d'écran (1600x900 pixels) */
+/* Taille d'écran "Moyen ecran" (max 1600 pixels en largeur) */
 @media screen and (max-width: 1600px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -638,7 +623,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-	/* Boutton pour accéder au cours suivant */
 	.nextbutton {
 		background-color: #ffe033;
 		color: white;
@@ -653,7 +637,6 @@ footer .bottom {
 	}
 
 
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -695,10 +678,9 @@ footer .bottom {
 }
 
 
-/* Taille d'écran (1366x768) */
+/* Taille d'écran "Petit ecran" (max 1366 pixels en largeur) */
 @media screen and (max-width: 1366px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -739,7 +721,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-	/* Boutton pour accéder au cours suivant */
 	.nextbutton {
 		background-color: #ffe033;
 		color: white;
@@ -754,7 +735,6 @@ footer .bottom {
 	}
 
 
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -799,7 +779,6 @@ footer .bottom {
 /* Taille d'écran "pc portable" (max 1200 pixels en largeur) */
 @media screen and (max-width: 1200px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -841,7 +820,6 @@ footer .bottom {
 	}
 
 
-	/* Boutton pour accéder au cours suivant */
 	.nextbutton {
 		background-color: #ffe033;
 		color: white;
@@ -856,7 +834,6 @@ footer .bottom {
 	}
 
 
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -925,7 +902,6 @@ footer .bottom {
 /* Taille d'écran "téléphone" (max 720 pixels en largeur) */
 @media screen and (max-width: 720px) {
 
-	/* En-Tête */
 	.header a {
 		float: none;
 		display: block;
@@ -937,7 +913,6 @@ footer .bottom {
 	}
 
 
-	/* FOOTER */
 	footer img {
 		width: 150px;
 		height: 150px;
