@@ -7,9 +7,11 @@ function verifierReponses() {
  
     // Réponses correctes
     var reponsesCorrectes = {
-       'question1': 'vrai',
-       'question2': 'faux',
-       'question3': 'vrai',
+       'question1': "3 notes",
+       'question2': "La renaissance",
+       'question3': "Monter la note d'1/2 ton",
+       'question4': "Descendre la note d'1/2 ton",
+       'question5': "2 temps",
     };
  
     // Vérifie les réponses
