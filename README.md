@@ -23,7 +23,7 @@ TO-DO LIST :
 - Amelioration SEO V
 
 - Responsive
-    - Tonalite X
+    - Tonalite V
     - Accords X
     - Index V
     - resultats V
