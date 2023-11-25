@@ -248,7 +248,6 @@ h1.test {
 
 /* Première Image de partition dans le test */
 .Partition1 {
-	width: 100%;
 	margin-top: 100px;
 	margin-left: 800px;
 	width: 900px;
@@ -285,7 +284,6 @@ h1.test {
 
 /* Seconde Image de partition dans le test */
 .Partition2 {
-	width: 100%;
 	margin-top: 100px;
 	margin-left: 800px;
 	width: 900px;
@@ -422,6 +420,83 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
+	.imgdiese1 {
+		margin-top: -900px;
+		font-size: 25px;
+		margin-left: 1100px;
+		width: 700px;
+		height: 700px;
+		text-align: right;
+	}
+
+	.tonalite p.second {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 1200px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.tonalite h3.first {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 1200px;
+		font-size: 25px;
+	}
+
+	.tonalite p.third {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 1200px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.imgbemol {
+		margin-top: -900px;
+		font-size: 25px;
+		margin-left: 1100px;
+		width: 700px;
+		height: 600px;
+		text-align: right;
+	}
+
+	.Partition1 {
+		margin-top: 100px;
+		margin-left: 500px;
+		width: 900px;
+		height: 300px;
+		text-align: left;
+	}
+
+	.partition input {
+		margin-top: 30px;
+		margin-left: 750px;
+		font-size: 30px;
+		width: 400px;
+		height: 60px;
+	}
+
+	.partition button {
+		margin-left: 850px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.Partition2 {
+		margin-top: 100px;
+		margin-left: 500px;
+		width: 900px;
+		height: 300px;
+		text-align: left;
+	}
+
 	.nextbutton {
 		background-color: #ffe033;
 		color: white;
@@ -519,6 +594,114 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
+	.imgdiese1 {
+		margin-top: -900px;
+		font-size: 25px;
+		margin-left: 850px;
+		width: 700px;
+		height: 700px;
+		text-align: right;
+	}
+
+	.tonalite p.first {
+		margin-top: 30px;
+		margin-left: 100px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 600px;
+	}
+
+	.tonalite h2.second {
+		margin-top: 150px;
+		margin-right: 0px;
+		margin-left: 1270px;
+		font-size: 40px;
+	}
+
+	.tonalite p.second {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 1000px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.tonalite h3.first {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 1000px;
+		font-size: 25px;
+	}
+
+	.tonalite p.third {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 1000px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.tonalite p.fourth {
+		margin-top: 20px;
+		margin-left: 100px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 600px;
+	}
+
+	.imgbemol {
+		margin-top: -900px;
+		font-size: 25px;
+		margin-left: 850px;
+		width: 700px;
+		height: 600px;
+		text-align: right;
+	}
+
+	.separateur {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 3500px;
+		border-top: 8px solid #ffe033;
+	}	
+
+	.Partition1 {
+		margin-top: 100px;
+		margin-left: 400px;
+		width: 900px;
+		height: 300px;
+		text-align: left;
+	}
+
+	.partition input {
+		margin-top: 30px;
+		margin-left: 650px;
+		font-size: 30px;
+		width: 400px;
+		height: 60px;
+	}
+
+	.partition button {
+		margin-left: 750px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.Partition2 {
+		margin-top: 100px;
+		margin-left: 400px;
+		width: 900px;
+		height: 300px;
+		text-align: left;
+	}
+
 	.nextbutton {
 		background-color: #ffe033;
 		color: white;
@@ -614,6 +797,114 @@ footer .bottom {
 	.header-droit .finalexam {
 		border: 2px solid rgb(255, 214, 30);
 		margin-right: 40px;
+	}
+
+	.imgdiese1 {
+		margin-top: -900px;
+		font-size: 25px;
+		margin-left: 650px;
+		width: 700px;
+		height: 700px;
+		text-align: right;
+	}
+
+	.tonalite p.first {
+		margin-top: 30px;
+		margin-left: 100px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 450px;
+	}
+
+	.tonalite h2.second {
+		margin-top: 150px;
+		margin-right: 0px;
+		margin-left: 1050px;
+		font-size: 40px;
+	}
+
+	.tonalite p.second {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 800px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.tonalite h3.first {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 800px;
+		font-size: 25px;
+	}
+
+	.tonalite p.third {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 800px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.tonalite p.fourth {
+		margin-top: 20px;
+		margin-left: 100px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 450px;
+	}
+
+	.imgbemol {
+		margin-top: -900px;
+		font-size: 25px;
+		margin-left: 650px;
+		width: 700px;
+		height: 600px;
+		text-align: right;
+	}
+
+	.separateur {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 3800px;
+		border-top: 8px solid #ffe033;
+	}	
+
+	.Partition1 {
+		margin-top: 100px;
+		margin-left: 250px;
+		width: 900px;
+		height: 300px;
+		text-align: left;
+	}
+
+	.partition input {
+		margin-top: 30px;
+		margin-left: 500px;
+		font-size: 30px;
+		width: 400px;
+		height: 60px;
+	}
+
+	.partition button {
+		margin-left: 600px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.Partition2 {
+		margin-top: 100px;
+		margin-left: 250px;
+		width: 900px;
+		height: 300px;
+		text-align: left;
 	}
 
 	.nextbutton {
@@ -714,6 +1005,122 @@ footer .bottom {
 		margin-right: 30px;
 	}
 
+	.imgdiese1 {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 250px;
+		width: 700px;
+		height: 700px;
+		text-align: right;
+	}
+
+	.tonalite p.first {
+		margin-top: 30px;
+		margin-left: 100px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 800px;
+	}
+
+	.tonalite h2.second {
+		margin-top: 150px;
+		margin-right: 0px;
+		margin-left: 880px;
+		font-size: 40px;
+	}
+
+	.tonalite p.second {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 200px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.tonalite h3.first {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 200px;
+		font-size: 25px;
+	}
+
+	.tonalite p.third {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 200px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.imgdiese {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 250px;
+		width: 700px;
+		height: 700px;
+		text-align: left;
+	}
+
+	.tonalite p.fourth {
+		margin-top: 20px;
+		margin-left: 100px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 800px;
+	}
+
+	.imgbemol {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 250px;
+		width: 700px;
+		height: 600px;
+		text-align: right;
+	}
+
+	.separateur {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 5100px;
+		border-top: 8px solid #ffe033;
+	}	
+
+	.Partition1 {
+		margin-top: 100px;
+		margin-left: 200px;
+		width: 900px;
+		height: 300px;
+		text-align: left;
+	}
+
+	.partition input {
+		margin-top: 30px;
+		margin-left: 450px;
+		font-size: 30px;
+		width: 400px;
+		height: 60px;
+	}
+
+	.partition button {
+		margin-left: 550px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.Partition2 {
+		margin-top: 100px;
+		margin-left: 200px;
+		width: 900px;
+		height: 300px;
+		text-align: left;
+	}
 
 	.nextbutton {
 		background-color: #ffe033;
@@ -779,6 +1186,128 @@ footer .bottom {
 		margin-left: 30px;
 		text-align: center;
 	}
+
+	.nextbutton {
+		background-color: #ffe033;
+		color: white;
+		padding: 85px 95px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 60px;
+		transition: transform 0.5s;
+		margin-left: 200px;
+		margin-top: 100px;
+	}
+
+	.imgdiese1 {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 150px;
+		width: 700px;
+		height: 700px;
+		text-align: right;
+	}
+
+	.tonalite h2.second {
+		margin-top: 150px;
+		margin-right: 0px;
+		margin-left: 700px;
+		font-size: 40px;
+	}
+
+	.tonalite p.second {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 200px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.tonalite h3.first {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 200px;
+		font-size: 25px;
+	}
+
+	.tonalite p.third {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 200px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.imgdiese {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 150px;
+		width: 700px;
+		height: 700px;
+		text-align: left;
+	}
+
+	.tonalite p.fourth {
+		margin-top: 20px;
+		margin-left: 100px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 800px;
+	}
+
+	.imgbemol {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 150px;
+		width: 700px;
+		height: 600px;
+		text-align: right;
+	}
+
+	.separateur {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 5200px;
+		border-top: 8px solid #ffe033;
+	}	
+
+	.Partition1 {
+		margin-top: 100px;
+		margin-left: 100px;
+		width: 900px;
+		height: 300px;
+		text-align: left;
+	}
+
+	.partition input {
+		margin-top: 30px;
+		margin-left: 350px;
+		font-size: 30px;
+		width: 400px;
+		height: 60px;
+	}
+
+	.partition button {
+		margin-left: 450px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.Partition2 {
+		margin-top: 100px;
+		margin-left: 100px;
+		width: 900px;
+		height: 300px;
+		text-align: left;
+	}
 }
 
 
@@ -790,6 +1319,136 @@ footer .bottom {
 		margin-right: 500px;
 		margin-left: 30px;
 		text-align: center;
+	}
+	
+	.imgdiese1 {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 100px;
+		width: 700px;
+		height: 700px;
+		text-align: right;
+	}
+
+	.tonalite p.first {
+		margin-top: 30px;
+		margin-left: 100px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 700px;
+	}
+
+	.tonalite h2.second {
+		margin-top: 150px;
+		margin-right: 0px;
+		margin-left: 580px;
+		font-size: 40px;
+	}
+
+	.tonalite p.second {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 130px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.tonalite h3.first {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 130px;
+		font-size: 25px;
+	}
+
+	.tonalite p.third {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 130px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.imgdiese {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 100px;
+		width: 700px;
+		height: 700px;
+		text-align: left;
+	}
+
+	.tonalite p.fourth {
+		margin-top: 20px;
+		margin-left: 100px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 700px;
+	}
+
+	.imgbemol {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 100px;
+		width: 700px;
+		height: 600px;
+		text-align: right;
+	}
+
+	.separateur {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 5200px;
+		border-top: 8px solid #ffe033;
+	}	
+
+	.Partition1 {
+		margin-top: 100px;
+		margin-left: 50px;
+		width: 800px;
+		height: 200px;
+		text-align: left;
+	}
+
+	.partition input {
+		margin-top: 30px;
+		margin-left: 250px;
+		font-size: 30px;
+		width: 400px;
+		height: 60px;
+	}
+
+	.partition button {
+		margin-left: 350px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.Partition2 {
+		margin-top: 100px;
+		margin-left: 50px;
+		width: 800px;
+		height: 200px;
+		text-align: left;
+	}
+
+	.nextbutton {
+		background-color: #ffe033;
+		color: white;
+		padding: 85px 95px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 60px;
+		transition: transform 0.5s;
+		margin-left: 130px;
+		margin-top: 100px;
 	}
 }
 
@@ -808,8 +1467,136 @@ footer .bottom {
 		float: none;
 	}
 
+	.imgdiese1 {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 600px;
+		height: 600px;
+		text-align: right;
+	}
 
-	/* FOOTER */
+	.tonalite p.first {
+		margin-top: 30px;
+		margin-left: 100px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 550px;
+	}
+
+	.tonalite h2.second {
+		margin-top: 150px;
+		margin-right: 0px;
+		margin-left: 400px;
+		font-size: 40px;
+	}
+
+	.tonalite p.second {
+		margin-top: 30px;
+		margin-right: 50px;
+		margin-left: 130px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.tonalite h3.first {
+		margin-top: 30px;
+		margin-right: 50px;
+		margin-left: 130px;
+		font-size: 25px;
+	}
+
+	.tonalite p.third {
+		margin-top: 30px;
+		margin-right: 50px;
+		margin-left: 130px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.imgdiese {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 600px;
+		height: 600px;
+		text-align: left;
+	}
+
+	.tonalite p.fourth {
+		margin-top: 20px;
+		margin-left: 100px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 550px;
+	}
+
+	.imgbemol {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 600px;
+		height: 500px;
+		text-align: right;
+	}
+
+	.separateur {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 5600px;
+		border-top: 8px solid #ffe033;
+	}	
+
+	.Partition1 {
+		margin-top: 100px;
+		margin-left: 50px;
+		width: 650px;
+		height: 150px;
+		text-align: left;
+	}
+
+	.partition input {
+		margin-top: 30px;
+		margin-left: 180px;
+		font-size: 30px;
+		width: 400px;
+		height: 60px;
+	}
+
+	.partition button {
+		margin-left: 280px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.Partition2 {
+		margin-top: 100px;
+		margin-left: 50px;
+		width: 650px;
+		height: 150px;
+		text-align: left;
+	}
+
+	.nextbutton {
+		background-color: #ffe033;
+		color: white;
+		padding: 65px 75px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 60px;
+		transition: transform 0.5s;
+		margin-left: 60px;
+		margin-top: 100px;
+	}
+
 	footer img {
 		width: 150px;
 		height: 150px;
