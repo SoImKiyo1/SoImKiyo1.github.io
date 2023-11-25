@@ -1,4 +1,4 @@
-// Attente du chargement complet du document HTML
+// Attente du chargement complet du document HTML *Fait par Sacha Pastor* 
 document.addEventListener('DOMContentLoaded', function () {
 
    // Sélectionne l'élément avec la classe 'finalexam' dans le document
@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
    });
 });
 
+// *Fait par Noa Pagesse* 
 function playAudio(source) {
    var audioPlayer = document.getElementById('audioPlayer');
    audioPlayer.src = source;
@@ -35,7 +36,7 @@ function openImg1() {
    playAudio("/static/audio/audiobatterie.mp3");
 }
 
-// Gestion des cases à cocher pour qu'une seule case puisse être cochée
+// Gestion des cases à cocher pour qu'une seule case puisse être cochée *Fait par Sacha Pastor* 
 function gererCheckboxes() {
    var checkboxes = document.querySelectorAll('input[type=checkbox][name="partition"]');
    checkboxes.forEach(function (checkbox) {
@@ -48,6 +49,7 @@ function gererCheckboxes() {
 }
 
 // Gestion des cases à cocher pour qu'une seule case puisse être cochée
+// *Fait par Sacha Pastor* 
 function gererCheckboxes2() {
    var checkboxes = document.querySelectorAll('input[type=checkbox][name="rythme"]');
    checkboxes.forEach(function (checkbox) {
@@ -59,7 +61,7 @@ function gererCheckboxes2() {
    });
 }
 
-// Vérification des réponses
+// Vérification des réponses *Fait par Sacha Pastor* 
 function verifierReponses() {
    var reponsesCorrectes = "part1"; // Remplacer par l'ID de la bonne case à cocher
    var reponseUtilisateur = document.querySelector('input[type=checkbox][name="partition"]:checked');
@@ -74,10 +76,10 @@ function verifierReponses() {
    }
 }
 
-// Initialiser la gestion des cases à cocher
+// Initialiser la gestion des cases à cocher *Fait par Sacha Pastor* 
 gererCheckboxes();
 
-// Vérification des réponses
+// Vérification des réponses *Fait par Sacha Pastor* 
 function verifierReponses2() {
    var reponsesCorrectes = "ryt3"; // Remplacer par l'ID de la bonne case à cocher
    var reponseUtilisateur = document.querySelector('input[type=checkbox][name="rythme"]:checked');
@@ -92,5 +94,5 @@ function verifierReponses2() {
    }
 }
 
-// Initialiser la gestion des cases à cocher
+// Initialiser la gestion des cases à cocher *Fait par Sacha Pastor* 
 gererCheckboxes2();

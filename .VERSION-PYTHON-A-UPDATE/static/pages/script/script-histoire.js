@@ -1,4 +1,4 @@
-// Attente du chargement complet du document HTML
+// Attente du chargement complet du document HTML *Fait par Sacha Pastor* 
 document.addEventListener('DOMContentLoaded', function () {
 
    // Sélectionne l'élément avec la classe 'finalexam' dans le document
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function verifierReponses() {
-   // Tableau des réponses correctes
+   // Tableau des réponses correctes *Fait par Sacha Pastor* 
    var reponsesCorrectes = ["voix", "paroles", "perfection", "troubadours", "gestes", "jeux", "messe", "motet", "chansons", "profanes", "divertissement", "raffiné", "danses", "opéra", "sonate", "orchestre", "styles", "galant", "sensible", "émotion"];
 
    var erreurs = 0;
@@ -46,7 +46,7 @@ function verifierReponses() {
       }
    }
 
-   // Affichage du résultat
+   // Affichage du résultat *Fait par Sacha Pastor* 
    var resultat = document.getElementById("resultat");
    if (erreurs === 0) {
       resultat.innerHTML = "Toutes les réponses sont correctes!";

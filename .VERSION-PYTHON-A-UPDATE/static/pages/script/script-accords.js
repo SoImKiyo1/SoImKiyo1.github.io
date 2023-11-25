@@ -1,3 +1,4 @@
+// *Fait par Noa Pagesse* 
 function playAudio(source) {
    var audioPlayer = document.getElementById('audioPlayer');
    audioPlayer.src = source;
@@ -20,7 +21,7 @@ function openImg3() {
    playAudio("/static/audio/magic4.mp3"); // 
 }
 
-// Stocker les questions et les réponses correctes dans un objet
+// Stocker les questions et les réponses correctes dans un objet *Fait par Sacha Pastor* 
 var questionsEtReponses = {
    fondamentale: {
       reponse: "sol",
@@ -43,7 +44,7 @@ var questionsEtReponses = {
 function verifierReponses() {
    var erreurs = 0;
 
-   // Vérifier chaque question
+   // Vérifier chaque question *Fait par Sacha Pastor* 
    for (var question in questionsEtReponses) {
       var element = document.querySelector(questionsEtReponses[question].selecteur);
       var reponseUtilisateur = element.value.toLowerCase();
@@ -57,7 +58,7 @@ function verifierReponses() {
       }
    }
 
-   // Affichage du résultat
+   // Affichage du résultat *Fait par Sacha Pastor* 
    var resultat = document.getElementById("resultat");
    if (!resultat) {
       resultat = document.createElement("div");

@@ -1,4 +1,4 @@
-// Gestion des cases à cocher pour qu'une seule case par paire puisse être cochée
+// Gestion des cases à cocher pour qu'une seule case par paire puisse être cochée *Fait par Sacha Pastor* 
 function gererCheckboxes() {
    var checkboxes = document.querySelectorAll('.question input[type=checkbox]');
    checkboxes.forEach(function (checkbox) {
@@ -14,5 +14,5 @@ function gererCheckboxes() {
    });
 }
 
-// Appelle gererCheckboxes lorsque la page est chargée
+// Appelle gererCheckboxes lorsque la page est chargée *Fait par Sacha Pastor* 
 document.addEventListener('DOMContentLoaded', gererCheckboxes);

@@ -1,4 +1,4 @@
-// Attente du chargement complet du document HTML
+// Attente du chargement complet du document HTML *Fait par Sacha Pastor* 
 document.addEventListener('DOMContentLoaded', function () {
 
    // Sélectionne l'élément avec la classe 'finalexam' dans le document
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
    });
 });
 
-// Stocker les questions et les réponses correctes dans un objet
+// Stocker les questions et les réponses correctes dans un objet *Fait par Sacha Pastor* 
 var questionsEtReponses = {
    fondamentale: {
       reponse: "Mi",
@@ -36,7 +36,7 @@ var questionsEtReponses = {
 function verifierReponses() {
    var erreurs = 0;
 
-   // Vérifier chaque question
+   // Vérifier chaque question *Fait par Sacha Pastor* 
    for (var question in questionsEtReponses) {
       var element = document.querySelector(questionsEtReponses[question].selecteur);
       var reponseUtilisateur = element.value.toLowerCase();
@@ -50,7 +50,7 @@ function verifierReponses() {
       }
    }
 
-   // Affichage du résultat
+   // Affichage du résultat *Fait par Sacha Pastor* 
    var resultat = document.getElementById("resultat");
    if (!resultat) {
       resultat = document.createElement("div");

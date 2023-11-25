@@ -52,7 +52,6 @@ TO-DO LIST :
         - Tonalite X
         - Accords X
         - Index X
-        - resultats X
         - histoire X
         - finaltest X
         - partition X 

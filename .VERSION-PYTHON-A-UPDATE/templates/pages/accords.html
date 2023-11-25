@@ -3,17 +3,17 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Nom du site -->
+      <!-- Nom du site *Fait par Eloi Guillot*-->
       <title>Learn-Solfege</title>
-      <!-- Lien vers le fichier CSS externe -->
+      <!-- Lien vers le fichier CSS externe *Fait par Eloi Guillot*-->
       <link rel="stylesheet" href="/static/pages/css/style-accords.css">
-      <!-- Favicon du site -->
+      <!-- Favicon du site *Fait par Noa Pagesse* -->
       <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
    </head>
    <body>
-      <!-- Section En-Tête -->
+      <!-- Section En-Tête *Fait par Eloi Guillot* -->
       <div class="header">
-         <!-- Le logo et les liens vers les pages -->
+         <!-- Le logo et les liens vers les pages *Fait par Eloi Guillot* -->
          <a href="../." class="logo">
          <img src="/static/images/logo2-min.png" alt="Logo Learn-Solfège"/>
          </a>
@@ -25,18 +25,18 @@
             <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
          </div>
       </div>
-      <!-- Contenu de la page -->
+      <!-- Contenu de la page *Fait par Noa Pagesse* -->
       <div class="accords">
-         <!-- Titre de la Page -->
+         <!-- Titre de la Page *Fait par Noa Pagesse* -->
          <h1>Qu'est-ce qu'un accord ?</h1>
-         <!-- Premier paragraphe -->
+         <!-- Premier paragraphe *Fait par Noa Pagesse* -->
          <h2 class="first">Introduction</h2>
          <p class="first">Un accord est constitué de plusieurs sons joués en même temps. C'est un empilement vertical de sons.
             <br>Voici quelques exemples d'accords :   
             <br><i>(Clique sur les accords pour entendre leur sonorité)</i>
          </p>
          <img src="/static/images/exemplesdaccords-min.png" alt="imageaccords1" class="exaccord">
-         <!-- Deuxième paragraphe -->
+         <!-- Deuxième paragraphe *Fait par Noa Pagesse* -->
          <h2 class="second">L'accord parfait</h2>
          <p class="second">L'accord parfait est un accord composé de trois notes à l'état fondamental, dont la quinte est juste.
             Il existe deux familles d'accord parfait : le majeur et le mineur.
@@ -66,7 +66,7 @@
             <br>Si la fondamentale de notre accord est ré, alors la tierce mineure sera fa.
          </p>
          <img src="/static/images/accorddomineur-min.jpg" alt="imageaccords3" class="accordmineur" onclick="openImg1()">
-         <!-- Troisième paragraphe -->
+         <!-- Troisième paragraphe *Fait par Noa Pagesse* -->
          <h2 class="third">L'accord de septième</h2>
          <p class="fifth">Les accords de septième sont des accords à quatre sons. Quand on dit « accords à quatre sons », 
             cela signifie que ce sont des accords ayant quatre notes différentes. Les accords de septième sont plus riches que les accords à trois sons et 
@@ -89,7 +89,7 @@
          </p>
          <img src="/static/images/accord7min3-min.jpg" alt="imageaccords5" class="accord7min3" onclick="openImg3()">
          <audio id="audioPlayer" style="display:none;"></audio>
-         <!-- Dernier paragraphe -->
+         <!-- Dernier paragraphe *Fait par Noa Pagesse* -->
          <h2 class="fourth">À quoi servent donc les accords?</h2>
          <p class="eighth">Les accords permettent de créer la partie accompagnement d'une chanson. 
             Lorsque l'on regroupe ensemble différents accords, on crée ce qu'on appelle une progression d'accords.
@@ -98,23 +98,23 @@
             (Bien évidemment, cette progression peut évoluer au fur et à mesure du morceau, mais vous avez compris l'idée).    
          </p>
       </div>
-      <!-- Bouton pour accéder au test final -->
+      <!-- Bouton pour accéder au test final *Fait par Noa Pagesse* -->
       <a href="finaltest.html" class="nextbutton">
       Accéder au Test Final
       <img src="/static/images/rightarrow.png" class="imgnextbutton" alt="Flèche vers le prochain cours" /> 
       </a>
-      <!-- Barre de séparation -->
+      <!-- Barre de séparation *Fait par Noa Pagesse* -->
       <div class="separateur"></div>
-      <!-- Titre "Test" -->
+      <!-- Titre "Test" *Fait par Noa Pagesse* -->
       <h1 class="test">À toi de jouer !!!</h1>
-      <!-- Test -->
+      <!-- Test *Fait par Noa Pagesse* -->
       <div class="test">
-         <!-- Explication du Test -->
+         <!-- Explication du Test *Fait par Noa Pagesse* -->
          <h2> Maintenant, c'est à toi de trouver les notes d'un accord !</h2>
          <h3>Ton but est d'identifier qu'elle est la tonalité de l'accord </h3>
          <p>
             Quelle est la fondamentale de cette accord?
-            <!-- Menus déroulant avec les réponses possibles -->
+            <!-- Menus déroulant avec les réponses possibles *Fait par Noa Pagesse* -->
             <select name="fondamentale">
                <option value="sol">Sol</option>
                <option value="si">Si bémol</option>
@@ -137,15 +137,16 @@
          </p>
          <img src="/static/images/accordtest-min.jpg" alt="imagetestaccords" class="accordtest1">
          <button onclick="verifierReponses()">Vérifier</button>
-         <!-- Zone où sera afficher le résultat -->
+         <!-- Zone où sera afficher le résultat *Fait par Sacha Pastor* -->
          <p id="resultat"></p>
       </div>
-      <!-- Pied de Page (Footer) -->
+      <!-- Pied de Page (Footer) *Fait par Noa Pagesse* -->
       <footer>
          <a href="../.">
          <img src="/static/images/logo-min.png" alt="Logo Learn-Solfege"/>
          </a>
          <p class="top"></p>
+         <!-- Texte *Fait par Eloi Guillot* -->
          <h1>Description</h1>
          <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique.
             <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des
@@ -155,7 +156,7 @@
          <p class="copyright">© Copyright 2023 Learn-Solfege</p>
          <p class="bottom"></p>
       </footer>
-      <!-- Lien vers le fichier JavaScript externe (script.js) -->
+      <!-- Lien vers le fichier JavaScript externe (script.js) *Fait par Noa Pagesse* -->
       <script src="/static/pages/script/script-accords.js"></script>
    </body>
 </html>
