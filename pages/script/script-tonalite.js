@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
  
  function checkAnswers() {
     let score = 0;
-    const correctAnswers = ["Ré", "Si bémol"]; // Remplir avec les bonnes réponses
+    const correctAnswers = ["Mi", "Si"]; // Remplir avec les bonnes réponses
  
     // Vérifie chaque réponse
     for (let i = 1; i <= correctAnswers.length; i++) {
