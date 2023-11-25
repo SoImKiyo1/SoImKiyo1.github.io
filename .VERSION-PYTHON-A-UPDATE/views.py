@@ -35,20 +35,18 @@ def resultats():
 def tonalite():
     return render_template("/pages/tonalite.html")
 
-
-
 @app.route('/resultat', methods=['GET', 'POST'])
 def resultat():
     if request.method == 'POST':
         result = request.form
         score = 0
         totalQuestions = 5
-        reponses_correctes = {'question1': 'vrai', 'question2': 'vrai', 'question3': 'faux', 'question4': 'vrai', 'question5': 'faux'}
+        reponses_correctes = {"question1": "3 notes", "question2": "La renaissance", "question3": "Monter la note d'1/2 ton", "question4": "Descendre la note d'1/2 ton", "question5": "2 temps"}
         corrections = {}
 
         for key, value in reponses_correctes.items():
             reponse_soumise = result.get(key, "Aucune réponse")
-            corrections[key] = {'attendue': value, 'soumise': reponse_soumise}
+            corrections[key] = {"attendue": value, "soumise": reponse_soumise}
             if reponse_soumise == value:
                 score += 1
 

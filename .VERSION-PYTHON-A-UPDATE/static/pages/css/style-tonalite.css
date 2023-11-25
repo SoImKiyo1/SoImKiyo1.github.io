@@ -238,14 +238,64 @@ h1.test {
 	margin-bottom: 20px;
 }
 
-.partition img {
-	width: 100%;
-	/* Ajuster selon le besoin */
-	height: auto;
+.partition h3 {
+	margin-top: 150px;
+	margin-left: 100px;
+	font-size: 35px;
+	text-align: justify;
 }
+
+.Partition1 {
+	width: 100%;
+	margin-top: 100px;
+	margin-left: 800px;
+	width: 900px;
+	height: 300px;
+	text-align: left;
+}
+
+.partition input {
+	margin-top: 30px;
+	margin-left: 1100px;
+	font-size: 30px;
+	width: 400px;
+	height: 60px;
+}
+
+
+/* Styles pour le bouton dans la section du test */
+.partition button {
+	margin-left: 1800px;
+	margin-top: 200px;
+	font-size: 30px;
+	width: 400px;
+	height: 100px;
+	background-color: #ffe033;
+	border: 0px solid #000;
+	border-radius: 15px;
+	transition: transform 0.2s;
+}
+
+/* Styles pour le bouton dans la section du test quand on passe dessus */
+.partition button:hover {
+	transform: scale(1.1);
+}
+
+
+.Partition2 {
+	width: 100%;
+	margin-top: 100px;
+	margin-left: 800px;
+	width: 900px;
+	height: 300px;
+	text-align: left;
+}
+
 
 #result {
 	margin-top: 20px;
+	margin-left: 100px;
+	font-size: 50px;
 	font-weight: bold;
 }
 

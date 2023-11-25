@@ -313,6 +313,134 @@ h1.test {
 	opacity: 0.3;
 }
 
+/* 1 part*/
+.par1 {
+	margin-top: -200px;
+	font-size: 25px;
+	margin-left: 200px;
+	width: 366px;
+	height: 138px;
+	text-align: right;
+}
+
+/* 2 part*/
+.par2 {
+	margin-top: -200px;
+	font-size: 25px;
+	margin-left: 100px;
+	width: 366px;
+	height: 138px;
+	text-align: right;
+}
+
+/* 3 part*/
+.par3 {
+	margin-top: -200px;
+	font-size: 25px;
+	margin-left: 100px;
+	width: 366px;
+	height: 138px;
+	text-align: right;
+}
+
+.test input[type="checkbox"] {
+	margin-top: 250px;
+	margin-left: 240px;
+	width: 30px;
+	height: 30px;
+}
+
+/* Styles pour le bouton dans la section du test */
+.test select {
+	font-size: 30px;
+	width: 280px;
+	height: 60px;
+}
+
+/* Styles pour le bouton dans la section du test */
+.test input {
+	font-size: 30px;
+	width: 400px;
+	height: 60px;
+}
+
+/* piano */
+.batterie {
+	margin-top: -100px;
+	font-size: 25px;
+	margin-left: 1700px;
+	width: 722px;
+	height: 640px;
+	text-align: right;
+}
+
+.batterie:hover {
+	opacity: 0.3;
+}
+
+/* 1 part*/
+.ryt1 {
+	margin-top: -200px;
+	font-size: 25px;
+	margin-left: 200px;
+	width: 366px;
+	height: 100px;
+	text-align: right;
+}
+
+/* 2 part*/
+.ryt2 {
+	margin-top: -200px;
+	font-size: 25px;
+	margin-left: 100px;
+	width: 366px;
+	height: 100px;
+	text-align: right;
+}
+
+/* 3 part*/
+.ryt3 {
+	margin-top: -200px;
+	font-size: 25px;
+	margin-left: 100px;
+	width: 366px;
+	height: 100px;
+	text-align: right;
+}
+
+/* accord 6 */
+.accordtest1 {
+	margin-top: -550px;
+	font-size: 25px;
+	margin-left: 1480px;
+	width: 1000px;
+	height: 630px;
+	text-align: right;
+}
+
+
+/* Styles pour le bouton dans la section du test */
+.test button {
+	margin-left: 1150px;
+	margin-top: 200px;
+	font-size: 30px;
+	width: 200px;
+	height: 100px;
+	background-color: #ffe033;
+	border: 0px solid #000;
+	border-radius: 15px;
+	transition: transform 0.2s;
+}
+
+/* Styles pour le bouton dans la section du test quand on passe dessus */
+.test button:hover {
+	transform: scale(1.1);
+}
+
+.piano:hover {
+	opacity: 0.3;
+}
+
 /* Styles pour le texte de resultat (javascript) dans la section du test */
 #resultat {
 	margin-top: 10px;
@@ -320,6 +448,14 @@ h1.test {
 	font-size: 30px;
 	margin-left: 100px;
 }
+
+#resultat1 {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 30px;
+	margin-left: 100px;
+}
+
 
 
 /******* FOOTER *******/

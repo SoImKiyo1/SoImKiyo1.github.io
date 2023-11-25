@@ -26,10 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
     audioPlayer.src = source;
     audioPlayer.play();
  }
- 
+
  function openImg() {
-    playAudio("../audio/test1.mp3");
- }
+   playAudio("/static/audio/test1.mp3");
+}
+ 
+ function openImg1() {
+   playAudio("/static/audio/audiobatterie.mp3");
+}
  
  // Gestion des cases à cocher pour qu'une seule case puisse être cochée
  function gererCheckboxes() {
@@ -42,6 +46,18 @@ document.addEventListener('DOMContentLoaded', function () {
        });
     });
  }
+
+  // Gestion des cases à cocher pour qu'une seule case puisse être cochée
+  function gererCheckboxes2() {
+   var checkboxes = document.querySelectorAll('input[type=checkbox][name="rythme"]');
+   checkboxes.forEach(function (checkbox) {
+      checkbox.addEventListener('change', function () {
+         checkboxes.forEach(function (other) {
+            if (other !== checkbox) other.checked = false;
+         });
+      });
+   });
+}
  
  // Vérification des réponses
  function verifierReponses() {
@@ -60,3 +76,21 @@ document.addEventListener('DOMContentLoaded', function () {
  
  // Initialiser la gestion des cases à cocher
  gererCheckboxes();
+
+  // Vérification des réponses
+  function verifierReponses2() {
+   var bonneReponse = "ryt3"; // Remplacer par l'ID de la bonne case à cocher
+   var reponseUtilisateur = document.querySelector('input[type=checkbox][name="rythme"]:checked');
+
+   var resultat = document.getElementById("resultat1");
+   if (reponseUtilisateur && reponseUtilisateur.id === bonneReponse) {
+      resultat.innerHTML = "Bonne réponse!";
+      resultat.style.color = "green";
+   } else {
+      resultat.innerHTML = "Mauvaise réponse.";
+      resultat.style.color = "red";
+   }
+}
+
+// Initialiser la gestion des cases à cocher
+gererCheckboxes2();
