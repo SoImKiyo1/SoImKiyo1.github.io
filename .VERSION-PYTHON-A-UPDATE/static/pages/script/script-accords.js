@@ -27,7 +27,7 @@ function playAudio(source) {
        selecteur: "select[name='fondamentale']"
     },
     intervalle: {
-       reponse: "1ton",
+       reponse: "1,5ton",
        selecteur: "select[name='intervalle']"
     },
     quinteJuste: {
@@ -35,7 +35,7 @@ function playAudio(source) {
        selecteur: "select[name='quinte juste']"
     },
     tonalite: {
-       reponse: "tonalité correcte",
+       reponse: "Sol mineur",
        selecteur: "#answer1"
     }
  };

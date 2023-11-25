@@ -30,7 +30,7 @@ TO-DO LIST :
     - resultats V
     - histoire V
     - finaltest V
-    - partition V (sauf le test)
+    - partition V
 
 - Documentation Code
     - HTML :
@@ -61,7 +61,7 @@ TO-DO LIST :
         - partition X 
     - Python X
 
-- Correction fautes d'orthographes X
+- Correction fautes d'orthographes V
 - Creation de la Video V 
 - Compréhension du code (Par tout le monde) X
 
