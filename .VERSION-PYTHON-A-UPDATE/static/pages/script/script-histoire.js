@@ -6,16 +6,16 @@ document.addEventListener('DOMContentLoaded', function () {
  
     // Permet de savoir quand on clique sur l'élément sélectionner pour éxécuter le code
     lienTestFinal.addEventListener('click', function (event) {
-        // Empêche l'action de base du hyperlink (Navigation vers la page demandé)
-        event.preventDefault();
-        // Affiche une pop-up de confirmation
-        var confirmation = confirm("Êtes-vous sûr de vouloir passer au test final ? Assurez-vous d'avoir complété toutes les leçons.");
-        
-        // Vérifie si l'utilisateur a cliqué sur "OK" dans la boîte de dialogue
-        if (confirmation) {
-            // Si l'utilisateur confirme il est redirigé vers le lien stocké dans le href de l'élément avec la classe finalexam (hyperlink dans notre cas)
-            window.location.href = lienTestFinal.href;
-        }
+       // Empêche l'action de base du hyperlink (Navigation vers la page demandé)
+       event.preventDefault();
+       // Affiche une pop-up de confirmation
+       var confirmation = confirm("Êtes-vous sûr de vouloir passer au test final ? Assurez-vous d'avoir complété toutes les leçons.");
+ 
+       // Vérifie si l'utilisateur a cliqué sur "OK" dans la boîte de dialogue
+       if (confirmation) {
+          // Si l'utilisateur confirme il est redirigé vers le lien stocké dans le href de l'élément avec la classe finalexam (hyperlink dans notre cas)
+          window.location.href = lienTestFinal.href;
+       }
     });
  });
  
@@ -28,23 +28,23 @@ document.addEventListener('DOMContentLoaded', function () {
  
     // Boucle sur chaque question dans le tableau "reponsesCorrectes"
     for (var i = 1; i <= reponsesCorrectes.length; i++) {
-        // Sélectionne l'élément avec l'id "mot" suivi du numéro de la question
-        var element = document.getElementById("mot" + i);
-        // Récupère la réponse de l'utilisateur et la convertit en minuscules pour la comparaison (Pour accepter la réponse même avec des Majuscules/Minuscules différentes de la réponse attendue)
-        var reponseUtilisateur = element.value.toLowerCase();
+       // Sélectionne l'élément avec l'id "mot" suivi du numéro de la question
+       var element = document.getElementById("mot" + i);
+       // Récupère la réponse de l'utilisateur et la convertit en minuscules pour la comparaison (Pour accepter la réponse même avec des Majuscules/Minuscules différentes de la réponse attendue)
+       var reponseUtilisateur = element.value.toLowerCase();
  
-        // Compare la réponse de l'utilisateur à la réponse attendue
-        if (reponseUtilisateur !== reponsesCorrectes[i - 1]) {
-            // Change la couleur de la bordure de l'élément en rouge si la réponse est différente
-            element.style.border = "2px solid red";
-            // Affiche la bonne réponse comme placeholder
-            element.placeholder = reponsesCorrectes[i - 1];
-            // Augmente le compteur d'erreur
-            erreurs++;
-        } else {
-            // Change la couleur de la bordure de l'élément en vert si la réponse est identique
-            element.style.border = "2px solid green";
-        }
+       // Compare la réponse de l'utilisateur à la réponse attendue
+       if (reponseUtilisateur !== reponsesCorrectes[i - 1]) {
+          // Change la couleur de la bordure de l'élément en rouge si la réponse est différente
+          element.style.border = "2px solid red";
+          // Affiche la bonne réponse comme placeholder
+          element.placeholder = reponsesCorrectes[i - 1];
+          // Augmente le compteur d'erreur
+          erreurs++;
+       } else {
+          // Change la couleur de la bordure de l'élément en vert si la réponse est identique
+          element.style.border = "2px solid green";
+       }
     }
  
     // Appelle la fonction afficherResultat pour montrer le résultat
