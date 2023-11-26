@@ -24,7 +24,7 @@ TO-DO LIST :
 
 - Responsive
     - Tonalite V
-    - Accords X
+    - Accords V
     - Index V
     - resultats V
     - histoire V
@@ -49,18 +49,20 @@ TO-DO LIST :
         - finaltest V
         - partition V
     - JS : 
-        - Tonalite X
-        - Accords X
-        - Index X
-        - histoire X
-        - finaltest X
-        - partition X 
-    - Python X
+        - Tonalite V
+        - Accords V
+        - Index V
+        - histoire V
+        - finaltest V
+        - partition V
+    - Python V
 
 - Correction fautes d'orthographes V
 - Creation de la Video V 
+- Faire un JavaScript/HTML TEST raccord V
 - Compréhension du code (Par tout le monde) X
-- Faire un JavaScript/HTML TEST raccord X
+
+> (Redocumenter JS+PYTHON correctement / Finir le responsive de accords / faire les etapes final)
 
 - ETAPES final :
  1. Verifier tout les boutons sur le site
