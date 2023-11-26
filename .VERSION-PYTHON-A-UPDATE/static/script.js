@@ -1,22 +1,19 @@
-// Attente du chargement complet du document HTML
+// Écoute l'événement 'DOMContentLoaded' pour exécuter du code une fois que le contenu HTML est complètement chargé.
 document.addEventListener('DOMContentLoaded', function () {
-
-    // Sélectionne l'élément avec la classe 'finalexam' dans le document
+    // Sélectionne l'élément avec la classe 'finalexam'.
     var lienTestFinal = document.querySelector('.finalexam');
  
-    // Ajoute un écouteur d'événement au clic sur le lien 'Test Final'
+    // Ajoute un écouteur d'événement de clic sur l'élément sélectionné.
     lienTestFinal.addEventListener('click', function (event) {
- 
-       // Empêche le comportement par défaut du lien (ici, la navigation vers une autre page)
-       event.preventDefault();
- 
-       // Affiche une boîte de dialogue de confirmation avec un message personnalisé
-       var confirmation = confirm("Êtes-vous sûr de vouloir passer au test final ? Assurez-vous d'avoir complété toutes les lessons.");
- 
-       // Si l'utilisateur confirme
-       if (confirmation) {
-          // Redirige l'utilisateur vers l'URL du lien 'Test Final'
-          window.location.href = lienTestFinal.href;
-       }
+        // Empêche le comportement par défaut du lien (empêcher la navigation vers l'URL du lien).
+        event.preventDefault();
+        // Affiche une boîte de dialogue de confirmation avec un message personnalisé.
+        var confirmation = confirm("Êtes-vous sûr de vouloir passer au test final ? Assurez-vous d'avoir complété toutes les leçons.");
+        
+        // Vérifie si l'utilisateur a cliqué sur "OK" dans la boîte de dialogue.
+        if (confirmation) {
+            // Si l'utilisateur confirme, redirige vers l'URL spécifiée dans l'attribut href de 'lienTestFinal'.
+            window.location.href = lienTestFinal.href;
+        }
     });
  });

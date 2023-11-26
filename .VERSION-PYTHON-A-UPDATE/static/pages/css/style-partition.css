@@ -1,8 +1,8 @@
 /******* Corp du site *******/
-/* Import de la police d'écriture */
+/* Import de la police d'écriture *Fait par Sacha Pastor* */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Paramètres et fond général de la page */
+/* Paramètres et fond général de la page *Fait par Sacha Pastor* */
 body {
 	background-color: white;
 	overflow-x: hidden;
@@ -15,20 +15,20 @@ body {
 
 /******* HEADER *******/
 
-/* Image du Logo sur le header */
+/* Image du Logo sur le header *Fait par Sacha Pastor* */
 .header img {
 	width: 100px;
 	height: 100px;
 }
 
-/* Bar du header */
+/* Bar du header *Fait par Sacha Pastor* */
 .header {
 	overflow: hidden;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.363) 70%, rgba(0, 0, 0, 0));
 	padding: 20px 10px;
 }
 
-/* Les liens de pages sur le header */
+/* Les liens de pages sur le header *Fait par Sacha Pastor* */
 .header a {
 	float: left;
 	color: white;
@@ -40,13 +40,13 @@ body {
 	border-radius: 4px;
 }
 
-/* Les liens de pages sur le header avec la class button */
+/* Les liens de pages sur le header avec la class button *Fait par Sacha Pastor* */
 .header .button {
 	margin-top: 30px;
 	margin-right: 30px;
 }
 
-/* Le lien du logo sur le header */
+/* Le lien du logo sur le header *Fait par Sacha Pastor* */
 .header .logo {
 	font-size: 25px;
 	font-weight: bold;
@@ -54,13 +54,13 @@ body {
 	margin-left: 40px;
 }
 
-/* Quand on passe au dessus des liens sur le header */
+/* Quand on passe au dessus des liens sur le header *Fait par Sacha Pastor* */
 .header a:hover {
 	background-color: #ddd;
 	color: black;
 }
 
-/* Le lien sur la page (où on est) sur le header */
+/* Le lien sur la page (où on est) sur le header *Fait par Sacha Pastor* */
 .header .active {
 	background-color: rgb(255, 214, 30);
 	color: white;
@@ -68,13 +68,13 @@ body {
 	margin-right: 30px;
 }
 
-/* La partie droite du header */
+/* La partie droite du header *Fait par Sacha Pastor* */
 .header-droit {
 	float: right;
 	margin-top: 30px;
 }
 
-/* Le bouton sur la partie droite du header */
+/* Le bouton sur la partie droite du header *Fait par Sacha Pastor* */
 .header-droit .finalexam {
 	border: 2px solid rgb(255, 214, 30);
 	margin-right: 40px;
@@ -83,7 +83,7 @@ body {
 
 /******* FIN DU HEADER *******/
 
-/* Titre de la page */
+/* Titre de la page *Fait par Eloi Guillot* */
 .partition h1 {
 	margin-top: 100px;
 	margin-bottom: 100px;
@@ -92,15 +92,17 @@ body {
 	color: #ffe033;
 }
 
-/* Titre texte 1 et 3 */
-.partition h2.first, h2.third {
+/* Titre texte 1 et 3 *Fait par Eloi Guillot* */
+.partition h2.first,
+h2.third {
 	margin-top: 50px;
 	margin-left: 100px;
 	font-size: 40px;
 }
 
-/* Paragraphes 1 et 3 */
-.partition p.first, p.third {
+/* Paragraphes 1 et 3 *Fait par Eloi Guillot* */
+.partition p.first,
+p.third {
 	margin-top: 30px;
 	margin-left: 100px;
 	font-size: 25px;
@@ -108,41 +110,41 @@ body {
 	max-width: 800px;
 }
 
-/* Paramètres général pour les images */
+/* Paramètres général pour les images *Fait par Eloi Guillot* */
 .partition img {
 	width: 1000px;
 	height: 600px;
 	border-radius: 50px;
 }
 
-/* Image du premier paragraphe*/
+/* Image du premier paragraphe *Fait par Eloi Guillot* */
 .pp {
 	margin-left: 1450px;
 	margin-top: -350px;
 	margin-bottom: 150px;
 }
 
-/* Image du second paragraphe*/
+/* Image du second paragraphe *Fait par Eloi Guillot* */
 .dp {
 	margin-left: 50px;
 	margin-top: -550px;
 	margin-bottom: 150px;
 }
 
-/* Image du troisième paragraphe*/
+/* Image du troisième paragraphe *Fait par Eloi Guillot* */
 .tp {
 	margin-left: 1450px;
 	margin-top: -780px;
 }
 
-/* Image du quatrième paragraphe*/
+/* Image du quatrième paragraphe *Fait par Eloi Guillot* */
 .qp {
 	margin-left: 50px;
 	margin-top: -1000px;
 	margin-bottom: 150px;
 }
 
-/* Titre texte 2 */
+/* Titre texte 2 *Fait par Eloi Guillot* */
 .partition h2.second {
 	margin-top: 150px;
 	margin-right: 100px;
@@ -150,7 +152,7 @@ body {
 	text-align: right;
 }
 
-/* Titre texte 4 */
+/* Titre texte 4 *Fait par Eloi Guillot* */
 .partition h2.fourth {
 	margin-top: 150px;
 	margin-right: 100px;
@@ -158,7 +160,7 @@ body {
 	text-align: right;
 }
 
-/* Paragraphes 2 */
+/* Paragraphes 2 *Fait par Eloi Guillot* */
 .partition p.second {
 	margin-top: 30px;
 	margin-right: 100px;
@@ -167,7 +169,7 @@ body {
 	text-align: justify;
 }
 
-/* Paragraphes 4 */
+/* Paragraphes 4 *Fait par Eloi Guillot* */
 .partition p.fourth {
 	margin-top: 30px;
 	margin-right: 100px;
@@ -177,7 +179,7 @@ body {
 	text-align: justify;
 }
 
-/* Boutton pour accéder au cours suivant */
+/* Boutton pour accéder au cours suivant *Fait par Eloi Guillot* */
 .nextbutton {
 	background-color: #ffe033;
 	color: white;
@@ -191,19 +193,19 @@ body {
 	margin-top: 100px;
 }
 
-/* l'image sur le boutton pour accéder au cours suivant */
+/* l'image sur le boutton pour accéder au cours suivant *Fait par Eloi Guillot* */
 .imgnextbutton {
 	margin-bottom: -10px;
 	width: 50px;
 	height: 50px;
 }
 
-/* le Boutton pour accéder au cours suivant quand on passe dessus */
+/* le Boutton pour accéder au cours suivant quand on passe dessus *Fait par Eloi Guillot* */
 .nextbutton:hover {
 	transform: scale(1.1);
 }
 
-/* Bar horizontal pour séparer la lesson du test */
+/* Bar horizontal pour séparer la lesson du test *Fait par Eloi Guillot* */
 .separateur {
 	position: absolute;
 	left: 0;
@@ -213,7 +215,7 @@ body {
 }
 
 
-/* Titre du test */
+/* Titre du test *Fait par Eloi Guillot* */
 h1.test {
 	margin-top: 650px;
 	margin-bottom: 100px;
@@ -223,7 +225,7 @@ h1.test {
 }
 
 
-/* Description (Indications) du Test */
+/* Description (Indications) du Test *Fait par Eloi Guillot* */
 .test h2 {
 	margin-top: 50px;
 	margin-bottom: 100px;
@@ -233,7 +235,7 @@ h1.test {
 }
 
 
-/* Texte du Test */
+/* Texte du Test *Fait par Eloi Guillot* */
 .test h3 {
 	margin-top: 20px;
 	margin-bottom: 100px;
@@ -242,7 +244,7 @@ h1.test {
 	max-width: 1000px;
 }
 
-/* Image de Piano du Test */
+/* Image de Piano du Test *Fait par Eloi Guillot* */
 .piano {
 	margin-top: -450px;
 	font-size: 25px;
@@ -252,27 +254,15 @@ h1.test {
 	text-align: right;
 }
 
-/* Première Image de Partition du Test */
-.par1 {
-	margin-top: -200px;
-	font-size: 25px;
-	margin-left: 200px;
-	width: 366px;
-	height: 138px;
-	text-align: right;
+/* Image de Piano du Test quand on passe dessus *Fait par Eloi Guillot* */
+.piano:hover {
+	opacity: 0.3;
 }
 
-/* Seconde Image de Partition du Test */
-.par2 {
-	margin-top: -200px;
-	font-size: 25px;
-	margin-left: 100px;
-	width: 366px;
-	height: 138px;
-	text-align: right;
-}
 
-/* Troisième Image de Partition du Test */
+/* Trois Images de Partition du Test *Fait par Eloi Guillot* */
+.par1,
+.par2,
 .par3 {
 	margin-top: -200px;
 	font-size: 25px;
@@ -282,7 +272,7 @@ h1.test {
 	text-align: right;
 }
 
-/* CheckBox du Test */
+/* CheckBox du Test *Fait par Eloi Guillot* */
 .test input[type="checkbox"] {
 	margin-top: 250px;
 	margin-left: 240px;
@@ -290,8 +280,7 @@ h1.test {
 	height: 30px;
 }
 
-
-/* Styles pour le bouton de vérification dans la section du test */
+/* Styles pour le bouton de vérification dans la section du test *Fait par Eloi Guillot* */
 .test button {
 	margin-left: 1150px;
 	margin-top: 200px;
@@ -304,17 +293,53 @@ h1.test {
 	transition: transform 0.2s;
 }
 
-/* Styles pour le bouton de vérification dans la section du test quand on passe dessus */
+/* Styles pour le bouton de vérification dans la section du test quand on passe dessus *Fait par Eloi Guillot* */
 .test button:hover {
 	transform: scale(1.1);
 }
 
-.piano:hover {
+/* Image de Batterie du Test *Fait par Eloi Guillot* */
+.batterie {
+	margin-top: -100px;
+	font-size: 25px;
+	margin-left: 1700px;
+	width: 722px;
+	height: 640px;
+	text-align: right;
+}
+
+/* Image de Batterie du Test Quand on passe dessus *Fait par Eloi Guillot* */
+.batterie:hover {
 	opacity: 0.3;
 }
 
-/* Styles pour le texte de resultat (javascript) dans la section du test */
+/* Trois Images de Partition du Test (Rythmes) *Fait par Eloi Guillot* */
+.ryt1,
+.ryt2,
+.ryt3 {
+	margin-top: -200px;
+	font-size: 25px;
+	margin-left: 100px;
+	width: 366px;
+	height: 100px;
+	text-align: right;
+}
+
+/* Texte du Test mais pour la partie rythme *Fait par Eloi Guillot* */
+.test h3.tbatterie {
+	margin-top: 200px;
+}
+
+/* Styles pour le texte de resultat (javascript) dans la section du test *Fait par Eloi Guillot* */
 #resultat {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 30px;
+	margin-left: 100px;
+}
+
+/* Styles pour le texte de resultat (javascript) dans la section du test pour le "deuxième" test (rythme) *Fait par Eloi Guillot* */
+#resultat1 {
 	margin-top: 10px;
 	font-weight: bold;
 	font-size: 30px;
@@ -323,20 +348,20 @@ h1.test {
 
 
 /******* FOOTER *******/
-/* Pied de page */
+/* Pied de page *Fait par Sacha Pastor* */
 footer {
 	background-color: #ffe033;
 	padding-bottom: 20px;
 	position: relative;
 }
 
-/* Espacement supérieur au pied de page */
+/* Espacement supérieur au pied de page *Fait par Sacha Pastor* */
 footer .top {
 	padding-top: 40px;
 	margin-top: 400px;
 }
 
-/* Logo du pied de page */
+/* Logo du pied de page *Fait par Sacha Pastor* */
 footer img {
 	width: 200px;
 	height: 200px;
@@ -346,25 +371,25 @@ footer img {
 	transition: transform 0.5s;
 }
 
-/* Logo du pied de page quand on passe dessus */
+/* Logo du pied de page quand on passe dessus *Fait par Sacha Pastor* */
 footer img:hover {
 	transform: scale(1.1);
 }
 
-/* Titre "Description" du pied de page */
+/* Titre "Description" du pied de page *Fait par Sacha Pastor* */
 footer h1 {
 	margin-left: 500px;
 	font-size: 60px;
 }
 
-/* Texte (description) du pied de page */
+/* Texte (description) du pied de page *Fait par Sacha Pastor* */
 footer p {
 	margin-left: 500px;
 	margin-top: -20px;
 	font-size: 20px;
 }
 
-/* Lien (vers le site NSI) du pied de page */
+/* Lien (vers le site NSI) du pied de page *Fait par Sacha Pastor* */
 footer .button {
 	margin-top: -150px;
 	font-size: 40px;
@@ -375,19 +400,19 @@ footer .button {
 	color: rgb(155, 155, 155);
 }
 
-/* Lien (vers le site NSI) du pied de page quand on passe dessus*/
+/* Lien (vers le site NSI) du pied de page quand on passe dessus *Fait par Sacha Pastor* */
 footer .button:hover {
 	transform: scale(1.1);
 }
 
-/* Texte "copyright" du pied de page */
+/* Texte "copyright" du pied de page *Fait par Sacha Pastor* */
 footer .copyright {
 	margin-top: -140px;
 	font-size: 20px;
 	margin-left: 2250px;
 }
 
-/* Espacement inférieur au pied de page */
+/* Espacement inférieur au pied de page *Fait par Sacha Pastor* */
 footer .bottom {
 	margin-bottom: 180px;
 }
@@ -399,7 +424,7 @@ footer .bottom {
 /******* RESPONSIVE *******/
 /* Tout est pareile mais avec des tailles/valeurs différentes */
 
-/* Taille d'écran "normal" (max 1920 pixels en largeur) */
+/* Taille d'écran "normal" (max 1920 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 1920px) {
 
 	.header img {
@@ -517,6 +542,73 @@ footer .bottom {
 		border-top: 8px solid #ffe033;
 	}
 
+	.test h2 {
+		margin-top: 50px;
+		margin-bottom: 100px;
+		margin-left: 100px;
+		font-size: 50px;
+		max-width: 1000px;
+	}
+
+	.piano {
+		margin-top: -450px;
+		font-size: 25px;
+		margin-left: 1050px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
+
+	.par1,
+	.par2,
+	.par3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 336px;
+		height: 108px;
+		text-align: right;
+	}
+
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 140px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.test button {
+		margin-left: 850px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.batterie {
+		margin-top: -100px;
+		font-size: 25px;
+		margin-left: 1100px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
+
+	.ryt1,
+	.ryt2,
+	.ryt3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 336px;
+		height: 70px;
+		text-align: right;
+	}
+
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -557,7 +649,7 @@ footer .bottom {
 	}
 }
 
-/* Taille d'écran "Moyen ecran" (max 1600 pixels en largeur) */
+/* Taille d'écran "Moyen ecran" (max 1600 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 1600px) {
 
 	.header img {
@@ -678,6 +770,81 @@ footer .bottom {
 		border-top: 8px solid #ffe033;
 	}
 
+	.test h2 {
+		margin-top: 50px;
+		margin-bottom: 100px;
+		margin-left: 100px;
+		font-size: 50px;
+		max-width: 700px;
+	}
+
+	.test h3 {
+		margin-top: 20px;
+		margin-bottom: 100px;
+		margin-left: 100px;
+		font-size: 35px;
+		max-width: 650px;
+	}
+
+	.piano {
+		margin-top: -450px;
+		font-size: 25px;
+		margin-left: 800px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
+
+	.par1,
+	.par2,
+	.par3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 306px;
+		height: 98px;
+		text-align: right;
+	}
+
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 100px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.test button {
+		margin-left: 740px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.batterie {
+		margin-top: -100px;
+		font-size: 25px;
+		margin-left: 850px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
+
+	.ryt1,
+	.ryt2,
+	.ryt3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 290px;
+		height: 70px;
+		text-align: right;
+	}
+
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -718,7 +885,7 @@ footer .bottom {
 	}
 }
 
-/* Taille d'écran "Petit ecran" (max 1366 pixels en largeur) */
+/* Taille d'écran "Petit ecran" (max 1366 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 1366px) {
 
 	.header img {
@@ -839,6 +1006,83 @@ footer .bottom {
 		border-top: 8px solid #ffe033;
 	}
 
+	.test h2 {
+		margin-top: 50px;
+		margin-bottom: 100px;
+		margin-left: 100px;
+		font-size: 50px;
+		max-width: 1000px;
+	}
+
+	.test h3 {
+		margin-top: 20px;
+		margin-bottom: 100px;
+		margin-left: 100px;
+		font-size: 35px;
+		max-width: 950px;
+	}
+
+	.piano {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 260px;
+		padding-right: 300px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
+
+	.par1,
+	.par2,
+	.par3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 290px;
+		height: 98px;
+		text-align: right;
+	}
+
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 50px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.test button {
+		margin-left: 600px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.batterie {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 400px;
+		padding-right: 300px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
+
+	.ryt1,
+	.ryt2,
+	.ryt3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 50px;
+		width: 290px;
+		height: 70px;
+		text-align: right;
+	}
+
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -880,7 +1124,7 @@ footer .bottom {
 }
 
 
-/* Taille d'écran "pc portable" (max 1200 pixels en largeur) */
+/* Taille d'écran "pc portable" (max 1200 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 1200px) {
 
 	.header img {
@@ -1002,6 +1246,48 @@ footer .bottom {
 		border-top: 8px solid #ffe033;
 	}
 
+
+	.par1,
+	.par2,
+	.par3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 25px;
+		width: 260px;
+		height: 90px;
+		text-align: right;
+	}
+
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 50px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.test button {
+		margin-left: 550px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.ryt1,
+	.ryt2,
+	.ryt3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 25px;
+		width: 260px;
+		height: 70px;
+		text-align: right;
+	}
+
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -1043,7 +1329,7 @@ footer .bottom {
 }
 
 
-/* Taille d'écran "tablette en mode paysage" (max 1024 pixels en largeur) */
+/* Taille d'écran "tablette en mode paysage" (max 1024 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 1024px) {
 	footer .button {
 		font-size: 20px;
@@ -1096,10 +1382,76 @@ footer .bottom {
 		top: 6600px;
 		border-top: 8px solid #ffe033;
 	}
+
+
+	.test h2 {
+		margin-top: 50px;
+		margin-bottom: 100px;
+		margin-left: 100px;
+		font-size: 50px;
+		max-width: 950px;
+	}
+
+	.test h3 {
+		margin-top: 20px;
+		margin-bottom: 100px;
+		margin-left: 100px;
+		font-size: 35px;
+		max-width: 900px;
+	}
+
+	.piano {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 150px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
+
+	.par1,
+	.par2,
+	.par3 {
+		margin-top: -200px;
+		font-size: 25px;
+		margin-left: 25px;
+		width: 290px;
+		height: 98px;
+		text-align: right;
+	}
+
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 380px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.test button {
+		margin-left: 450px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.batterie {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 200px;
+		padding-right: 300px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
 }
 
 
-/* Taille d'écran "tablette en mode portrait" (max 900 pixels en largeur) */
+/* Taille d'écran "tablette en mode portrait" (max 900 pixels en largeur) *Fait par Noa Pagesse* */
 @media screen and (max-width: 900px) {
 	footer .button {
 		font-size: 20px;
@@ -1144,10 +1496,71 @@ footer .bottom {
 		top: 6500px;
 		border-top: 8px solid #ffe033;
 	}
+
+	h1.test {
+		margin-top: 650px;
+		margin-bottom: 100px;
+		margin-left: 200px;
+		font-size: 80px;
+		color: #ffe033;
+	}
+
+	.test h2 {
+		margin-top: 50px;
+		margin-bottom: 100px;
+		margin-left: 50px;
+		font-size: 50px;
+		max-width: 950px;
+	}
+
+	.test h3 {
+		margin-top: 20px;
+		margin-bottom: 100px;
+		margin-left: 50px;
+		font-size: 35px;
+		max-width: 900px;
+	}
+
+	.piano {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 80px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
+
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 300px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.test button {
+		margin-left: 380px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.batterie {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 150px;
+		width: 722px;
+		height: 640px;
+		text-align: right;
+	}
 }
 
 
-/* Taille d'écran "téléphone" (max 720 pixels en largeur) */
+/* Taille d'écran "téléphone" (max 720 pixels en largeur) *Fait par Noa Pagesse* */
 @media screen and (max-width: 720px) {
 
 	.header a {
@@ -1195,6 +1608,51 @@ footer .bottom {
 		transition: transform 0.5s;
 		margin-left: 60px;
 		margin-top: 100px;
+	}
+
+	h1.test {
+		margin-top: 650px;
+		margin-bottom: 100px;
+		margin-left: 50px;
+		font-size: 80px;
+		color: #ffe033;
+	}
+
+	.piano {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 20px;
+		width: 662px;
+		height: 580px;
+		text-align: right;
+	}
+
+	.test input[type="checkbox"] {
+		margin-top: 250px;
+		margin-left: 200px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.test button {
+		margin-left: 280px;
+		margin-top: 200px;
+		font-size: 30px;
+		width: 200px;
+		height: 100px;
+		background-color: #ffe033;
+		border: 0px solid #000;
+		border-radius: 15px;
+		transition: transform 0.2s;
+	}
+
+	.batterie {
+		margin-top: 50px;
+		font-size: 25px;
+		margin-left: 60px;
+		width: 642px;
+		height: 560px;
+		text-align: right;
 	}
 
 	footer img {

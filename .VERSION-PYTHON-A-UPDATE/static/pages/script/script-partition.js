@@ -1,62 +1,82 @@
-// Attente du chargement complet du document HTML
+// Ajoute un écouteur d'événements pour exécuter du code une fois le contenu HTML complètement chargé.
 document.addEventListener('DOMContentLoaded', function () {
+   // Sélectionne l'élément avec la classe 'finalexam' dans le document.
+   var lienTestFinal = document.querySelector('.finalexam');
 
-    // Sélectionne l'élément avec la classe 'finalexam' dans le document
-    var lienTestFinal = document.querySelector('.finalexam');
- 
-    // Ajoute un écouteur d'événement au clic sur le lien 'Test Final'
-    lienTestFinal.addEventListener('click', function (event) {
- 
-       // Empêche le comportement par défaut du lien (ici, la navigation vers une autre page)
+   // Ajoute un écouteur d'événement pour réagir au clic sur cet élément.
+   lienTestFinal.addEventListener('click', function (event) {
+       // Empêche le comportement par défaut du lien (par exemple, empêcher la navigation automatique).
        event.preventDefault();
- 
-       // Affiche une boîte de dialogue de confirmation avec un message personnalisé
+       // Affiche une boîte de dialogue de confirmation avec un message personnalisé.
        var confirmation = confirm("Êtes-vous sûr de vouloir passer au test final ? Assurez-vous d'avoir complété toutes les leçons.");
- 
-       // Si l'utilisateur confirme
+       
+       // Vérifie si l'utilisateur a confirmé dans la boîte de dialogue.
        if (confirmation) {
-          // Redirige l'utilisateur vers l'URL du lien 'Test Final'
-          window.location.href = lienTestFinal.href;
+           // Si confirmé, redirige l'utilisateur vers l'URL spécifiée dans l'attribut href de 'lienTestFinal'.
+           window.location.href = lienTestFinal.href;
        }
-    });
- });
- 
- function playAudio(source) {
-    var audioPlayer = document.getElementById('audioPlayer');
-    audioPlayer.src = source;
-    audioPlayer.play();
- }
- 
- function openImg() {
-    playAudio("../audio/test1.mp3");
- }
- 
- // Gestion des cases à cocher pour qu'une seule case puisse être cochée
- function gererCheckboxes() {
-    var checkboxes = document.querySelectorAll('input[type=checkbox][name="partition"]');
-    checkboxes.forEach(function (checkbox) {
+   });
+});
+
+// Déclaration de la fonction playAudio qui prend un chemin de fichier audio en tant que source.
+function playAudio(source) {
+   // Récupère l'élément audioPlayer par son ID.
+   var audioPlayer = document.getElementById('audioPlayer');
+   // Définit la source de l'audioPlayer avec le chemin fourni.
+   audioPlayer.src = source;
+   // Déclenche la lecture de l'audio.
+   audioPlayer.play();
+}
+
+// Déclaration de la fonction openImg sans paramètres.
+function openImg() {
+   // Appelle la fonction playAudio avec un chemin de fichier audio spécifique.
+   playAudio("/static/audio/test1.mp3");
+}
+
+// Déclaration de la fonction openImg1 sans paramètres.
+function openImg1() {
+   // Appelle la fonction playAudio avec un autre chemin de fichier audio spécifique.
+   playAudio("/static/audio/audiobatterie.mp3");
+}
+
+// Déclaration de la fonction gererCheckboxes qui prend le nom d'un groupe de checkboxes en paramètre.
+function gererCheckboxes(nomCheckbox) {
+   // Sélectionne toutes les checkboxes avec le nom spécifié.
+   var checkboxes = document.querySelectorAll('input[type=checkbox][name="' + nomCheckbox + '"]');
+   
+   // Boucle sur chaque checkbox sélectionnée.
+   checkboxes.forEach(function (checkbox) {
+       // Ajoute un écouteur d'événement pour détecter un changement (coché/décoché) sur chaque checkbox.
        checkbox.addEventListener('change', function () {
-          checkboxes.forEach(function (other) {
-             if (other !== checkbox) other.checked = false;
-          });
+           // Boucle sur toutes les checkboxes du même groupe.
+           checkboxes.forEach(function (other) {
+               // Décoche toutes les autres checkboxes du groupe, sauf celle qui vient d'être cochée.
+               if (other !== checkbox) other.checked = false;
+           });
        });
-    });
- }
- 
- // Vérification des réponses
- function verifierReponses() {
-    var bonneReponse = "part1"; // Remplacer par l'ID de la bonne case à cocher
-    var reponseUtilisateur = document.querySelector('input[type=checkbox][name="partition"]:checked');
- 
-    var resultat = document.getElementById("resultat");
-    if (reponseUtilisateur && reponseUtilisateur.id === bonneReponse) {
+   });
+}
+
+// Appelle la fonction gererCheckboxes pour les groupes de checkboxes 'partition' et 'rythme'.
+gererCheckboxes("partition");
+gererCheckboxes("rythme");
+
+// Déclaration de la fonction verifierReponses qui prend le nom du groupe de checkboxes, la réponse correcte et l'ID de l'élément résultat.
+function verifierReponses(nomCheckbox, reponsesCorrectes, idResultat) {
+   // Sélectionne la checkbox cochée dans le groupe spécifié.
+   var reponseUtilisateur = document.querySelector('input[type=checkbox][name="' + nomCheckbox + '"]:checked');
+   // Obtient ou crée l'élément pour afficher le résultat.
+   var resultat = document.getElementById(idResultat) || creerElementResultat(idResultat);
+
+   // Vérifie si la checkbox cochée est la réponse correcte.
+   if (reponseUtilisateur && reponseUtilisateur.id === reponsesCorrectes) {
+       // Si oui, affiche un message de succès et change la couleur du texte en vert.
        resultat.innerHTML = "Bonne réponse!";
        resultat.style.color = "green";
-    } else {
+   } else {
+       // Sinon, affiche un message d'erreur et change la couleur du texte en rouge.
        resultat.innerHTML = "Mauvaise réponse.";
        resultat.style.color = "red";
-    }
- }
- 
- // Initialiser la gestion des cases à cocher
- gererCheckboxes();
+   }
+}

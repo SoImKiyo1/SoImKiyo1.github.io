@@ -1,8 +1,8 @@
 /******* Corp du site *******/
-/* Import de la police d'écriture */
+/* Import de la police d'écriture *Fait par Sacha Pastor* */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Paramètres et fond général de la page */
+/* Paramètres et fond général de la page *Fait par Sacha Pastor* */
 body {
 	background-color: white;
 	overflow-x: hidden;
@@ -15,7 +15,7 @@ body {
 
 /******* HEADER *******/
 
-/* Image du Logo sur le header */
+/* Image du Logo sur le header *Fait par Sacha Pastor* */
 .header img {
 	width: 100px;
 	height: 100px;
@@ -28,7 +28,7 @@ body {
 	padding: 20px 10px;
 }
 
-/* Les liens de pages sur le header */
+/* Les liens de pages sur le header *Fait par Sacha Pastor* */
 .header a {
 	float: left;
 	color: white;
@@ -40,13 +40,13 @@ body {
 	border-radius: 4px;
 }
 
-/* Les liens de pages sur le header avec la class button */
+/* Les liens de pages sur le header avec la class button *Fait par Sacha Pastor* */
 .header .button {
 	margin-top: 30px;
 	margin-right: 30px;
 }
 
-/* Le lien du logo sur le header */
+/* Le lien du logo sur le header *Fait par Sacha Pastor* */
 .header .logo {
 	font-size: 25px;
 	font-weight: bold;
@@ -54,19 +54,19 @@ body {
 	margin-left: 40px;
 }
 
-/* Quand on passe au dessus des liens sur le header */
+/* Quand on passe au dessus des liens sur le header *Fait par Sacha Pastor* */
 .header a:hover {
 	background-color: #ddd;
 	color: black;
 }
 
-/* La partie droite du header */
+/* La partie droite du header *Fait par Sacha Pastor* */
 .header-droit {
 	float: right;
 	margin-top: 30px;
 }
 
-/* Le bouton sur la partie droite du header */
+/* Le bouton sur la partie droite du header *Fait par Sacha Pastor* */
 .header-droit .finalexam {
 	border: 2px solid rgb(255, 214, 30);
 	margin-right: 40px;
@@ -76,7 +76,7 @@ body {
 
 /******* FIN DU HEADER *******/
 
-
+/* Titre (principal) de la page *Fait par Eloi Guillot* */
 h1.finaltest {
 	font-size: 80px;
 	color: #ffe033;
@@ -85,7 +85,7 @@ h1.finaltest {
 	font-size: 80px;
 }
 
-/* Style général du formulaire */
+/* Style général du formulaire *Fait par Eloi Guillot* */
 form#qcmForm {
 	max-width: 600px;
 	margin: 200px auto;
@@ -96,21 +96,21 @@ form#qcmForm {
 	text-align: center;
 }
 
-/* Container pour les champs Nom et Prénom */
+/* Container pour les entrées pour le Nom et Prénom *Fait par Eloi Guillot* */
 .form-row {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 20px;
 }
 
-/* Style pour chaque champ de texte */
+/* Style pour chaque entrées de texte (Nom et prénom) *Fait par Eloi Guillot* */
 .form-field {
 	display: flex;
 	flex-direction: column;
 	width: 48%;
-	/* Permet de mettre les deux champs sur une même ligne */
 }
 
+/* Texte (Nom/Prénom) des entrées de texte *Fait par Eloi Guillot* */
 .form-field label {
 	font-size: 16px;
 	color: #333;
@@ -118,6 +118,7 @@ form#qcmForm {
 	text-align: left;
 }
 
+/* Style pour les entrées de texte *Fait par Eloi Guillot* */
 .form-field input[type="text"] {
 	padding: 10px;
 	border-radius: 5px;
@@ -125,32 +126,34 @@ form#qcmForm {
 	font-size: 14px;
 }
 
-/* Style des questions et des checkbox */
+/* Style du conteneur (div) des questions et checkbox *Fait par Eloi Guillot* */
 .question {
 	margin-bottom: 20px;
 }
 
+/* Texte des questions *Fait par Eloi Guillot* */
 .question p {
 	font-size: 18px;
 	color: #333;
 	margin-bottom: 10px;
 }
 
+/* Texte pour chaque réponses possible *Fait par Eloi Guillot* */
 .question label {
 	margin-right: 10px;
 	font-size: 16px;
 	color: #333;
 }
 
+/* Style des checkbox *Fait par Eloi Guillot* */
 .question input[type="checkbox"] {
 	margin-right: 5px;
 }
 
-/* Bouton de vérification */
+/* Bouton de vérification *Fait par Eloi Guillot* */
 input[type="submit"] {
 	padding: 10px 20px;
 	background-color: #fada05;
-	/* Couleur jaune du thème */
 	color: #333;
 	border: none;
 	border-radius: 5px;
@@ -160,27 +163,27 @@ input[type="submit"] {
 	transition: background-color 0.3s ease;
 }
 
+/* Bouton de vérification quand on passe au dessus *Fait par Eloi Guillot* */
 input[type="submit"]:hover {
 	background-color: #e1c204;
-	/* Une teinte de jaune plus foncée pour le survol */
 }
 
 
 /******* FOOTER *******/
-/* Pied de page */
+/* Pied de page *Fait par Sacha Pastor* */
 footer {
 	background-color: #ffe033;
 	padding-bottom: 20px;
 	position: relative;
 }
 
-/* Espacement supérieur au pied de page */
+/* Espacement supérieur au pied de page *Fait par Sacha Pastor* */
 footer .top {
 	padding-top: 40px;
 	margin-top: 400px;
 }
 
-/* Logo du pied de page */
+/* Logo du pied de page *Fait par Sacha Pastor* */
 footer img {
 	width: 200px;
 	height: 200px;
@@ -190,25 +193,25 @@ footer img {
 	transition: transform 0.5s;
 }
 
-/* Logo du pied de page quand on passe dessus */
+/* Logo du pied de page quand on passe dessus *Fait par Sacha Pastor* */
 footer img:hover {
 	transform: scale(1.1);
 }
 
-/* Titre "Description" du pied de page */
+/* Titre "Description" du pied de page *Fait par Sacha Pastor* */
 footer h1 {
 	margin-left: 500px;
 	font-size: 60px;
 }
 
-/* Texte (description) du pied de page */
+/* Texte (description) du pied de page *Fait par Sacha Pastor* */
 footer p {
 	margin-left: 500px;
 	margin-top: -20px;
 	font-size: 20px;
 }
 
-/* Lien (vers le site NSI) du pied de page */
+/* Lien (vers le site NSI) du pied de page *Fait par Sacha Pastor* */
 footer .button {
 	margin-top: -150px;
 	font-size: 40px;
@@ -219,19 +222,19 @@ footer .button {
 	color: rgb(155, 155, 155);
 }
 
-/* Lien (vers le site NSI) du pied de page quand on passe dessus*/
+/* Lien (vers le site NSI) du pied de page quand on passe dessus *Fait par Sacha Pastor* */
 footer .button:hover {
 	transform: scale(1.1);
 }
 
-/* Texte "copyright" du pied de page */
+/* Texte "copyright" du pied de page *Fait par Sacha Pastor* */
 footer .copyright {
 	margin-top: -140px;
 	font-size: 20px;
 	margin-left: 2250px;
 }
 
-/* Espacement inférieur au pied de page */
+/* Espacement inférieur au pied de page *Fait par Sacha Pastor* */
 footer .bottom {
 	margin-bottom: 180px;
 }
@@ -241,11 +244,11 @@ footer .bottom {
 
 
 /******* RESPONSIVE *******/
+/* Tout est pareile mais avec des tailles/valeurs différentes */
 
-/* Taille d'écran "normal" (max 1920 pixels en largeur) */
+/* Taille d'écran "normal" (max 1920 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 1920px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -286,8 +289,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -328,10 +329,9 @@ footer .bottom {
 	}
 }
 
-/* Taille d'écran (1600x900 pixels) */
+/* Taille d'écran "Moyen ecran" (max 1600 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 1600px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -372,8 +372,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -415,10 +413,9 @@ footer .bottom {
 }
 
 
-/* Taille d'écran (1366x768) */
+/* Taille d'écran "Petit ecran" (max 1366 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 1366px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -459,8 +456,6 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
-
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -502,10 +497,9 @@ footer .bottom {
 }
 
 
-/* Taille d'écran "pc portable" (max 1200 pixels en largeur) */
+/* Taille d'écran "pc portable" (max 1200 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 1200px) {
 
-	/* En-Tête */
 	.header img {
 		width: 80px;
 		height: 80px;
@@ -546,7 +540,6 @@ footer .bottom {
 		margin-right: 30px;
 	}
 
-	/* FOOTER */
 	footer img {
 		width: 200px;
 		height: 200px;
@@ -588,7 +581,7 @@ footer .bottom {
 }
 
 
-/* Taille d'écran "tablette en mode paysage" (max 1024 pixels en largeur) */
+/* Taille d'écran "tablette en mode paysage" (max 1024 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 1024px) {
 	footer .button {
 		font-size: 20px;
@@ -600,7 +593,7 @@ footer .bottom {
 }
 
 
-/* Taille d'écran "tablette en mode portrait" (max 900 pixels en largeur) */
+/* Taille d'écran "tablette en mode portrait" (max 900 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 900px) {
 	footer .button {
 		font-size: 20px;
@@ -612,10 +605,9 @@ footer .bottom {
 }
 
 
-/* Taille d'écran "téléphone" (max 720 pixels en largeur) */
+/* Taille d'écran "téléphone" (max 720 pixels en largeur) *Fait par Eloi Guillot* */
 @media screen and (max-width: 720px) {
 
-	/* En-Tête */
 	.header a {
 		float: none;
 		display: block;
@@ -627,7 +619,6 @@ footer .bottom {
 	}
 
 
-	/* FOOTER */
 	footer img {
 		width: 150px;
 		height: 150px;

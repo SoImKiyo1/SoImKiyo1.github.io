@@ -1,20 +1,19 @@
-<!-- https://other-wikis.gitbook.io/projet-nsi-learn-solfege/html/finaltest.html -->
 <!DOCTYPE html>
 <html lang="fr">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Nom du site -->
+      <!-- Nom du site *Fait par Noa Pagesse* -->
       <title>Learn-Solfege</title>
-      <!-- Lien vers le fichier CSS externe -->
+      <!-- Lien vers le fichier CSS externe *Fait par Noa Pagesse* -->
       <link rel="stylesheet" href="/static/pages/css/style-finaltest.css">
-      <!-- Favicon du site -->
+      <!-- Favicon du site *Fait par Noa Pagesse* -->
       <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
    </head>
    <body>
-      <!-- Section En-Tete -->
+      <!-- Section En-Tete *Fait par Sacha Pastor* -->
       <div class="header">
-         <!-- Le logo et les liens vers les pages -->
+         <!-- Le logo et les liens vers les pages *Fait par Sacha Pastor* -->
          <a href="../." class="logo">
          <img src="/static/images/logo2-min.png" alt="Logo Learn-Solfege"/>
          </a>
@@ -26,13 +25,11 @@
             <a class="finalexam" href="../pages/finaltest.html">Test Final</a>
          </div>
       </div>
-      <!-- Titre de la page -->
+      <!-- Titre de la page *Fait par Noa Pagesse* -->
       <h1 class="finaltest">Test Final</h1>
-      <!-- Description de la page -->
-      <p class="finaltest"></p>
       <!-- Test -->
       <form id="qcmForm" action="/resultat" method="post">
-         <!-- Les champs pour le nom et le prénom -->
+         <!-- Les champs pour le nom et le prénom *Fait par Sacha Pastor* -->
          <div class="form-row">
             <div class="form-field">
                <label for="nom">Nom:</label>
@@ -43,50 +40,51 @@
                <input type="text" id="prenom" name="prenom" required>
             </div>
          </div>
-         <!-- Questions -->
+         <!-- Questions *Fait par Noa Pagesse* -->
          <div class="question">
-            <p>Question 1: Le chant grégorien était la forme principale de musique dans l'église catholique entre le Ve et le IXe siècle.</p>
-            <input type="checkbox" id="q1vrai" name="question1" value="vrai">
-            <label for="q1vrai">Vrai</label>
-            <input type="checkbox" id="q1faux" name="question1" value="faux">
-            <label for="q1faux">Faux</label>
+            <p>Question 1: De combien de notes est composé l'accord parfait?</p>
+            <input type="checkbox" id="q1vrai" name="question1" value="3 notes">
+            <label for="q1vrai">3 notes</label>
+            <input type="checkbox" id="q1faux" name="question1" value="4 notes">
+            <label for="q1faux">4 notes</label>
          </div>
          <div class="question">
-            <p>Question 2: La polyphonie a atteint son apogée pendant la Renaissance.</p>
-            <input type="checkbox" id="q2vrai" name="question2" value="vrai">
-            <label for="q2vrai">Vrai</label>
-            <input type="checkbox" id="q2faux" name="question2" value="faux">
-            <label for="q2faux">Faux</label>
+            <p>Question 2: A quelle époque, la polyphonie est elle à son apogée?</p>
+            <input type="checkbox" id="q2vrai" name="question2" value="Le Moyen-Age">
+            <label for="q2vrai">Le Moyen-Age</label>
+            <input type="checkbox" id="q2faux" name="question2" value="La renaissance">
+            <label for="q2faux">La renaissance</label>
          </div>
          <div class="question">
-            <p>Question 3: Une portée musicale est constituée de quatre lignes horizontales.</p>
-            <input type="checkbox" id="q3vrai" name="question3" value="vrai">
-            <label for="q3vrai">Vrai</label>
-            <input type="checkbox" id="q3faux" name="question3" value="faux">
-            <label for="q3faux">Faux</label>
+            <p>Question 3: A quoi servent les dièses?</p>
+            <input type="checkbox" id="q3vrai" name="question3" value="Monter la note d'1/2 ton">
+            <label for="q3vrai">Monter la note d'1/2 ton</label>
+            <input type="checkbox" id="q3faux" name="question3" value="Descendre la note d'1/2 ton">
+            <label for="q3faux">Descendre la note d'1/2 ton</label>
          </div>
          <div class="question">
-            <p>Question 4: Dans un accord parfait mineur, l'intervalle entre la fondamentale et la seconde note est une tierce mineure.</p>
-            <input type="checkbox" id="q4vrai" name="question4" value="vrai">
-            <label for="q4vrai">Vrai</label>
-            <input type="checkbox" id="q4faux" name="question4" value="faux">
-            <label for="q4faux">Faux</label>
+            <p>Question 4: A quoi servent les bémols?</p>
+            <input type="checkbox" id="q4vrai" name="question4" value="Monter la note d'1/2 ton">
+            <label for="q4vrai">Monter la note d'1/2 ton</label>
+            <input type="checkbox" id="q4faux" name="question4" value="Descendre la note d'1/2 ton">
+            <label for="q4faux">Descendre la note d'1/2 ton</label>
          </div>
          <div class="question">
-            <p>Question 5: Une portée musicale est constituée de quatre lignes horizontales.</p>
-            <input type="checkbox" id="q5vrai" name="question5" value="vrai">
-            <label for="q5vrai">Vrai</label>
-            <input type="checkbox" id="q5faux" name="question5" value="faux">
-            <label for="q5faux">Faux</label>
+            <p>Question 5: Combien de temps dure une blanche?</p>
+            <input type="checkbox" id="q5vrai" name="question5" value="4 temps">
+            <label for="q5vrai">4 temps</label>
+            <input type="checkbox" id="q5faux" name="question5" value="2 temps">
+            <label for="q5faux">2 temps</label>
          </div>
          <input type="submit" value="Vérifier">
       </form>
-      <!-- Pied de Page (Footer) -->
+      <!-- Pied de Page (Footer) *Fait par Sacha Pastor* -->
       <footer>
          <a href="../.">
          <img src="/static/images/logo-min.png" alt="Logo Learn-Solfege"/>
          </a>
          <p class="top"></p>
+         <!-- Texte *Fait par Eloi Guillot* -->
          <h1>Description</h1>
          <p>“Learn-Solfege” est un site d’apprentissage en ligne dédié à l’enseignement du solfège et de la musique.
             <br>Ce site propose des cours clairs et concis pour comprendre les fondements de l’écriture musicale, des
@@ -96,7 +94,7 @@
          <p class="copyright">© Copyright 2023 Learn-Solfege</p>
          <p class="bottom"></p>
       </footer>
-      <!-- Lien vers le fichier JavaScript externe (script.js) -->
+      <!-- Lien vers le fichier JavaScript externe (script.js) *Fait par Noa Pagesse* -->
       <script src="/static/pages/script/script-finaltest.js"></script>
    </body>
 </html>

@@ -23,47 +23,46 @@ TO-DO LIST :
 - Amelioration SEO V
 
 - Responsive
-    - Tonalite X
-    - Accords X
+    - Tonalite V
+    - Accords V
     - Index V
-    - 404 V
     - resultats V
     - histoire V
     - finaltest V
-    - partition V (sauf le test)
+    - partition V
 
 - Documentation Code
     - HTML :
         - Tonalite V
         - Accords V
         - Index V
-        - 404 V
         - resultats V
         - histoire V
         - finaltest V
          - partition V
     - CSS :
-        - Tonalite X
-        - Accords X
-        - Index X
-        - 404 X
-        - resultats X
-        - histoire X 
-        - finaltest X
+        - Tonalite V
+        - Accords V
+        - Index V
+        - resultats V
+        - histoire V
+        - finaltest V
         - partition V
     - JS : 
-        - Tonalite X
-        - Accords X
-        - Index X
-        - resultats X
-        - histoire X
-        - finaltest X
-        - partition X 
-    - Python X
+        - Tonalite V
+        - Accords V
+        - Index V
+        - histoire V
+        - finaltest V
+        - partition V
+    - Python V
 
-- Correction fautes d'orthographes X
+- Correction fautes d'orthographes V
 - Creation de la Video V 
+- Faire un JavaScript/HTML TEST raccord V
 - Compréhension du code (Par tout le monde) X
+
+> (Redocumenter JS+PYTHON correctement / Finir le responsive de accords / faire les etapes final)
 
 - ETAPES final :
  1. Verifier tout les boutons sur le site
