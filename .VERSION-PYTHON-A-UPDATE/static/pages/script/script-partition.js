@@ -80,15 +80,3 @@ function verifierReponses(nomCheckbox, reponsesCorrectes, idResultat) {
        resultat.style.color = "red";
    }
 }
-
-// Déclaration de la fonction creerElementResultat pour créer un élément de résultat si nécessaire.
-function creerElementResultat(id) {
-   // Crée un nouvel élément div.
-   var resultat = document.createElement("div");
-   // Attribue l'ID fourni à l'élément.
-   resultat.id = id;
-   // Ajoute l'élément créé au corps du document.
-   document.body.appendChild(resultat);
-   // Retourne l'élément résultat.
-   return resultat;
-}

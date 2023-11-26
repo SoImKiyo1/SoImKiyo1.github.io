@@ -59,16 +59,3 @@ document.addEventListener('DOMContentLoaded', function () {
     // Change la couleur du texte en vert pour zéro erreur, sinon en rouge.
     resultat.style.color = erreurs === 0 ? "green" : "red";
  }
- 
- // Déclaration de la fonction creerElementResultat pour créer un élément de résultat si nécessaire.
- function creerElementResultat(id) {
-    // Crée un nouvel élément div.
-    var resultat = document.createElement("div");
-    // Attribue l'ID fourni à l'élément.
-    resultat.id = id;
-    // Ajoute l'élément créé au corps du document.
-    document.body.appendChild(resultat);
-    // Retourne l'élément résultat.
-    return resultat;
- }
- 
