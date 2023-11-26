@@ -8,10 +8,28 @@ function playAudio(source) {
    audioPlayer.play();
 }
 
-// Déclaration de la fonction openImg qui prend un chemin d'audio et appelle playAudio.
-function openImg(audioPath) {
-   // Appelle la fonction playAudio avec le chemin d'audio fourni.
-   playAudio(audioPath);
+// Déclaration de la fonction openImg sans paramètres.
+function openImg() {
+   // Appelle la fonction playAudio avec un chemin de fichier audio spécifique.
+   playAudio("/static/audio/magic.mp3");
+}
+
+// Déclaration de la fonction openImg1 sans paramètres.
+function openImg1() {
+   // Appelle la fonction playAudio avec un autre chemin de fichier audio spécifique.
+   playAudio("/static/audio/magic2.mp3");
+}
+
+// Déclaration de la fonction openImg1 sans paramètres.
+function openImg2() {
+   // Appelle la fonction playAudio avec un autre chemin de fichier audio spécifique.
+   playAudio("/static/audio/magic3.mp3");
+}
+
+// Déclaration de la fonction openImg1 sans paramètres.
+function openImg3() {
+   // Appelle la fonction playAudio avec un autre chemin de fichier audio spécifique.
+   playAudio("/static/audio/magic4.mp3");
 }
 
 // Déclaration d'un objet questionsEtReponses contenant des paires question/réponse.

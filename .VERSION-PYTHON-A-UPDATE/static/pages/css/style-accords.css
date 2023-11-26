@@ -265,7 +265,7 @@ body {
 	font-size: 25px;
 	margin-left: 100px;
 	width: 1000px;
-	height: 730;
+	height: 630px;
 	text-align: right;
 }
 
@@ -1798,7 +1798,7 @@ footer .bottom {
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 8100px;
+		top: 8300px;
 		border-top: 8px solid #ffe033;
 	}
 

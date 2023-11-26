@@ -708,7 +708,7 @@ footer .bottom {
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 3200px;
+		top: 3350px;
 		border-top: 8px solid #ffe033;
 	}
 
@@ -761,10 +761,6 @@ footer .bottom {
 		margin-bottom: -7px;
 		width: 30px;
 		height: 3%;
-	}
-
-	.nextbutton:hover {
-		transform: scale(1.1);
 	}
 
 
@@ -933,7 +929,7 @@ footer .bottom {
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 4600px;
+		top: 4300px;
 		border-top: 8px solid #ffe033;
 	}
 
@@ -1067,7 +1063,6 @@ footer .bottom {
 		margin-right: 30px;
 	}
 
-
 	.histoire p.first,
 	p.third,
 	p.fifth {
@@ -1136,14 +1131,6 @@ footer .bottom {
 		margin-top: 50px;
 		margin-bottom: 0px;
 		margin-left: 100px;
-	}
-
-	.separateur {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 4400px;
-		border-top: 8px solid #ffe033;
 	}
 
 	h1.test {
@@ -1178,114 +1165,12 @@ footer .bottom {
 		transition: transform 0.2s;
 	}
 
-	.histoire p.first,
-	p.third,
-	p.fifth {
-		font-size: 20px;
-	}
-
-	.histoire img {
-		width: 500px;
-		height: 300px;
-		border-radius: 50px;
-	}
-
-	.pp {
-		margin-top: 50px;
-		margin-bottom: 100px;
-		margin-left: 100px;
-	}
-
-
-	.histoire h2.second {
-		margin-top: 100px;
-		margin-right: 100px;
-		font-size: 30px;
-		text-align: right;
-	}
-
-	.histoire h2.fourth {
-		margin-top: 150px;
-		margin-right: 100px;
-		font-size: 30px;
-		text-align: right;
-	}
-
-	.histoire p.second {
-		margin-top: 30px;
-		margin-left: 700px;
-		font-size: 20px;
-		text-align: justify;
-	}
-
-	.dp {
-		margin-left: 150px;
-		margin-top: -300px;
-		margin-bottom: 150px;
-	}
-
-	.tp {
-		margin-top: 50px;
-		margin-left: 100px;
-	}
-
-	.histoire p.fourth {
-		margin-top: 30px;
-		margin-left: 600px;
-		font-size: 20px;
-		text-align: justify;
-	}
-
-	.qp {
-		margin-left: 50px;
-		margin-top: -900px;
-		margin-bottom: 150px;
-	}
-
-	.cp {
-		margin-top: 50px;
-		margin-bottom: 0px;
-		margin-left: 100px;
-	}
-
 	.separateur {
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 4600px;
+		top: 4500px;
 		border-top: 8px solid #ffe033;
-	}
-
-	h1.test {
-		margin-top: 250px;
-		margin-bottom: 100px;
-		margin-left: 100px;
-		font-size: 65px;
-		color: #ffe033;
-	}
-
-	.exam {
-		border: 5px solid #000;
-		padding: 10px;
-		width: 1150px;
-		margin-left: 100px;
-	}
-
-	.exam p {
-		margin-left: 50px;
-		margin-right: 50px;
-		font-size: 20px;
-	}
-
-	.exam button {
-		margin-left: 450px;
-		font-size: 30px;
-		width: 200px;
-		height: 100px;
-		background-color: #ffe033;
-		border: 0px solid #000;
-		border-radius: 15px;
-		transition: transform 0.2s;
 	}
 
 	.nextbutton {
