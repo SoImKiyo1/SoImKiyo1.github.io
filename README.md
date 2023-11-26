@@ -69,13 +69,11 @@ TO-DO LIST :
  4. Verifier que le Python marche correctement --- V
  5. Verifier qu'il ne manque pas d'elements visuel/sonore  --- V
  6. Verifier le responsive pour toutes les pages/tailles (1920/1600/1366/1200/1024/900/720) --- V
- 7. Verifier que tout les codes sont correctement documenté
+ 7. Verifier que tout les codes sont correctement documenté --- V (sauf JS et Python)
  8. Verifier tout les codes pour eviter les doublons --- V
  9. Verifier les fautes d'orthographes --- V
- 10. Passer tout les codes aux moulinettes (Formatter (Exemple : https://www.freeformatter.com/css-beautifier.html) et verif des bug sur https://validator.w3.org/)
+ 10. Passer tout les codes aux moulinettes (Formatter (Exemple : https://www.freeformatter.com/css-beautifier.html) et verif des bug sur https://validator.w3.org/) --- V (sauf JS et Python)
  11. Verifier que le site repond à toutes les attentes --- V
- 12. Verifier que la répartition nommé dans le code est bien faite et que tout les codes sont bien répartie
- 13. Verifier que toutes les redirections/liens fonctionnent --- V
+ 12. Verifier que la répartition nommé dans le code est bien faite et que tout les codes sont bien répartie --- V (sauf JS et Python)
  14. Relire et comprendre le code pour que si on nous interroge tout le monde sache decrire ce qui a etait fait
- 15. Tester la compatibilité du site sur différents navigateurs
- 16. Verif l'optimisation (.jpg/-min/compressor/.ogg)
+ 15. Tester la compatibilité du site sur différents navigateurs --- V
