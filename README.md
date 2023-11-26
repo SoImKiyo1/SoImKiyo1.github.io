@@ -71,7 +71,7 @@ TO-DO LIST :
  6. Verifier le responsive pour toutes les pages/tailles (1920/1600/1366/1200/1024/900/720) --- V
  7. Verifier que tout les codes sont correctement documenté
  8. Verifier tout les codes pour eviter les doublons --- V
- 9. Verifier les fautes d'orthographes
+ 9. Verifier les fautes d'orthographes --- V
  10. Passer tout les codes aux moulinettes (Formatter (Exemple : https://www.freeformatter.com/css-beautifier.html) et verif des bug sur https://validator.w3.org/)
  11. Verifier que le site repond à toutes les attentes --- V
  12. Verifier que la répartition nommé dans le code est bien faite et que tout les codes sont bien répartie
