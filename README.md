@@ -60,9 +60,9 @@ TO-DO LIST :
 - Correction fautes d'orthographes V
 - Creation de la Video V 
 - Faire un JavaScript/HTML TEST raccord V
-- Compréhension du code (Par tout le monde) X
+- Compréhension du code (Par tout le monde) V
 
-> (Redocumenter JS+PYTHON correctement / Finir le responsive de accords / faire les etapes final)
+> (Redocumenter JS+PYTHON correctement / faire les etapes final)
 
 - ETAPES final :
  1. Verifier tout les boutons sur le site
