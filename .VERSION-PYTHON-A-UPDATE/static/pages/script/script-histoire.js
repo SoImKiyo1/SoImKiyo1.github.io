@@ -1,58 +1,74 @@
-// Attente du chargement complet du document HTML *Fait par Sacha Pastor* 
+// Écoute l'événement de chargement complet du document HTML.
 document.addEventListener('DOMContentLoaded', function () {
-
-   // Sélectionne l'élément avec la classe 'finalexam' dans le document
-   var lienTestFinal = document.querySelector('.finalexam');
-
-   // Ajoute un écouteur d'événement au clic sur le lien 'Test Final'
-   lienTestFinal.addEventListener('click', function (event) {
-
-      // Empêche le comportement par défaut du lien (ici, la navigation vers une autre page)
-      event.preventDefault();
-
-      // Affiche une boîte de dialogue de confirmation avec un message personnalisé
-      var confirmation = confirm("Êtes-vous sûr de vouloir passer au test final ? Assurez-vous d'avoir complété toutes les leçons.");
-
-      // Si l'utilisateur confirme
-      if (confirmation) {
-         // Redirige l'utilisateur vers l'URL du lien 'Test Final'
-         window.location.href = lienTestFinal.href;
-      }
-   });
-});
-
-
-function verifierReponses() {
-   // Tableau des réponses correctes *Fait par Sacha Pastor* 
-   var reponsesCorrectes = ["voix", "paroles", "perfection", "troubadours", "gestes", "jeux", "messe", "motet", "chansons", "profanes", "divertissement", "raffiné", "danses", "opéra", "sonate", "orchestre", "styles", "galant", "sensible", "émotion"];
-
-   var erreurs = 0;
-
-   for (var i = 1; i <= reponsesCorrectes.length; i++) {
-      // Récupère la réponse de l'utilisateur à partir de l'élément avec l'ID "mot" + i
-      var reponseUtilisateur = document.getElementById("mot" + i).value.toLowerCase();
-
-      if (reponseUtilisateur !== reponsesCorrectes[i - 1]) {
-         // Si la réponse de l'utilisateur est incorrecte
-         document.getElementById("mot" + i).style.border = "2px solid red";
-         // Change la bordure de l'élément pour indiquer une réponse incorrecte
-         document.getElementById("mot" + i).placeholder = reponsesCorrectes[i - 1];
-         // Affiche la réponse correcte en tant que placeholder
-         erreurs++;
-      } else {
-         // Si la réponse de l'utilisateur est correcte
-         document.getElementById("mot" + i).style.border = "2px solid green";
-         // Change la bordure de l'élément pour indiquer une réponse correcte
-      }
-   }
-
-   // Affichage du résultat *Fait par Sacha Pastor* 
-   var resultat = document.getElementById("resultat");
-   if (erreurs === 0) {
-      resultat.innerHTML = "Toutes les réponses sont correctes!";
-      resultat.style.color = "green";
-   } else {
-      resultat.innerHTML = "Il y a " + erreurs + " erreur(s).";
-      resultat.style.color = "red";
-   }
-}
+    // Sélectionne l'élément avec la classe 'finalexam' dans le document.
+    var lienTestFinal = document.querySelector('.finalexam');
+ 
+    // Ajoute un écouteur d'événement pour réagir au clic sur cet élément.
+    lienTestFinal.addEventListener('click', function (event) {
+        // Empêche le comportement par défaut du lien (par exemple, empêcher la navigation automatique).
+        event.preventDefault();
+        // Affiche une boîte de dialogue de confirmation avec un message personnalisé.
+        var confirmation = confirm("Êtes-vous sûr de vouloir passer au test final ? Assurez-vous d'avoir complété toutes les leçons.");
+        
+        // Vérifie si l'utilisateur a confirmé dans la boîte de dialogue.
+        if (confirmation) {
+            // Si confirmé, redirige l'utilisateur vers l'URL spécifiée dans l'attribut href de 'lienTestFinal'.
+            window.location.href = lienTestFinal.href;
+        }
+    });
+ });
+ 
+ // Déclare un tableau de réponses correctes pour les questions.
+ var reponsesCorrectes = ["voix", "paroles", "perfection", "troubadours", "gestes", "jeux", "messe", "motet", "chansons", "profanes", "divertissement", "raffiné", "danses", "opéra", "sonate", "orchestre", "styles", "galant", "sensible", "émotion"];
+ 
+ // Déclaration de la fonction verifierReponses pour évaluer les réponses données par l'utilisateur.
+ function verifierReponses() {
+    var erreurs = 0; // Initialisation du compteur d'erreurs.
+ 
+    // Boucle sur chaque réponse dans le tableau reponsesCorrectes.
+    for (var i = 1; i <= reponsesCorrectes.length; i++) {
+        // Sélectionne l'élément avec l'id 'mot' suivi du numéro de la question.
+        var element = document.getElementById("mot" + i);
+        // Récupère la réponse de l'utilisateur en minuscules pour la comparaison.
+        var reponseUtilisateur = element.value.toLowerCase();
+ 
+        // Compare la réponse de l'utilisateur à la bonne réponse.
+        if (reponseUtilisateur !== reponsesCorrectes[i - 1]) {
+            // Si la réponse est incorrecte, applique un style de bordure rouge à l'élément.
+            element.style.border = "2px solid red";
+            // Affiche la bonne réponse comme placeholder.
+            element.placeholder = reponsesCorrectes[i - 1];
+            // Incrémente le compteur d'erreurs.
+            erreurs++;
+        } else {
+            // Si la réponse est correcte, applique un style de bordure verte à l'élément.
+            element.style.border = "2px solid green";
+        }
+    }
+ 
+    // Appelle la fonction afficherResultat pour montrer le nombre d'erreurs.
+    afficherResultat(erreurs, "resultat");
+ }
+ 
+ // Déclaration de la fonction afficherResultat pour afficher les résultats du quiz.
+ function afficherResultat(erreurs, idResultat) {
+    // Obtient ou crée l'élément pour afficher le résultat.
+    var resultat = document.getElementById(idResultat) || creerElementResultat(idResultat);
+    // Définit le contenu de l'élément de résultat en fonction du nombre d'erreurs.
+    resultat.innerHTML = erreurs === 0 ? "Toutes les réponses sont correctes!" : "Il y a " + erreurs + " erreur(s).";
+    // Change la couleur du texte en vert pour zéro erreur, sinon en rouge.
+    resultat.style.color = erreurs === 0 ? "green" : "red";
+ }
+ 
+ // Déclaration de la fonction creerElementResultat pour créer un élément de résultat si nécessaire.
+ function creerElementResultat(id) {
+    // Crée un nouvel élément div.
+    var resultat = document.createElement("div");
+    // Attribue l'ID fourni à l'élément.
+    resultat.id = id;
+    // Ajoute l'élément créé au corps du document.
+    document.body.appendChild(resultat);
+    // Retourne l'élément résultat.
+    return resultat;
+ }
+ 
