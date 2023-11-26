@@ -527,6 +527,92 @@ footer .bottom {
 		margin-right: 40px;
 	}
 
+	.exaccord {
+		margin-top: -1500px;
+		font-size: 25px;
+		margin-left: 1000px;
+		width: 800px;
+		height: 250px;
+		text-align: right;
+	}
+
+	.accords h2.second {
+		margin-top: 150px;
+		margin-right: 100px;
+		margin-left: 1200px;
+		font-size: 40px;
+	}
+	
+	.accords p.second {
+		margin-top: 20px;
+		margin-right: 100px;
+		margin-left: 1200px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.accords h3.first {
+		margin-top: 20px;
+		margin-right: 100px;
+		margin-left: 1200px;
+		font-size: 25px;
+	}
+	
+	.accords p.third {
+		margin-top: 30px;
+		margin-right: 100px;
+		margin-left: 1200px;
+		font-size: 25px;
+		text-align: justify;
+	}
+
+	.accordmineur {
+		margin-top: -600px;
+		font-size: 25px;
+		margin-left: 1000px;
+		width: 800px;
+		height: 730;
+		text-align: right;
+	}
+
+	.accords h3.third {
+		margin-top: 300px;
+		margin-left: 1200px;
+		font-size: 25px;
+	}
+	
+	.accords p.sixth {
+		margin-top: 30px;
+		margin-left: 1200px;
+		font-size: 25px;
+		text-align: justify;
+		max-width: 600px;
+	}
+
+	.accord7min3 {
+		margin-top: -550px;
+		font-size: 25px;
+		margin-left: 1000px;
+		width: 800px;
+		height: 730px;
+		text-align: right;
+	}
+
+	.accords h2.fourth {
+		margin-top: 200px;
+		margin-left: 700px;
+		font-size: 40px;
+		text-align: left;
+	}
+	
+	.accords p.eighth {
+		margin-top: 20px;
+		margin-left: 500px;
+		font-size: 25px;
+		text-align: center;
+		max-width: 1000px;
+	}
+
 	.nextbutton {
 		background-color: #ffe033;
 		color: white;
@@ -536,9 +622,29 @@ footer .bottom {
 		display: inline-block;
 		font-size: 60px;
 		transition: transform 0.5s;
-		margin-left: 1000px;
+		margin-left: 550px;
 		margin-top: 100px;
 	}
+
+	.separateur {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 5500px;
+		border-top: 8px solid #ffe033;
+	}
+
+	.accordtest1 {
+		margin-top: 15px;
+		font-size: 25px;
+		margin-left: 100px;
+		padding-right:600px;
+		margin-bottom:100px;
+		width: 1000px;
+		height: 630px;
+		text-align: right;
+	}
+	
 
 	footer img {
 		width: 200px;
@@ -622,6 +728,7 @@ footer .bottom {
 		border: 2px solid rgb(255, 214, 30);
 		margin-right: 40px;
 	}
+
 
 	.nextbutton {
 		background-color: #ffe033;
