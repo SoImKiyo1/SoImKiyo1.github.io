@@ -1,18 +1,20 @@
-// Écoute l'événement 'DOMContentLoaded' pour exécuter du code une fois que le contenu HTML est complètement chargé.
+// Fait Par Sacha Pastor
+
+// Permet d'attendre que le contenu HTML est complètement chargé avant d'exécuter le code
 document.addEventListener('DOMContentLoaded', function () {
-    // Sélectionne l'élément avec la classe 'finalexam'.
+    // Sélectionne l'élément avec la classe 'finalexam' dans le HTML
     var lienTestFinal = document.querySelector('.finalexam');
  
-    // Ajoute un écouteur d'événement de clic sur l'élément sélectionné.
+    // Permet de savoir quand on clique sur l'élément sélectionner pour éxécuter le code
     lienTestFinal.addEventListener('click', function (event) {
-        // Empêche le comportement par défaut du lien (empêcher la navigation vers l'URL du lien).
+        // Empêche l'action de base du hyperlink (Navigation vers la page demandé)
         event.preventDefault();
-        // Affiche une boîte de dialogue de confirmation avec un message personnalisé.
+        // Affiche une pop-up de confirmation
         var confirmation = confirm("Êtes-vous sûr de vouloir passer au test final ? Assurez-vous d'avoir complété toutes les leçons.");
         
-        // Vérifie si l'utilisateur a cliqué sur "OK" dans la boîte de dialogue.
+        // Vérifie si l'utilisateur a cliqué sur "OK" dans la boîte de dialogue
         if (confirmation) {
-            // Si l'utilisateur confirme, redirige vers l'URL spécifiée dans l'attribut href de 'lienTestFinal'.
+            // Si l'utilisateur confirme il est redirigé vers le lien stocké dans le href de l'élément avec la classe finalexam (hyperlink dans notre cas)
             window.location.href = lienTestFinal.href;
         }
     });

@@ -1,65 +1,66 @@
-// Écoute l'événement 'DOMContentLoaded' pour exécuter du code une fois que le contenu HTML est complètement chargé.
+// Fait Par Sacha Pastor
+// Permet d'attendre que le contenu HTML est complètement chargé avant d'exécuter le code
 document.addEventListener('DOMContentLoaded', function () {
-    // Sélectionne l'élément avec la classe 'finalexam'.
+    // Sélectionne l'élément avec la classe 'finalexam' dans le HTML
     var lienTestFinal = document.querySelector('.finalexam');
  
-    // Ajoute un écouteur d'événement de clic sur l'élément sélectionné.
+    // Permet de savoir quand on clique sur l'élément sélectionner pour éxécuter le code
     lienTestFinal.addEventListener('click', function (event) {
-        // Empêche le comportement par défaut du lien (empêcher la navigation vers l'URL du lien).
+        // Empêche l'action de base du hyperlink (Navigation vers la page demandé)
         event.preventDefault();
-        // Affiche une boîte de dialogue de confirmation avec un message personnalisé.
+        // Affiche une pop-up de confirmation
         var confirmation = confirm("Êtes-vous sûr de vouloir passer au test final ? Assurez-vous d'avoir complété toutes les leçons.");
         
-        // Vérifie si l'utilisateur a cliqué sur "OK" dans la boîte de dialogue.
+        // Vérifie si l'utilisateur a cliqué sur "OK" dans la boîte de dialogue
         if (confirmation) {
-            // Si l'utilisateur confirme, redirige vers l'URL spécifiée dans l'attribut href de 'lienTestFinal'.
+            // Si l'utilisateur confirme il est redirigé vers le lien stocké dans le href de l'élément avec la classe finalexam (hyperlink dans notre cas)
             window.location.href = lienTestFinal.href;
         }
     });
  });
  
- // Déclaration d'un objet pour stocker les questions et leurs réponses correctes.
+ // Stocke toutes les réponses et les zones où doivent être entré celles-ci
  var questionsEtReponses = {
-    fondamentale: { reponse: "Mi", selecteur: "#answer1" }, // Question sur la note fondamentale
-    intervalle: { reponse: "Si", selecteur: "#answer2" }    // Question sur l'intervalle
+    fondamentale: { reponse: "Mi", selecteur: "#answer1" },
+    intervalle: { reponse: "Si", selecteur: "#answer2" }
  };
  
- // Déclaration de la fonction verifierReponses pour évaluer les réponses données par l'utilisateur.
+ // Fonction pour vérifier les réponses de l'utilisateur par rapport au réponses attendues
  function verifierReponses() {
-    var erreurs = 0; // Initialisation du compteur d'erreurs.
+    var erreurs = 0; // Initialisation du compteur d'erreurs
  
-    // Boucle sur chaque question dans l'objet 'questionsEtReponses'.
+    // Boucle sur chaque question dans l'objet "questionsEtReponses"
     for (var question in questionsEtReponses) {
-        // Sélectionne l'élément HTML correspondant à la question.
+        // Sélectionne l'élément HTML correspondant à la question
         var element = document.querySelector(questionsEtReponses[question].selecteur);
-        // Récupère la réponse de l'utilisateur et la convertit en minuscules pour la comparaison.
+        // Récupère la réponse de l'utilisateur et la convertit en minuscules pour la comparaison (Pour accepter la réponse même avec des Majuscules/Minuscules différentes de la réponse attendue)
         var reponseUtilisateur = element.value.toLowerCase();
-        // Convertit également la réponse correcte en minuscules pour la comparaison.
+        // Convertit également la réponse attendue en minuscules pour la comparaison
         var bonneReponse = questionsEtReponses[question].reponse.toLowerCase();
  
-        // Compare la réponse de l'utilisateur à la réponse correcte.
+        // Compare la réponse de l'utilisateur à la réponse attendue
         if (reponseUtilisateur !== bonneReponse) {
-            // Si différent, change le style de la bordure de l'élément pour indiquer une erreur.
+            // Change la couleur de la bordure de l'élément en rouge si la réponse est différente
             element.style.border = "2px solid red";
-            // Incrémente le compteur d'erreurs.
+            // Augmente le compteur d'erreur
             erreurs++;
         } else {
-            // Si identique, change le style de la bordure pour indiquer une réponse correcte.
+            // Change la couleur de la bordure de l'élément en vert si la réponse est identique
             element.style.border = "2px solid green";
         }
     }
  
-    // Appelle la fonction afficherResultat pour montrer le résultat.
+    // Appelle la fonction afficherResultat pour montrer le résultat
     afficherResultat(erreurs);
  }
  
- // Déclaration de la fonction afficherResultat pour afficher le résultat du quiz.
+ // Fonction "afficherResultat" pour afficher le résultat du quiz en texte sur le html
  function afficherResultat(erreurs) {
-    // Obtient ou crée l'élément pour afficher le résultat.
-    var resultat = document.getElementById("resultat") || creerElementResultat();
-    // Définit le contenu de l'élément de résultat en fonction du nombre d'erreurs.
+    // Obtient l'élément où afficher le résultat
+    var resultat = document.getElementById("resultat")
+    // Définit le texte en fonction du résultat
     resultat.innerHTML = erreurs === 0 ? "Toutes les réponses sont correctes!" : "Il y a " + erreurs + " erreur(s).";
-    // Change la couleur du texte en vert pour zéro erreur, sinon en rouge.
+    // Change la couleur du texte en vert pour aucune erreur sinon en rouge
     resultat.style.color = erreurs === 0 ? "green" : "red";
  }
  

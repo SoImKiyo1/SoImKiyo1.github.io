@@ -1,80 +1,82 @@
-// Déclaration de la fonction playAudio qui prend un chemin de fichier audio en tant que source.
+// Fait par Noa Pagesse
+// Fonction "playAudio" qui prend un chemin de fichier audio en tant que source
 function playAudio(source) {
-   // Récupère l'élément audioPlayer par son ID.
+   // Récupère l'élément audioPlayer dans le HTML
    var audioPlayer = document.getElementById('audioPlayer');
-   // Définit la source de l'audioPlayer avec le chemin fourni.
+   // Définit la source de l'audioPlayer avec le chemin fourni
    audioPlayer.src = source;
-   // Déclenche la lecture de l'audio.
+   // Déclenche la lecture de l'audio
    audioPlayer.play();
 }
 
-// Déclaration de la fonction openImg sans paramètres.
+// Fonction openImg qui nomme l'action demandé par le HTML
 function openImg() {
-   // Appelle la fonction playAudio avec un chemin de fichier audio spécifique.
+   // Appelle la fonction playAudio avec un chemin de fichier audio spécifique
    playAudio("/static/audio/magic.mp3");
 }
 
-// Déclaration de la fonction openImg1 sans paramètres.
+// Fonction openImg1 qui nomme l'action demandé par le HTML
 function openImg1() {
-   // Appelle la fonction playAudio avec un autre chemin de fichier audio spécifique.
+   // Appelle la fonction playAudio avec un autre chemin de fichier audio spécifique
    playAudio("/static/audio/magic2.mp3");
 }
 
-// Déclaration de la fonction openImg1 sans paramètres.
+// Fonction openImg2 qui nomme l'action demandé par le HTML
 function openImg2() {
-   // Appelle la fonction playAudio avec un autre chemin de fichier audio spécifique.
+   // Appelle la fonction playAudio avec un autre chemin de fichier audio spécifique
    playAudio("/static/audio/magic3.mp3");
 }
 
-// Déclaration de la fonction openImg1 sans paramètres.
+// Fonction openImg3 qui nomme l'action demandé par le HTML
 function openImg3() {
-   // Appelle la fonction playAudio avec un autre chemin de fichier audio spécifique.
+   // Appelle la fonction playAudio avec un autre chemin de fichier audio spécifique
    playAudio("/static/audio/magic4.mp3");
 }
 
-// Déclaration d'un objet questionsEtReponses contenant des paires question/réponse.
+// Fait par Sacha Pastor
+ // Stocke toutes les réponses et les zones où doivent être entré celles-ci
 var questionsEtReponses = {
-   fondamentale: { reponse: "sol", selecteur: "select[name='fondamentale']" }, // Question sur la note fondamentale
-   intervalle: { reponse: "1,5ton", selecteur: "select[name='intervalle']" }, // Question sur l'intervalle
-   quinteJuste: { reponse: "quintejuste", selecteur: "select[name='quinte juste']" }, // Question sur la quinte juste
-   tonalite: { reponse: "Sol mineur", selecteur: "#answer1" } // Question sur la tonalité
+   fondamentale: { reponse: "sol", selecteur: "select[name='fondamentale']" },
+   intervalle: { reponse: "1,5ton", selecteur: "select[name='intervalle']" },
+   quinteJuste: { reponse: "quintejuste", selecteur: "select[name='quinte juste']" },
+   tonalite: { reponse: "Sol mineur", selecteur: "#answer1" }
 };
 
-// Déclaration de la fonction verifierReponses pour évaluer les réponses données par l'utilisateur.
+ // Fonction pour vérifier les réponses de l'utilisateur par rapport au réponses attendues
 function verifierReponses() {
-   var erreurs = 0; // Initialisation du compteur d'erreurs.
+   var erreurs = 0; // Initialisation du compteur d'erreurs
 
-   // Boucle sur chaque question dans l'objet questionsEtReponses.
+    // Boucle sur chaque question dans l'objet "questionsEtReponses"
    for (var question in questionsEtReponses) {
-       // Sélectionne l'élément correspondant au sélecteur de la question actuelle.
+      // Sélectionne l'élément HTML correspondant à la question
        var element = document.querySelector(questionsEtReponses[question].selecteur);
-       // Récupère la réponse de l'utilisateur en minuscules pour la comparaison.
+      // Récupère la réponse de l'utilisateur et la convertit en minuscules pour la comparaison (Pour accepter la réponse même avec des Majuscules/Minuscules différentes de la réponse attendue)
        var reponseUtilisateur = element.value.toLowerCase();
-       // Convertit la réponse correcte en minuscules pour la comparaison.
+      // Convertit également la réponse attendue en minuscules pour la comparaison
        var bonneReponse = questionsEtReponses[question].reponse.toLowerCase();
 
-       // Compare la réponse de l'utilisateur à la bonne réponse.
+        // Compare la réponse de l'utilisateur à la réponse attendue
        if (reponseUtilisateur !== bonneReponse) {
-           // Si la réponse est incorrecte, applique un style de bordure rouge à l'élément.
+            // Change la couleur de la bordure de l'élément en rouge si la réponse est différente
            element.style.border = "2px solid red";
-           // Incrémente le compteur d'erreurs.
+            // Augmente le compteur d'erreur
            erreurs++;
        } else {
-           // Si la réponse est correcte, applique un style de bordure verte à l'élément.
+            // Change la couleur de la bordure de l'élément en vert si la réponse est identique
            element.style.border = "2px solid green";
        }
    }
 
-   // Appelle la fonction afficherResultat pour montrer le nombre d'erreurs.
+    // Appelle la fonction afficherResultat pour montrer le résultat
    afficherResultat(erreurs, "resultat");
 }
 
-// Déclaration de la fonction afficherResultat pour afficher les résultats du quiz.
+ // Fonction "afficherResultat" pour afficher le résultat du quiz en texte sur le html
 function afficherResultat(erreurs, idResultat) {
-   // Obtient ou crée l'élément pour afficher le résultat.
+    // Obtient l'élément où afficher le résultat
    var resultat = document.getElementById(idResultat) || creerElementResultat(idResultat);
-   // Définit le contenu de l'élément de résultat en fonction du nombre d'erreurs.
+    // Définit le texte en fonction du résultat
    resultat.innerHTML = erreurs === 0 ? "Toutes les réponses sont correctes!" : "Il y a " + erreurs + " erreur(s).";
-   // Change la couleur du texte en vert pour zéro erreur, sinon en rouge.
+    // Change la couleur du texte en vert pour aucune erreur sinon en rouge
    resultat.style.color = erreurs === 0 ? "green" : "red";
 }

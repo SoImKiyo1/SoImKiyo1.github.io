@@ -27,15 +27,18 @@
       </div>
       <!-- Zone où sera affiché le résultat (Venant de la page finaltest.html) *Fait par Sacha Pastor* -->
       <div id="resultats">
+         <!-- On retranscrit les placeholders venant du Python *Fait par Sacha Pastor* -->
          <h1>Résultats pour {{ prenom }} {{ nom }}</h1>
          <p>Score: {{ score }} / {{ totalQuestions }}</p>
          <h2>Corrections:</h2>
+         <!-- Boucle Jinja2 qui récupère la key (question) et le dictionnaire associé (value/reponse_soumise (Les reponses attendues et soumises)) *Fait par Sacha Pastor* -->
          {% for question, details in corrections.items() %}
          <div>
             <p>{{ question }}:</p>
             <p>Réponse attendue: {{ details.attendue }}</p>
             <p>Réponse soumise: {{ details.soumise }}</p>
          </div>
+         <!-- Fin de la boucle *Fait par Sacha Pastor* -->
          {% endfor %}
       </div>
       </div>
